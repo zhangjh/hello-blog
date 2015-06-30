@@ -78,7 +78,7 @@ social:
   github: https://github.com/zhangjh
   weibo: http://weibo.com/jhspider
   douban: http://douban.com/people/48165389
-  wechat: wechat.jpg
+#  wechat: wechat.jpg
 
 # duoshuo评论
 duoshuo_shortname: zhangjh
