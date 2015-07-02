@@ -10,6 +10,9 @@ categories: 技术人生
 `fatal: HTTP request failed`
 
 百度了一下，有很多类似的问题，解决方法较多的一种是：
+
+<!--more-->
+
 将.git/config文件的[remote "origin"]部分的repo地址修改为username@githubxxx，即：
 原：`url=https://github.com/zhangjh/myblog.git/`
 修改为：`url=https://zhangjh@github.com/zhangjh/myblog.git`

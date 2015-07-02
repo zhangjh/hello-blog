@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://zhangjh.github.io/
+url: http://www.5941740.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -94,7 +94,7 @@ jiathis: true
 zhanzhang_analytics: yes
 
 # site search
-swiftype_key: kqk6Yx61eKS5JujMK_Zq
+#swiftype_key: kqk6Yx61eKS5JujMK_Zq
 
 # since
 since: 2015
@@ -103,8 +103,6 @@ creative_commons: by-nc-sa
 
 plugin:
 - hexo-generator-sitemap
-sitemap:
-  path: sitemap.xml
 
 #sidebar
 sidebar: post
