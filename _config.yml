@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hello Blog
+title: Dante notes
 subtitle: 与细微处思寰宇，细思极恐
 description: dante's blog | IT | blog | 幽默 | 吐槽 | 兴趣爱好 | 折腾
 author: 但丁
@@ -70,7 +70,7 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://git@github.com:zhangjh/myblog.git
+  repository: ssh://git@github.com/zhangjh/myblog.git
 branch: gh-pages
 
 # Social links
