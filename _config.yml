@@ -71,7 +71,7 @@ theme: next
 deploy:
   type: git
   repository: ssh://git@github.com/zhangjh/myblog.git
-branch: gh-pages
+branch: master
 
 # Social links
 social:
