@@ -112,3 +112,5 @@ scroll_to_more: true
 
 #为侧边栏文章的目录自动添加索引
 toc_list_number: true 
+
+html_minifier: 
