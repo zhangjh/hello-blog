@@ -60,4 +60,12 @@ git merge dev
 ##4.3删除分支
 `git branch -d dev`
 
+##4.4获取远程分支
+很多时候我们需要将远程分支上的代码check下来修改，这时候如果本地工作机器没有已经check好的分支代码的话直接`git pull`是不行的，该怎么获取远程分支代码呢？
+```
+git branch -a  //查看远程分支信息
+git fetch      //获取远程库代码
+git checkout -b local-branch origin/remote-branch   //新建本地分支并映射到远程名为remote-branch的分支上
+git branch     //可以查看下确认是否已经在local-branch分支上了
+```
 

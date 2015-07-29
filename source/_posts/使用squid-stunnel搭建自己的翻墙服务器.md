@@ -2,8 +2,10 @@ title: 使用squid+stunnel搭建自己的翻墙服务器
 date: 2015-07-17 10:30:38
 tags: 翻墙 squid stunnel vpn代理
 categories: 技术人生 
+photos:
+	- http://ww3.sinaimg.cn/large/62d95157gw1eu5kesk5m5j20dw0c2js1.jpg
 ---
-	![](http://ww3.sinaimg.cn/large/62d95157gw1eu5kesk5m5j20dw0c2js1.jpg)
+
 　　GFW让国内的码农们要比国外同行们必须多掌握一门必备技能：**翻墙**。
 　　就为了更好的上网体验，天朝上国的我们要跟移动、联通、电信(死比运营商肆无忌惮搞网络劫持推送广告)，工信部(互联网内容审查)，GFW作斗争，浪费大好光阴，真是想想就让人想[**爆粗**](http://www.bilibili.com/video/av2550217)。这不，大GFW最近技术又牛逼了，goagent已经被墙的半身不遂了。。有这技术研究点别的多好，天朝的网络审查制度典型的"把洗澡水和孩子一起泼了"：翻墙的除了去看法哔功的，也有社会主义现代化建设的我们啊。
 　　我本身翻墙的时候不多，用上的时候开下goagent基本也能对付了，虽然对限制自由这事很不爽，但也只能不爽了。可最近goagent也总是不能用了，这尼玛还咋玩。。
