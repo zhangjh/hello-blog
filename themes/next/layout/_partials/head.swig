@@ -29,7 +29,7 @@
   <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ config.title }}" type="application/atom+xml" />
 {% endif %}
 {% if theme.favicon %}
-  <link rel="shorticon icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
 {% endif %}
 {# HEXO CONFIGURATIONS #}
 <script type="text/javascript" id="hexo.configuration">
