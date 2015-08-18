@@ -1,5 +1,5 @@
 #!/bin/bash
-hexo g
+hexo2 o
 cp -r public/* myblog
 cd myblog
 git add .

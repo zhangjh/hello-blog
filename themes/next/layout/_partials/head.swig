@@ -1,7 +1,12 @@
 {% if theme.rss === '' and config.feed and config.feed.path %}
     {% set theme.rss = config.root + config.feed.path %}
 {% endif %}
-<meta charset="UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:type" content="Website">
+<meta property="og:description" content="www.5941740.cn Dante notes.">
+<meta property="og:url" content="http://www.5941740.cn">
+<meta property="og:image" content="http://www.5941740.cn/favicon.ico ">
+<meta property="og:image:type" content="image/ico">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 {% if theme.google_site_verification %}
