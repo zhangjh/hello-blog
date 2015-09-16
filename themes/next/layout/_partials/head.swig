@@ -46,4 +46,3 @@
     sidebar: '{{ theme.sidebar }}'
   };
 </script>
-{% include '../_scripts/analytics/zhanzhang-analytics.swig' %}
