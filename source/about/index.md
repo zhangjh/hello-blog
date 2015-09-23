@@ -3,7 +3,7 @@ date: 2015-09-23 14:27:34
 ---
 # 个人信息
 ![](http://www.5941740.cn/images/default_avatar.jpg)
-张基宏 男 86后处女座一枚 骄傲的大蓝鲸人
+张基宏 男 86年处女座一枚 骄傲的大蓝鲸人
 一个伪文青 一个Low Geek
 **个人邮箱**：njhxzhangjihong@126.com
 **毕业时间**：2012.4
