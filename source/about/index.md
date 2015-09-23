@@ -37,3 +37,5 @@ git/svn，maven
 阿里巴巴内部可访问http://tab.alibaba.net （casperjs自动化测试准入平台，nodejs全端实现）
 内部工具集平台光年
 此Hexo博客
+
+Chrome插件-自动修改url添加实验参数
