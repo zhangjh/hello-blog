@@ -5,7 +5,7 @@ date: 2015-09-23 14:27:34
 ![](http://www.5941740.cn/images/default_avatar.jpg)
 张基宏 男 86年处女座一枚 骄傲的大蓝鲸人
 一个伪文青 一个Low Geek
-**个人邮箱**：njhxzhangjihong@126.com
+**个人邮箱**：<a href="mailto:njhxzhangjihong@126.com" target="_self">njhxzhangjihong@126.com</a>
 **毕业时间**：2012.4
 **学　　历**：计算机硕士
 **Github**： https://github.com/zhangjh
@@ -17,12 +17,10 @@ date: 2015-09-23 14:27:34
 
 # 技能清单
 - #### 前端
-HTML/CSS/javascript，bootstrap
-jQuery
+HTML/CSS/javascript，bootstrap,jQuery
 
 - #### 后端 & 脚本
-nodejs，bash shell，awk/sed
-Hadoop mapreduce
+nodejs，bash shell，awk/sed,Hadoop mapreduce
 
 - #### 数据库（仅限于使用，对理论不懂）
 mongodb，mysql
