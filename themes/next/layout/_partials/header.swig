@@ -22,9 +22,13 @@
       {% for name, path in theme.menu %}
         {% set itemName = name.toLowerCase() %}
         <li class="menu-item menu-item-{{ itemName }}">
-          <a href="{{ url_for(path) }}">
-            <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
-            {{ __('menu.' + itemName) }}
+		  {% if itemName == "commonweal"%}
+			<a href="{{ url_for(path) }}" style="font-weight: bold;">
+		  {% else %}
+			<a href="{{ url_for(path) }}">
+		  {% endif %}
+            <i class="menu-item-icon icon-{{ itemName }}"></i> <br />    	
+				{{ __('menu.' + itemName) }}
           </a>
         </li>
       {% endfor %}

@@ -11,14 +11,18 @@
 		}
 		#l-map{
 			height:300px;
-			width:60%;
+			width:100%;
 /*			margin-left: 15%;
 			margin-top: 5%;*/
 		}
 		#r-result,#r-result table{
-			width:60%;
+			width:100%;
 			font-size:12px;
 			/*margin-left: 15%;*/
+		}
+		#cover {
+			margin-left: -5%;
+			margin-bottom: 10px;
 		}
 
 		/*#r-result table {
@@ -30,21 +34,27 @@
 	<title>展示公交换乘的结果面板</title>
 </head>
 <body>
-	<div style="margin-left: 15%">
+	<div>
 		<div id="cover">
 			<ul>
-				<li><a href="#pics">请柬</a></li>
+				<li><a href="#invitation">请柬</a></li>
 				<li><a href="#l-map">地图</a></li>
+				<li><a href="#pics">图片Show</a></li>
 			</ul>
 		</div>
 		<h2>请柬：</h2>
-		<div id="pics" name="invite">
-			<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eykb39k8ekj20rh0gtq7b.jpg" style="width: 60%">
-			<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eykb395098j20sg0i7jt3.jpg" style="width: 60%">
+		<div id="invitation">
+			<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eykb39k8ekj20rh0gtq7b.jpg" style="width: 100%">
+			<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eykb395098j20sg0i7jt3.jpg" style="width: 100%">
 		</div>
 		<h2>地图：</h2>
 		<div id="l-map" name="map"></div>
 		<div id="r-result"></div>
+		<h2>图片Show：</h2>
+		<div id="pics">
+			<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eykb39k8ekj20rh0gtq7b.jpg" style="width: 100%">
+			<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eykb395098j20sg0i7jt3.jpg" style="width: 100%">
+		</div>
 		<li><a href="#cover">返回顶部</a></li>
 	</div>
 
