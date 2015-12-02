@@ -1,0 +1,46 @@
+layout: false
+--------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta author="jihong.zjh">
+	<title>HTML5控制摄像头</title>
+</head>
+<body>
+	<video id="video" autoplay>
+	</video>
+	<button id="snap">拍摄</button>
+	<canvas id="canvas" style="border:2px solid #000099" width="640" height="480">
+		no canvas availabel
+	</canvas>
+</body>
+<script type="text/javascript">
+	var canvas = document.getElementById("canvas"),
+		context = canvas.getContext("2d"),
+		video = document.getElementById("video"),
+		videoObj = {"video":true};
+	var errcb = function(e){
+		console.log("error:",e);
+	}
+	if(navigator.getUserMedia){
+		navigator.getUserMedia(videoObj,function(stream){
+			video.src = stream;
+			video.play();
+		},errcb);
+	}else if(navigator.webkitGetUserMedia){
+		navigator.webkitGetUserMedia(videoObj,function(stream){
+			video.src = window.webkitURL.createObjectURL(stream);
+			video.play();
+		},errcb);
+	}else if(navigator.mozGetUserMedia){
+		navigator.mozGetUserMedia(videoObj,function(stream){
+			video.src = window.URL.createObjectURL(stream);
+			video.play();
+		},errcb);
+	}
+	document.getElementById("snap").addEventListener("click",function(){
+		context.drawImage(video,0,0,640,480);
+	})
+</script>
+</html>
