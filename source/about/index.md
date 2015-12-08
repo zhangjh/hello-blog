@@ -34,6 +34,14 @@ git/svn，maven
 # 工具&平台
 阿里巴巴内部可访问http://tab.alibaba.net （casperjs自动化测试准入平台，nodejs全端实现）
 内部工具集平台光年所有前端工作:http://guang.alibaba.net/index.htm
-此Hexo博客
+阿里巴巴搜索产品评测系统Chrome插件实现（提供用户反馈产品召回质量的入口，收集用户反馈信息）
 
-Chrome插件-自动修改url添加实验参数
+# 业余项目
+- 若干Chrome插件
+	1. 自动修改url添加实验参数
+	2. 自动去广告插件
+	3. 搜索页产品重复检查
+	...
+- 算法js实现
+	https://github.com/zhangjh/freeCodeCampAlgorithm 
+- 此Hexo博客
