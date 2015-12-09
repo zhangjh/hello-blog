@@ -2,6 +2,7 @@ title: html5学习--控制摄像头
 date: 2015-08-20 10:10:29
 tags: html5 摄像头
 categories: 技术人生
+show: true
 ---
 最近对html5萌生了兴趣，起初是因为在学习全栈时见识到了html5的强大威力。如下面这个例子：
 ```

@@ -2,6 +2,7 @@ title: Git push HTTP request failed 403 fatal问题解决
 date: 2015-06-30 11:26:40
 tags: git
 categories: 技术人生
+show: true
 ---
 我在搭建这个博客的时候，在更新了文件后使用git push到远程仓库时报错，报错信息如下：
 

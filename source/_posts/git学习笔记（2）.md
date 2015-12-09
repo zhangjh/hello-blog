@@ -2,6 +2,7 @@ title: git学习笔记（2）
 date: 2015-07-10 14:35:17
 tags: git
 categories: 技术人生
+show: true
 ---
 #3.远程仓库
 svn只在一个仓库里管理文件，而git是分布式版本控制系统，同一个git仓库可以分布到不同的机器上。

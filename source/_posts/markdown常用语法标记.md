@@ -2,6 +2,7 @@ title: markdown常用语法标记
 date: 2015-06-29 17:47:37
 tags: markdown
 categories: 技术人生
+show: true
 ---
 工欲善其事必先利其器，hexo博客的写作方式采用的是标准的markdown语法。
 因此要想写出漂亮的格式，掌握好必要的markdown语法必不可少。

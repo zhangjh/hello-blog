@@ -2,6 +2,7 @@ title: iptables端口转发
 date: 2015-07-14 20:26:20
 tags: [iptables,端口转发]
 categories: 技术人生
+show: true
 ---
 #背景
 我有个网站部署在我linux服务器的自己账户下，我们都知道，如果要以1000以下的端口启动服务需要root权限。而我又没有root权限。

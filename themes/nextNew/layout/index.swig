@@ -28,7 +28,9 @@
     {% endif %}
 
     {% for post in posts_normal %}
-      {{ post_template.render(post, true) }}
+	  {% if post.show %}
+      	{{ post_template.render(post, true) }}
+	  {% endif %}
     {% endfor %}
 
   </section>
