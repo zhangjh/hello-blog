@@ -1,6 +1,6 @@
 title: 使用squid+stunnel搭建自己的翻墙服务器
 date: 2015-07-17 10:30:38
-tags: 翻墙 squid stunnel vpn代理
+tags: [翻墙,squid,stunnel,vpn代理]
 categories: 技术人生 
 photos:
 	- http://ww3.sinaimg.cn/large/62d95157gw1eu5kesk5m5j20dw0c2js1.jpg

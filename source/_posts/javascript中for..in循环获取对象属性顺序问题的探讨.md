@@ -1,6 +1,6 @@
 title: javascript中for..in循环获取对象属性顺序问题的探讨
 date: 2015-07-13 13:58:37
-tags: javascript for..in 
+tags: [javascript,for..in] 
 categories: 技术人生
 ---
 #背景

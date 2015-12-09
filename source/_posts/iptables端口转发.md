@@ -1,6 +1,6 @@
 title: iptables端口转发
 date: 2015-07-14 20:26:20
-tags: iptables 端口转发
+tags: [iptables,端口转发]
 categories: 技术人生
 ---
 #背景

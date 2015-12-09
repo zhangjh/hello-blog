@@ -1,6 +1,6 @@
 title: javascript中几个编码函数encodeURI、encodeURIComponent以及escape的区别
 date: 2015-08-03 19:58:58
-tags: javascript,encode
+tags: [javascript,encode]
 categories: 技术人生
 ---
 ####背景
