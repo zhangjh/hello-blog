@@ -13,6 +13,12 @@
   <div id="posts" class="posts-expand">
     {{ post_template.render(page) }}
 
+	<!--底部广告内容-->
+	<hr />
+	<div id="bottom_ads">
+		<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=48&l=ur1&category=books&banner=0792752JZQ695PSS3KR2&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+	</div>	
+
     <div class="post-spread">
       {% if theme.jiathis %}
         {% include '_partials/share/jiathis.swig' %}

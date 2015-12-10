@@ -2,12 +2,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<meta property="og:type" content="Website">
-<meta property="og:description" content="www.5941740.cn Dante notes.">
-<meta property="og:url" content="http://www.5941740.cn">
-<meta property="og:image" content="http://www.5941740.cn/favicon.ico ">
-<meta property="og:image:type" content="image/ico">
-
 {# #238, Disable Baidu tranformation #}
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -20,6 +14,10 @@
 
 {% if theme.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}" />
+{% endif %}
+
+{% if theme.baidu_union_verification %}
+	<meta name="baidu_union_verify" content="{{ theme.baidu_union_verification }}">
 {% endif %}
 
 
