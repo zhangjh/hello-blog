@@ -36,11 +36,11 @@ photos:
 `yum install squid`
 - 修改squid配置文件：
 
-```
+```plain
 vim /etc/squid/squid.conf      #路径以自己安装的为准
 ```
 将配置文件的
-```
+```js
 http_access deny all
 修改为
 http_access allow all
@@ -52,18 +52,18 @@ http_access allow all
 - 安装stunnel
 `yum install stunnel`
 由于需要stunnel进行加密，因此还需要生成相应的密钥：(依赖openssl，通常linux发行版都自带了，如果没有预装可以自行安装)
-```
+```js
 cd /usr/local/etc/stunnel/
 openssl req -new -x509 -days 1000 -nodes -out stunnel.pem -keyout stunnel.pem  
 #生成一个有效时间1000天的证书文件stunnel.pem
 
 ```
 - 修改配置文件
-```
+```js
 vim /usr/local/etc/stunnel/stunnel.conf    #路径以自己安装的为准
 ```
 我的配置文件：
-```
+```plain
 fips=no
 syslog=yes
 debug=7
@@ -85,7 +85,7 @@ connect=127.0.0.1:3128             #服务器A的connect配置基本没啥用
 在服务器B上安装stunnel，步骤类似服务器A，需要注意的是，证书文件可以和服务器A一样，直接复制过来即可。
 - 修改配置文件：
 我的配置
-```
+```plain
 cert = ./stunnel.pem               #复制过来的证书文件路径
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1

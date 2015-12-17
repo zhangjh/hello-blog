@@ -11,12 +11,12 @@ show: true
 
 ####TEST1
 代码片段：
-```
+```js
 var resParams = {"name":encodeURI(out.name),"blockId":blockId,"total":1,"detail":encodeURI(reportPath)};
 ```
 发布后，重新触发，查看日志：
 
-```
+```js
 ..."detail":"http://(绿色围墙)/detail?id=1&suffix=1438601805325"...}
 ```
 怎么貌似请求串没有改变？
@@ -24,11 +24,11 @@ var resParams = {"name":encodeURI(out.name),"blockId":blockId,"total":1,"detail"
 第一反应，怀疑是不是编码没有成功，但我之前一直都是使用`encodeURI`编码，并不会别的什么方法，于是百度了下，发现还有个`encodeURIComponent以及escape的区别`方法。
 
 ####TEST2
-```
+```js
 var resParams = {"name":encodeURIComponent(out.name),"blockId":blockId,"total":1,"detail":encodeURIComponent(reportPath)};
 ```
 发布后，重新触发，查看日志：
-```
+```js
 ..."detail":"http://(绿色围墙)/detail%3Fid%3D1%26suffix%3D1438601805325"...}
 ```
 起效了~

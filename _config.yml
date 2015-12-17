@@ -71,8 +71,13 @@ theme: nextNew
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: ssh://git@github.com/zhangjh/myblog.git
-branch: master
+  repo: git@github.com:zhangjh/myblog.git
+  branch: gh-pages
+  message: "add new pages"
+  #type: git 
+  #repo: git@gitcafe.com:JHspider/JHspider.git
+  #branch: gitcafe-pages
+  #message: "add new pages"
 
 # Social links
 social:

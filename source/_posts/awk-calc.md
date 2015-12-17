@@ -18,7 +18,7 @@ PASS 15 tests executed in 20.642s, 15 passed, 0 failed, 0 dubious, 0 skipped.
 代码示例如下：
 <!--more-->
 
-```
+```js
 PASS数目:
 grep -o ".*tests executed in" reportName | awk 'BEGIN{sum=0}{if($1 ~ /PASS/)sum+=$2}END{print sum}'
 
@@ -34,22 +34,22 @@ BEGIN和END顾名思义，在awk中，BEGIN只在开始处理之前运行一次�
 非常适合用在做一些前置操作时使用，通常求和类初始化值、设定分隔符等经常会用。
 
 语法：
-```
+```js
 awk '[BEGIN]{..}{..}[END{..}]' file
 ```
 形式均为'{}'样，其中BEGIN和END语句块均可省略。
 
 examples：
 以统计数字文本（文本内容每行均为数字）为例
-```
-1. 求和
+```js
+//1. 求和
 awk 'BEGIN{sum=0}{sum+=$1}END{print sum}' file
 
-2. 求均值
+//2. 求均值
 awk 'BEGIN{sum=0}{sum+=$1}END{print sum/NR}' file
 NR为总记录数
 
-3. 求最大值
+//3. 求最大值
 awk 'BEGIN{max=0}{if($1 > max)max = $1}END{print max}'
 
 ```

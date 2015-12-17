@@ -26,7 +26,7 @@ show: true
 
 #存在感型扩展--自动修改url添加实验参数
 ##清单文件
-```
+```js
 {
 	"name": "自动添加实验参数",
 	"version": "2.0",
@@ -61,7 +61,7 @@ show: true
 ##业务代码
 　　搞定了清单文件，下面就是真正干活的业务代码了。
 　　为了将插件做的更通用一点，我们希望提供用户输入"实验参数"的功能，否则写死了的话只能用一次就嗝屁了。。因此我需要一个popup页面供用户输入实验参数，并且还需要将实验参数存储在浏览器本地，否则每打开一个页面都需要重复再输入一次"实验参数"这样就没法玩了。
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +83,7 @@ show: true
 　　很简单，啥玩意儿也没有，就一个框一个按钮。值得说明的是，不像普通的html，扩展的js文件一定要使用外部引入方式，否则没法运行！
 
 　　核心的逻辑代码在js文件中，当然也是非常简单：
-```
+```js
 (function addParam(){
     $("#btn").click(function() {
         var buckettestValue = $("#test_param").val();
@@ -117,7 +117,7 @@ show: true
 
 #雷锋型扩展--简易去广告插件
 ##清单文件
-```
+```js
 {
     "name": "清除页面广告",
     "version": "2.0",
@@ -142,7 +142,7 @@ show: true
 　　雷锋型扩展由于不需要跟用户交互，因此不需要**browser_action**属性，这款简易的去广告小插件也不需要使用Chrome的API或者是发送跨域请求因此我把**permissions**属性也去掉了。
 
 ##业务代码
-```
+```js
 (function clearAd (argument) {
     console.info("clear start");
 

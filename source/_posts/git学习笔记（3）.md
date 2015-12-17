@@ -17,17 +17,17 @@ show: true
 ## 4.1 创建标签
 git中打标签非常简单，拢共分两步：
 - 首先切换到待打标签的分支上
-```
+```js
 git checkout <branch name>
 
 ```
 - 然后git tag打标签
-```
+```js
 git tag <tag name>
 ```
 
 默认是给最新提交打标签，也可以给某次的历史commit打标签：
-```
+```js
 git tag <tag name> <commit id>
 
 ```
@@ -37,33 +37,33 @@ git tag <tag name> <commit id>
 
 ## 4.3 删除标签
 删除本地标签：
-```
+```js
 git tag -d <tag name>
 ```
 如果要删除远程标签：(先删除本地再删除远程)
-```
+```js
 git tag -d <tag name>
 git push origin :refs/tags/<tag name>
 ```
 
 ## 4.4 推送标签
-```
+```js
 git push origin <tag name>
 ```
 一次性推送全部本地尚未推送到远程的标签：
-```
+```js
 git push origin --tags
 ```
 
 # 5. 杂项
 ##5.1 配置git显示颜色
-```
+```js
 git config --global color.ui true
 ```
 
 ##5.2 配置git命令别名
 给常用git命令设置简短别名：
-```
+```js
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global alias.ci commit
@@ -74,7 +74,7 @@ git config --global alias.unstage 'reset HEAD'  //放弃暂存区的修改
 ## 5.3 配置忽略特殊文件
 我们在管理代码时，有时候有些文件不想列入代码管理，比如nodejs工程的node_modules安装模块目录，这种属于系统生成不是我们开发的文件，每次在查看git修改的时候都会提示"untracked xxx"，看着让强迫症患者还是挺不爽的。
 庆幸的是，git提供了忽略这些明确不用加入代码管理的文件的方式。只需配置下配置文件忽略掉他们即可。
-```
+```js
 touch ./.gitignore      //创建该配置文件，并添加待忽略文件，支持正则
 ```
 

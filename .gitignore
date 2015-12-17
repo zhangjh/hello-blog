@@ -6,3 +6,7 @@ node_modules/
 public/
 .deploy*/
 myblog
+CNAME
+JHspider
+myblog
+nohup.out

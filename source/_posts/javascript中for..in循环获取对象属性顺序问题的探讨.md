@@ -21,7 +21,7 @@ JSON对象本身是集合，而集合是无序的，因此for...in遍历对象�
 正如我的需求一样，就是对对象的顺序有依赖，否则在更新value时就会出现key与value对应不上的问题。
 因此只能将key事先遍历出来进行排序，后面在有需要用到key时不再用for...in遍历，而是直接使用预先遍历出来的key数组。
 
-```
+```js
 var keyArr = new Array();
 for(var item in params){
 	keyArr.push(item);

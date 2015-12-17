@@ -12,7 +12,7 @@ svn只在一个仓库里管理文件，而git是分布式版本控制系统，�
 ##3.1设置本地与远程的信任关系
 - 创建SSH KEY
 在本机用户主目录下如果已有密钥文件id_rsa、id_rsa.pub则可以跳过此步骤，否则需要先生成密钥，生成方法：
-```
+```js
 ssh-keygen -t rsa -C "email@xxx.com"
 ```
 使用默认设置，一路回车即可
@@ -51,7 +51,7 @@ git的分支管理可以让你随时修改代码，想提交就提交，开发�
 可以使用`git branch`查看当前分支，使用`git branch -a`查看远程仓库有几个分支
 ##4.2合并分支
 当分支开发完毕需要合并到master上时
-```
+```js
 git checkout master
 git merge dev
 ```
@@ -63,7 +63,7 @@ git merge dev
 
 ##4.4获取远程分支
 很多时候我们需要将远程分支上的代码check下来修改，这时候如果本地工作机器没有已经check好的分支代码的话直接`git pull`是不行的，该怎么获取远程分支代码呢？
-```
+```js
 git branch -a  //查看远程分支信息
 git fetch      //获取远程库代码
 git checkout -b local-branch origin/remote-branch   //新建本地分支并映射到远程名为remote-branch的分支上
