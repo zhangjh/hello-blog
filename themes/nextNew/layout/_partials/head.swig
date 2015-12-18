@@ -7,6 +7,8 @@
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+{# 设置缓存时间 10天（864000）#}
+<meta http-equiv="Cache-Control" content="max-age=864000" />
 
 {% if theme.google_site_verification %}
   <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
@@ -33,7 +35,7 @@
 
 
 {% if theme.use_font_lato %}
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 {% endif %}
 
 
