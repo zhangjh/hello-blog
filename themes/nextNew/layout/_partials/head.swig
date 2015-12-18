@@ -89,3 +89,6 @@
     motion: {{ theme.use_motion }}
   };
 </script>
+
+<!--jquery提前加载-->
+<script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
