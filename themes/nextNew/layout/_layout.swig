@@ -69,6 +69,6 @@
 
 
   <!--访问统计-->
-  {% include '_scripts/analytics.swig' %}
+  {# % include '_scripts/analytics.swig' %#}
 </body>
 </html>
