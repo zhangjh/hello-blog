@@ -1,0 +1,125 @@
+title: 结婚照
+categories: 图片廊
+date: 2015-12-09 10:13:38
+tags: 结婚照
+show: false
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>结婚照</title>
+	<style type="text/css">
+		img {
+			width: 33%;
+			display: inline;
+		}
+		.fancybox-skin {
+			padding: 5px !important;
+		}
+	</style>
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li><a href="#male">新郎篇</a></li>
+			<li><a href="#female">新娘篇</a></li>
+			<li><a href="#couple">合照篇</a></li>
+		<ul>
+	</div>
+
+	<div id="male">
+		<h2>新郎篇</h2>
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eysm0namv0j24c02w0qve.jpg" />
+		<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1eysm1af7uwj24c02w0he0.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eyslmjwg2wj24c02w0b2g.jpg" />
+	</div>
+
+	<div id="female">
+		<h2>新娘篇</h2>
+		<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eysljojf6gj24yo2w0he7.jpg" style="height: 154px;" />
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eyslhqc6woj24c02w0b2i.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eyslh8ngqqj24c02w0qvd.jpg" />
+	</div>
+	<div>
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eyslfm204hj22w04c07wr.jpg" />
+		<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eyslfec4luj22sr475u12.jpg" />
+		<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eysln7llobj22w04c07wr.jpg" />
+	</div>
+	<div id="couple">
+		<h2>合照篇</h2>
+		<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1eyslembq30j24c02w0he1.jpg" />
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eyslp8ss3zj24c02w0e8c.jpg" />
+		<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1eysmh26kdpj24c02w07ws.jpg" />
+	</div>
+	<div>
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eysmiu28m4j22w04c0e8c.jpg" />
+		<img src="http://ww4.sinaimg.cn/mw690/62d95157gw1eysm1nugatj24pc4pbkjy.jpg" />
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eyslte9gslj22w04c0u13.jpg" />
+	</div>
+	<div>
+		<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1eysmmiam6cj24c02w0x6x.jpg" />
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eyslvh2pqhj24c02w0x6x.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eyslwrr4eqj24c02w01l6.jpg" />
+	</div>
+	<div>
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eysn47owlfj24c02w01l6.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eysmks1m5zj24c02w01l7.jpg" />
+		<img src="http://ww1.sinaimg.cn/mw690/62d95157gw1eysls4lg7jj24c02w0u12.jpg" />
+	</div>
+	<div>
+		<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1eysm0l9o2tj24c02w01l7.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eysn208g2tj24c02w0he4.jpg" />
+		<img src="http://ww2.sinaimg.cn/mw690/62d95157gw1eyt8eta7xzj24c02w07wt.jpg" />
+	</div>
+
+	<hr />
+
+	<div class="post-spread">
+		<!-- JiaThis Button BEGIN -->
+		<div class="jiathis_style">
+		  <a class="jiathis_button_tsina"></a>
+		  <a class="jiathis_button_tqq"></a>
+		  <a class="jiathis_button_weixin"></a>
+		  <a class="jiathis_button_cqq"></a>
+		  <a class="jiathis_button_douban"></a>
+		  <a class="jiathis_button_renren"></a>
+		  <a class="jiathis_button_qzone"></a>
+		  <a class="jiathis_button_kaixin001"></a>
+		  <a class="jiathis_button_copy"></a>
+		  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+		  <a class="jiathis_counter_style"></a>
+		</div>
+		<script type="text/javascript" >
+		  var jiathis_config={
+			hideMore:false
+		  }
+		</script>
+		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+	</div>
+
+	<script>
+		//根据不同的用户设备显示
+		function isPc(){
+			var userAgentInfo = navigator.userAgent;
+			var agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+			var flag = true;
+			for(var i=0,len=agents.length;i<len;i++){
+				if(userAgentInfo.indexOf(agents[i]) != -1){
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		}
+		if(!isPc()){
+			console.log("移动设备访问.");
+			$("img").removeAttr("style");
+			$("img").css({"width": "100%"});
+		}
+	</script>
+</body>
+</html>

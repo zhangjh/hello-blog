@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo,dante notes,git,javascript,技术人生"
+keywords: "Hexo,dante notes,但丁笔记,git,javascript,技术人生"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -136,7 +136,8 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
+highlight_theme: "night bright"
+auto_detect: true
 
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
@@ -147,7 +148,7 @@ auto_excerpt:
   length: 150
 
 # Use Lato font
-use_font_lato: true
+use_font_lato: false
 
 
 
