@@ -44,4 +44,6 @@ git/svn，maven
 	...
 - 算法js实现
 	https://github.com/zhangjh/freeCodeCampAlgorithm 
+- 天气预报
+	http://www.5941740.cn/local-weather/index.html
 - 此Hexo博客

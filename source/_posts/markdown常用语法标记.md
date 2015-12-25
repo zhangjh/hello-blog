@@ -11,7 +11,7 @@ show: true
 <!--more-->
 
 #标题
-```plain
+```
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -20,14 +20,14 @@ show: true
 ```
 
 #引用
-```plain
+```
 > 引用的文字
 ```
 eg：
 > Talk is cheap，show me the code. -- Linus Torvalds
 
 #链接
-```plain
+```
 [this is link text](http://xxx)
 ```
 eg:
@@ -35,14 +35,14 @@ eg:
 
 #图片
 图片跟链接类似，只是[]前面多一个!
-```plain
+```
 ![](http://xxx)
 ```
 eg:
 ![](https://www.baidu.com/img/bd_logo1.png)
 
 #列表
-```plain
+```
 - ul1
 - ul2
 1. li1
@@ -57,11 +57,11 @@ eg：
 
 #代码&代码块
 代码：
-```plain
+```
 用`包裹语句
 ```
 代码块：
-```plain
+```
 用```包裹代码块
 ```
 eg:
