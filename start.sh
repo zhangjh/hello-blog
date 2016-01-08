@@ -1,17 +1,31 @@
 #!/bin/bash
 source ~/.bash_profile
 
-hexo3 generate && hexo2 o
-#cp -r public/* myblog
-sed -i 's/\&/\%26/g' public/sitemap.xml
-rsync -arzv public/* myblog
-rsync -arzv public/* JHspider
-cd myblog
-git add .
-git commit -a -m "add new"
-git push
-cd -
-cd JHspider
-git add .
-git commit -a -m "add new"
-git push
+function build(){
+	hexo3 generate && hexo2 o
+	sed -i 's/\&/\%26/g' public/sitemap.xml
+}
+
+function sync(){
+	dst=$1
+	rsync -arzv public/* ${dst}
+}
+
+function upload(){
+	dst=$1
+	msg=$2
+	if [ "${msg}" == "" ];then
+		msg="add new page"
+	fi
+	cd ${dst}
+	git add .
+	git commit -a -m "${msg}"
+	git push
+	cd -
+}
+
+build
+sync myblog
+sync JHspider
+upload myblog
+upload JHspider

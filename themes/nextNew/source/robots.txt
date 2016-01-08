@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /js
-Disallow: /vendors
-Disallow: /images
-Disallow: /css
-Disallow: /fonts
-
