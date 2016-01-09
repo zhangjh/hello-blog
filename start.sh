@@ -27,5 +27,5 @@ function upload(){
 build
 sync myblog
 sync JHspider
-upload myblog
-upload JHspider
+upload myblog $1
+upload JHspider $1
