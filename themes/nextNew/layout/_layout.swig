@@ -34,6 +34,9 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
+		<!--访问统计-->
+		<br>
+		{% include '_scripts/analytics.swig' %} 
       </div>
     </footer>
 
@@ -44,6 +47,7 @@
   {# This block is used to set options before any other scripts run #}
   {% block script_extra_before %}{% endblock %}
 
+  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
@@ -54,7 +58,7 @@
   {% block script_extra %}{% endblock %}
   
   <script type="text/javascript" src="{{ url_for(theme.js) }}/bootstrap.js"></script>
-
+  
   {% include '_scripts/tinysou.swig' %}
   {% include '_scripts/mathjax.swig' %}
   {% block comment_system %}{% endblock %}
@@ -66,7 +70,6 @@
     {% include '_scripts/comments/disqus.swig' %}
   {% endblock %}
 
-  <!--访问统计-->
-  {# % include '_scripts/analytics.swig' %#}
+  
 </body>
 </html>
