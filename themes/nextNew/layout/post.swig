@@ -29,21 +29,13 @@
 		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B00NN8GJGA/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00NN8GJGA&linkCode=as2&tag=dante-23">单页Web应用:JavaScript从前端到后端</a>
 	</div>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- dante notes II -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1455071851805801"
-     data-ad-slot="3790640639"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+	{% include '_scripts/ads/googleads.swig' %}
 
 	<hr>
 	<div id="bottom_ads">
 	</div>
 
+	{% include '_scripts/ads/bottom-ads.swig' %}
     
     <div class="post-spread">
       {% if theme.jiathis %}

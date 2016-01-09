@@ -2,7 +2,7 @@
 source ~/.bash_profile
 
 function build(){
-	hexo3 generate && hexo2 o
+	hexo3 generate #&& hexo2 o
 	sed -i 's/\&/\%26/g' public/sitemap.xml
 }
 
