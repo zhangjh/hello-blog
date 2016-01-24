@@ -6,7 +6,7 @@
     {% set duoshuo_shortname = theme.duoshuo_shortname %}
   {% endif %}
 
-  <script type="text/javascript">
+  <script type="text/javascript" async>
     var duoshuoQuery = {short_name:"{{duoshuo_shortname}}"};
     (function() {
       var ds = document.createElement('script');
@@ -26,7 +26,7 @@
       var duoshuo_admin_nickname="{{theme.duoshuo_info.admin_nickname}}"
   	  </script>
      {% endif %}
-  	<script src="{{ url_for(theme.js) }}/ua-parser.min.js"></script>
-  	<script src="{{ url_for(theme.js) }}/hook-duoshuo.js"></script>
+  	<script src="{{ url_for(theme.js) }}/ua-parser.min.js" async></script>
+  	<script src="{{ url_for(theme.js) }}/hook-duoshuo.js" async></script>
   {% endif %}
 {% endif %}
