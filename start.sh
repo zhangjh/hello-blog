@@ -4,10 +4,19 @@ source ~/.bash_profile
 function build(){
 	hexo3 generate #&& hexo2 o
 	sed -i 's/\&/\%26/g' public/sitemap.xml
+    ##gulp 压缩
+    rm -rf dst
+    gulp 
+    if [ $? -ne 0 ];then
+        echo "gulp压缩失败"
+        exit 1
+    fi
 }
 
 function sync(){
 	dst=$1
+    ##gulp压缩的替换
+    cp -r dst/* public/
 	rsync -arzv public/* ${dst}
 }
 
@@ -27,5 +36,5 @@ function upload(){
 build
 sync myblog
 sync JHspider
-#upload myblog $1
-#upload JHspider $1
+upload myblog $1
+upload JHspider $1
