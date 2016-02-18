@@ -10,7 +10,7 @@ show: true
 
 <!--more-->
 
-#标题
+# 标题
 ```
 # 一级标题
 ## 二级标题
@@ -19,21 +19,21 @@ show: true
 ###### 六级标题
 ```
 
-#引用
+# 引用
 ```
 > 引用的文字
 ```
 eg：
 > Talk is cheap，show me the code. -- Linus Torvalds
 
-#链接
+# 链接
 ```
 [this is link text](http://xxx)
 ```
 eg:
 [百度一下，你就知道](https://www.baidu.com)
 
-#图片
+# 图片
 图片跟链接类似，只是[]前面多一个!
 ```
 ![](http://xxx)
@@ -41,7 +41,7 @@ eg:
 eg:
 ![](https://www.baidu.com/img/bd_logo1.png)
 
-#列表
+# 列表
 ```
 - ul1
 - ul2
@@ -55,7 +55,7 @@ eg：
 1. 有序列表1
 2. 有序列表2
 
-#代码&代码块
+# 代码&代码块
 代码：
 ```
 用`包裹语句
@@ -72,7 +72,7 @@ function test(){
 }
 ```
 
-#字体
+# 字体
 粗体用两个`**`包含
 斜体用一个`*`包含
 eg:

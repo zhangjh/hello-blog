@@ -56,12 +56,12 @@ git push origin --tags
 ```
 
 # 5. 杂项
-##5.1 配置git显示颜色
+## 5.1 配置git显示颜色
 ```js
 git config --global color.ui true
 ```
 
-##5.2 配置git命令别名
+## 5.2 配置git命令别名
 给常用git命令设置简短别名：
 ```js
 git config --global alias.st status

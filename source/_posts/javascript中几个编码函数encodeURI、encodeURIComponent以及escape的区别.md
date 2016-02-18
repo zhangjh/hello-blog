@@ -4,12 +4,12 @@ tags: [javascript,encode]
 categories: 技术人生
 show: true
 ---
-####背景
+#### 背景
 今天平台在向调用的平台发送回调请求的时候，发现有问题，排查了一会儿发现并不是所有的回调请求都会有问题。基本上纯字母或数字的回调都没有问题，而出问题的请求包含"&","-"等特殊字符，于是第一时间想到是不是解析特殊字符的问题。
 
 于是跟接收方约定，我将请求encode后发送，接收方接收后decode后再解析。
 
-####TEST1
+#### TEST1
 代码片段：
 ```js
 var resParams = {"name":encodeURI(out.name),"blockId":blockId,"total":1,"detail":encodeURI(reportPath)};
@@ -23,7 +23,7 @@ var resParams = {"name":encodeURI(out.name),"blockId":blockId,"total":1,"detail"
 
 第一反应，怀疑是不是编码没有成功，但我之前一直都是使用`encodeURI`编码，并不会别的什么方法，于是百度了下，发现还有个`encodeURIComponent以及escape的区别`方法。
 
-####TEST2
+#### TEST2
 ```js
 var resParams = {"name":encodeURIComponent(out.name),"blockId":blockId,"total":1,"detail":encodeURIComponent(reportPath)};
 ```
@@ -33,7 +33,7 @@ var resParams = {"name":encodeURIComponent(out.name),"blockId":blockId,"total":1
 ```
 起效了~
 
-####总结
+#### 总结
 > javascript中有三种编码的函数，分别是：*`escape()`*,*`encodeURI()`*以及*`encodeURIComponent()`*。
 
 1. escape
