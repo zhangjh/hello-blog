@@ -2,10 +2,10 @@
 source ~/.bash_profile
 
 function build(){
-	hexo g #&& hexo2 o
+	hexo g 
 	sed -i 's/\&/\%26/g' public/sitemap.xml
     ##gulp 压缩
-    gulp 
+    gulp clean && gulp && gulp mv 
     if [ $? -ne 0 ];then
         echo "gulp压缩失败"
         exit 1

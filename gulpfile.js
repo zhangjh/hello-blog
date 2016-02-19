@@ -25,7 +25,18 @@ gulp.task("html",function(){
     .pipe(gulp.dest("./dst/"));
 });
 
-gulp.task("default",["clean","css","js","html"],function(){
+gulp.task("mv",function() {
+    return gulp.src("./dst/*")
+    .pipe(plugins.shell([
+        "cp -r ./dst/* ./public/"
+    ]));
+});
+
+gulp.task("watch",function() {
+    gulp.watch("public/*",["optimise"]);
+});
+
+gulp.task("default",["css","js","html"],function(){
     console.log("gulp task ok!");
 });
 
