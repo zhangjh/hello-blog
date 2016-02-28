@@ -8,7 +8,7 @@ categories: [技术人生]
 > 好记性不如烂笔头。
 
 [freecodecamp](http://www.freecodecamp.com/)是一个开源社区项目，提供免费的在线编程学习训练，主要以前端为主。完成相应的内容还可以获得freecodecamp颁发的电子认证，该电子认证在领英上还可以像普通学历一样作为一项个人的教育经历。
-不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基础算法、中级算法、高级算法、后端等等分们别类一目了然。这些分类在未做题列表里还是这么分，做过的题也有标记，不过如果点进已经做过的题会发现之前的解决方案已经不再自动展现出来了。总之就是很麻烦，如果你想review的话。
+不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基础算法、中级算法、高级算法、后端等等分门别类一目了然。这些分类在未做题列表里还是这么分，做过的题也有标记，不过如果点进已经做过的题会发现之前的解决方案已经不再自动展现出来了。总之就是很麻烦，如果你想review的话。
 如此这般就把做过的算法题作为博文梳理下吧，以便日后review巩固用法。
 
 #### Basic Algorithm
@@ -34,7 +34,7 @@ reverseString("hello");
 > Return the factorial of the provided integer.
 If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 Factorials are often represented with the shorthand notation n!
-For example: 5! = 1 * 2 * 3 * 4 * 5 = ######
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 输出给定数字的阶乘
 ```js
