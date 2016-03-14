@@ -5,7 +5,7 @@ function build(){
 	hexo g 
 	sed -i 's/\&/\%26/g' public/sitemap.xml
     ##gulp 压缩
-    gulp clean && gulp && gulp mv 
+    gulp  
     if [ $? -ne 0 ];then
         echo "gulp压缩失败"
         exit 1
@@ -16,7 +16,7 @@ function sync(){
 	dst=$1
     ##gulp压缩的替换
     cp -r dst/* public/
-	rsync -arzv public/* ${dst}
+	rsync -arzv --delete public/* ${dst}
 }
 
 function upload(){
@@ -26,7 +26,7 @@ function upload(){
 		msg="add new page"
 	fi
 	cd ${dst}
-	git add .
+	git add -A
 	git commit -a -m "${msg}"
 	git push
 	cd -
