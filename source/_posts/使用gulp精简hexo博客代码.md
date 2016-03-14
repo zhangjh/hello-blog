@@ -90,3 +90,31 @@ gulp.task("mv",function() {
 ###### 3.9 优化效果
 我的博客目前所有静态文件均经过了优化压缩,可以通过右键查看源码.
 ![](http://ww4.sinaimg.cn/mw690/62d95157gw1f14m6xopnuj21gl0dsk1w.jpg)
+
+
+#### 3.14日更新
+针对上述`3.8`节额外说明第二点任务依赖的问题，随着近期gulp实践中的进一步了解，有了更好的解决方式，将此种情形下的"半自动化"提升到"全自动化"方式。免去了需要人为先执行一遍`clean`任务的步骤。
+
+可以通过gulp的`stream`来解决任务依赖。亦即使gulp变成串行运行任务。
+```
+gulp.task("clean",function(){
+    ...
+});
+
+gulp.task("js",["clean"],function(){
+    var stream = gulp.src(...)          //执行操作
+        .pipe(...)
+        .pipe(...);
+    return stream;                      //返回stream表示任务已经完成
+});
+
+gulp.task("css",["clean"],function(){ 
+    var stream = gulp.src(...)
+        .pipe(...);
+    return stream;
+});
+
+gulp.task("defaul",["css","js"]);       //虽然clean任务作为依赖被调用了两次但并不会被执行两次，
+                                        //css和js任务将异步执行，clean任务作为依赖将在执行完以后再执行主体任务
+```
+
