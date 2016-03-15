@@ -36,4 +36,4 @@ build
 sync myblog
 sync JHspider
 upload myblog $1
-#upload JHspider $1
+upload JHspider $1
