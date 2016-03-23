@@ -1,4 +1,4 @@
-title: freecodecamp算法题解系列（一）--Basic Algorithm Scripting
+title: freecodecamp算法题解系列（一）--初级算法
 show: true
 date: 2016-02-28 17:08:49
 tags: [javascript,算法，字符串]
