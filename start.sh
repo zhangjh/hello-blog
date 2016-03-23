@@ -37,3 +37,11 @@ sync myblog
 sync JHspider
 upload myblog $1
 upload JHspider $1
+
+## 提交项目自身
+st=`git status | grep "working directory clean"`
+if [ ${st} -ne 0 ];then
+    git add -A
+    git commit -a -m "add new pages"
+    git push
+fi

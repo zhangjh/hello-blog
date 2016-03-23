@@ -6,7 +6,7 @@ categories: [技术人生]
 ---
 
 #### Intermediate Algorithm
-[戳此处查看前一篇基础算法](http://www.5941740.cn/2016/02/28/freecodecamp%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89-Basic-Algorithm-Scripting/)
+[戳此处查看前一篇基础算法](/2016/02/28/freecodecamp%E7%AE%97%E6%B3%95%E9%A2%98%E8%A7%A3%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89-Basic-Algorithm-Scripting/)
 
 ###### 1. [Sum All Numbers in a Range](https://www.freecodecamp.com/challenges/sum-all-numbers-in-a-range)
 > We'll pass you an array of two numbers. Return the sum of those two numbers and all numbers between them.
