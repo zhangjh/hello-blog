@@ -34,7 +34,7 @@ function upload(){
 
 build
 sync myblog
-sync JHspider
+#sync JHspider
 upload myblog $1
 upload JHspider $1
 
