@@ -12,5 +12,6 @@
     })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
     _st('install', '{{ theme.swiftype_key }}','2.0.0');
+    $("#st-search-input").attr("placeholder"," 站 内 搜 索");
   };
 </script>
