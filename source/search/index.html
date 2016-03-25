@@ -41,7 +41,7 @@
 	
 	<div class="tips">
 		<a id="close" href="javascript:;">x</a>
-		<img src="http://www.5941740.cn/favicon.ico" alt="">
+		<img src="/favicon.ico" alt="">
 		<div class="tips_info">
 			<a class="btn btn-primary" href="http://www.5941740.cn/">返回博客首页</a>
 		</div>
@@ -58,39 +58,5 @@
 </body>
 <script src="http://cse.google.com/cse.js?cx=016396588632552175870:3qx0q2tty6a"></script>
 
-<script async>
-	var closeE = $("#close");
-	var tipsE = $(".tips");
-	var desBtn = $("#desBtn");
-
-	(function showTips (argument) {
-		var cookie = document.cookie.split(";");
-		var i=0,len=cookie.length;
-		for(;i<len;i++){
-			if(cookie[i].indexOf("hide") !== -1){
-				break;
-			}
-		}
-		if(i === len){
-			tipsE.show();
-		} 
-	})();
-
-	window.onload = function  (argument) {
-		console.log($(".gsc-search-button gsc-search-button-v2").html());
-		$(".gsc-search-button gsc-search-button-v2").attr("src","http://www.easyicon.net/api/resizeApi.php?id=1100921&size=48");
-
-		var height = document.body.clientHeight;
-		$(".container").css({"margin-top": height/2,"margin-bottom": height/2});
-	}
-	
-	closeE.on("click",function  () {
-		 $(".tips").hide();
-		 document.cookie  = "hide=true"; 
-	});
-
-	desBtn.on("click",function  (argument) {
-		 $("#content").toggle("quick");
-	});
-</script>
+<script async src="/js/search.js"></script>
 </html>

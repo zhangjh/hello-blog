@@ -21,9 +21,9 @@ input.gsc-search-button-v2 {
 	height: 48px !important;
 	width: 48px !important;
 }
-.gsc-control-cse {
+/* .gsc-control-cse {
 	width: 700px !important;
-}
+} */
 .gsc-control-wrapper-cse,.gsc-search-box,.gsc-input {
 	width: 100% !important;
 }
@@ -97,7 +97,7 @@ a#close {
 	padding: 10px 0;
 	color: #666;
 	font-size: 14px;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
