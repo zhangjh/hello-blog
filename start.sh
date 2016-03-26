@@ -36,7 +36,7 @@ build
 sync myblog
 #sync JHspider
 upload myblog $1
-upload JHspider $1
+#upload JHspider $1
 
 ## 提交项目自身
 git status | grep -q "working directory clean"
