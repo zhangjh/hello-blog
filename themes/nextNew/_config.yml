@@ -158,7 +158,7 @@ use_font_lato: false
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Swiftype Search API Key
