@@ -42,7 +42,9 @@ showTips();
 var t = setInterval(function(){
 	if($(".gsc-search-button").length){
 		//$(".gsc-control-cse").css({"width":"350px !important"});
-			$(".gsc-search-button").attr("src","http://www.easyicon.net/api/resizeApi.php?id=1100921&size=48");
+        //隐藏warning
+        $("#warning").hide();
+        $(".gsc-search-button").attr("src","http://www.easyicon.net/api/resizeApi.php?id=1100921&size=48");
 		clearInterval(t);
 	}
 },50);
