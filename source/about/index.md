@@ -44,8 +44,6 @@ git/svn，maven
     2. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
 	3. 搜索页产品重复检查
 	...
-- 算法js实现
-	https://github.com/zhangjh/freeCodeCampAlgorithm 
-- 天气预报
-	http://www.5941740.cn/local-weather/index.html
+- [网盘、电子书搜索](http://5941740.cn/search)，基于谷歌自定义搜索，需要科学上网
+- [天气预报](http://www.5941740.cn/local-weather/index.html)
 - 此Hexo博客
