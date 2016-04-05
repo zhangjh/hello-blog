@@ -43,6 +43,8 @@
 
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
+<link rel="canonical" href="https://www.5941740.cn" />
+
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
@@ -79,6 +81,14 @@
     fb_app_id: theme.fb_app_id
   })
 }}
+
+{# 强制跳转https #}
+<!--script>
+    var host = "www.5941740.cn";
+    if(host === window.location.host && window.location.protocol !== "https"){
+        window.location.protocol = "https";
+    }
+</script-->
 
 
 {# Export some HEXO Configurations to Front-End #}
