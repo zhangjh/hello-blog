@@ -44,7 +44,7 @@ var t = setInterval(function(){
 		//$(".gsc-control-cse").css({"width":"350px !important"});
         //隐藏warning
         $("#warning").hide();
-        $(".gsc-search-button").attr("src","//ww2.sinaimg.cn/small/62d95157gw1f2gb7n4d27j201c01cgld.jpg");
+        $(".gsc-search-button").attr("src","/images/search.png");
 		clearInterval(t);
 	}
 },50);
