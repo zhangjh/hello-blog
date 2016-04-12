@@ -27,6 +27,8 @@ Hexo作为纯静态的博客系统决定了它要想实现一些诸如评论、�
 根据官方的文档，写入数据通过`set`命令，读取数据通过`on(value)`触发。`transaction`方法可以在原有基础上修改数据，这个方法正好可以给我们用来统计阅读量。
 全部的API见[这里](https://www.firebase.com/docs/web/api/),我们只用上述的`on`和`transaction`在合适的时候触发更新数据即可。
 
+<!--more-->
+
 #### 博客修改操作
 1. 引入firebase.js
 `<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>`
