@@ -10,7 +10,7 @@
             if($("#totalCnt").length){
                 $("#totalCnt").remove();
             }
-            $("span.author").append("|<span id='totalCnt'>自2016.4.12起总访问量：" + curCnt + "次")
+            $("span.author").append(" | <span id='totalCnt'>自2016.4.12起总访问量：" + curCnt + "次")
         }
     });
 
