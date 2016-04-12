@@ -211,7 +211,8 @@ facebook_sdk:
   like_button:  #true
   webmaster:    #true
 
-
+##firebase统计支持
+firebase: true
 
 
 

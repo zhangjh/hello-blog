@@ -96,6 +96,13 @@
             <div class="fb-like" data-layout="button_count" data-share="true"></div>
           {% endif %}
 
+          {% if theme.firebase and not is_home() %}
+              <span class="post-visit-count">
+                &nbsp; | &nbsp; 
+                <i class="fa fa-eye"></i>&nbsp;
+                <span id="detail_cnt">1</span>
+              </span>
+          {% endif %}
         </div>
       </header>
     {% endif %}

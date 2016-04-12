@@ -23,4 +23,8 @@
   </a>
 </div>
 
-{% block footer %}{% endblock %}
+{% block footer %}
+    {% if theme.firebase %}
+        {% include '../_scripts/analytics/visit.swig' %}
+    {% endif %}
+{% endblock %}
