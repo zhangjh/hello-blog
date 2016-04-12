@@ -27,6 +27,6 @@
     });
 
     firebase.child("page/" + curUrl).transaction(function(curCnt){
-        return (curCnt) + 1;
-        });
+        return (curCnt || 0) + 1;
+    });
 </script>
