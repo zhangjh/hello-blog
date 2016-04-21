@@ -9,7 +9,8 @@
 </div>
 
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="//hexo.io">Hexo</a>') }}
+  <!-- {{ __('footer.powered', '<a class="theme-link" href="//hexo.io">Hexo</a>') }} -->
+  {% include '../_scripts/analytics/zhanzhang-analytics.swig' %}
 </div>
 
 <div class="powered-by">
