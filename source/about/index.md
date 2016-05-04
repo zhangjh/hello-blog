@@ -43,6 +43,7 @@ git/svn，maven
 	1. 自动修改url添加实验参数
     2. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
 	3. 搜索页产品重复检查
+	4. [无良黑心骗子莆田系医院检测器](https://github.com/zhangjh/chromeExt/tree/master/%E8%8E%86%E7%94%B0%E7%B3%BB%E5%8C%BB%E9%99%A2%E6%A3%80%E6%B5%8B%E5%99%A8)
 	...
 - [网盘、电子书搜索](http://5941740.cn/search)，基于谷歌自定义搜索，需要科学上网
 - [天气预报](http://www.5941740.cn/local-weather/index.html)
