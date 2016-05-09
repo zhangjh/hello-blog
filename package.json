@@ -14,7 +14,7 @@
     "gulp-rename": "~1.2.2",
     "gulp-shell": "^0.5.2",
     "gulp-uglify": "~1.5.2",
-    "hexo": "^3.2.0",
+    "hexo": "^3.1.1",
     "hexo-console-optimize": "0.0.5",
     "hexo-deployer-git": "0.0.4",
     "hexo-generator-archive": "^0.1.2",
