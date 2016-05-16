@@ -2,7 +2,7 @@ title: 使用HTML5 FormData上传文件
 show: true
 date: 2016-02-21 15:33:28
 tags: ["HTML5","FormData","上传文件"]
-categrories: 技术人生
+categories: 技术人生
 ---
 前端开发中，每当遇到要写文件上传的功能的时候，第一时间就是去百度搜搜看有没有什么好用的插件。通常要么是用`iframe`，要么是用一些基于`jQuery`的插件。（实际也是利用`iframe`）
 现在有了`HTML5`的`FormData`技术，无需插件就可以实现文件上传功能了，方便多了。本篇博文记录一下我使用`FormData`上传图片的功能实现。
