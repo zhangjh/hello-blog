@@ -29,6 +29,10 @@ function upload(){
 	git add -A
 	git commit -a -m "${msg}"
 	git push
+	if [ $? -ne 0 ];then
+		echo "git push failed"
+		exit 1
+	fi 
 	cd -
 }
 
