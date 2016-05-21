@@ -49,3 +49,4 @@ if [ $? -ne 0 ];then
     git commit -a -m "add new pages"
     git push
 fi
+
