@@ -69,6 +69,6 @@
     {% include '_scripts/comments/disqus.swig' %}
   {% endblock %}
 
-  
+  <script src="/js/custom.js"></script> 
 </body>
 </html>

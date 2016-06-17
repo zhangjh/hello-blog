@@ -169,6 +169,15 @@
       {% endif  %}
     </div>
 
+	<!-- 增加打赏模块 -->
+	<div>
+		<div id="rewardTip">赞 赏</div>
+		<div id="dsWrapper">
+			<p>我只是玩下新功能，如果你觉得本文还不错的话也可以赞赏一点~</p>
+			<img src="/imgs/zfb.png" />
+		</div>
+	</div>
+
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
