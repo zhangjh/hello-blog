@@ -21,12 +21,12 @@
 	
 	if(width > height){
 		//宽屏
-		var ad_pc = '<iframe id="amazon_ads" src="" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>';
+		var ad_pc = '<iframe id="amazon_ads" src="" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>';
 		$("#bottom_ads").html(ad_pc);
 		var rand = Math.floor(Math.random() * widthAds.length);
 		$("#amazon_ads").attr("src",widthAds[rand]);
 	}else {
-		var ad_mobile = '<iframe id="amazon_ads" src="" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>';
+		var ad_mobile = '<iframe id="amazon_ads" src="" width="470" height="200" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>';
 		$("#bottom_ads").html(ad_mobile);
 		var rand = Math.floor(Math.random() * squareAds.length);
 		$("#amazon_ads").attr("src",squareAds[rand]);
