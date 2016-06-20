@@ -15,8 +15,14 @@
 	];
 	//窄屏广告
 	var squareAds = [
-		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=282&l=ur1&category=books&banner=1Z4KQFJE1CKNF5E67GR2&f=ifr",
-		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=282&l=ur1&category=books&banner=16G6TM7P4VKTS7NAEZG2&f=ifr"
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=17QS543P7Q3HA98XZV82&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=0MYHTGGE85NRFT2HWD82&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=037Q1SHMERMRJ82PA7R2&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=13KHSWM8QK53P2BAMKG2&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=1JBWHCFQYWBM1B3M9V02&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=178RNKETN7QTJC5BPR82&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=1N4AHFJRK48P743G2QR2&f=ifr",
+		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=1WBTNK2HJQF8QHK2R682&f=ifr"
 	];
 	
 	if(width > height){
@@ -26,7 +32,7 @@
 		var rand = Math.floor(Math.random() * widthAds.length);
 		$("#amazon_ads").attr("src",widthAds[rand]);
 	}else {
-		var ad_mobile = '<iframe id="amazon_ads" src="" width="470" height="200" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>';
+		var ad_mobile = '<iframe id="amazon_ads" src="" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>';
 		$("#bottom_ads").html(ad_mobile);
 		var rand = Math.floor(Math.random() * squareAds.length);
 		$("#amazon_ads").attr("src",squareAds[rand]);
