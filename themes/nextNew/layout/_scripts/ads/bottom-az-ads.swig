@@ -24,7 +24,6 @@
 		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=1N4AHFJRK48P743G2QR2&f=ifr",
 		"//rcm-cn.amazon-adsystem.com/e/cm?t=dante-23&o=28&p=12&l=ur1&category=books&banner=1WBTNK2HJQF8QHK2R682&f=ifr"
 	];
-	
 	if(width > height){
 		//宽屏
 		var ad_pc = '<iframe id="amazon_ads" src="" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>';

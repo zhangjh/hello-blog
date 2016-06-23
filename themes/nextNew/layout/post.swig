@@ -17,26 +17,19 @@
 	<hr />
 	推荐书目：
 	<div id="recommendBooks">
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B00S4OK1ZS/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00S4OK1ZS&linkCode=as2&tag=dante-23">三体全集</a>
-
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B00ZWTY2JO/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00ZWTY2JO&linkCode=as2&tag=dante-23">无声告白 </a>
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B00NOQNHP2/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00NOQNHP2&linkCode=as2&tag=dante-23">解忧杂货店</a>
-
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B007ED88CI/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B007ED88CI&linkCode=as2&tag=dante-23">奇思妙想:15位计算机天才及其重大发现</a>
-		
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0097CON2S&linkCode=as2&tag=dante-23">JavaScript语言精粹(修订版)</a>
-
-		<a rel="nofollow" href="http://www.amazon.cn/gp/product/B00NN8GJGA/ref=as_li_tf_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00NN8GJGA&linkCode=as2&tag=dante-23">单页Web应用:JavaScript从前端到后端</a>
+		{% include '_scripts/ads/jd_recommend_books.swig' %}
 	</div>
 
-	{% include '_scripts/ads/googleads.swig' %}
+	{# 停止google广告
+		{% include '_scripts/ads/googleads.swig' %}
+	#}
 
 	<hr>
 	<div id="bottom_ads">
+		{% include '_scripts/ads/bottom-jd-ads.swig' %}
 	</div>
 
-	{% include '_scripts/ads/bottom-ads.swig' %}
-    
+
     <div class="post-spread">
       {% if theme.jiathis %}
         {% include '_partials/share/jiathis.swig' %}
