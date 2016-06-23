@@ -13,7 +13,13 @@
 	books_links.push("http://union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCEgFcHFwRAREEZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSB1MSXBIGEQRWBAJQXk83CRxBTHxsdwF%2BDF1CdHcXZw4WWWd6ExdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEQ5WE1MdMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVBBsAUh9YFgENXhBHBg%3D%3D");
 	books_links.push("http://union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCFw5RElgVAxsPZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSAlwfUhYCEw5dBAJQXk83IEsAS2pSY1x%2BM1EYUEYDTw1VWUAdNRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEAJUGlsWMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQCxYOVhtaHAoNXhBHBg%3D%3D");
 	var content = "";
-	for(var i in books_links){
+	var w = document.body.clientWidth,
+		h = document.body.clientHeight;
+	var len = books_links.length;
+	if(w < h){
+		len = 8;
+	}
+	for(var i=0;i<len;i++){
 		content += "<a target='_blank' rel='nofollow' href='" + books_links[i] +  "'>" + books_name[i] +"</a>";
 	}
 	
