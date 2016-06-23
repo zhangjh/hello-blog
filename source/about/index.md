@@ -29,22 +29,21 @@ mongodb，mysql
 casperjs，watir框架
 
 - #### 代码管理及流程工具
-git/svn，maven
+git/svn，gulp
 
 # 工具&平台 (公司内部项目未开源,内部可访问)
-- [casperjs自动化测试准入平台](http://tab.alibaba.net),nodejs全端实现
-- 工具集平台光年的前端工作:http://guang.alibaba.net/index.htm
-- 组内对外的统一服务平台[特斯拉](http://tesla.alibaba.net)的前端工作
+- [塔普-casperjs自动化测试准入平台](http://tab.alibaba.net),nodejs全端实现
+- [光年-搜索广告工具集平台](http://guang.alibaba.net/index.htm)的前端工作
+- [特斯拉-组内对外的统一服务平台](http://tesla.alibaba.net)的前端工作
 - 阿里巴巴搜索产品评测系统Chrome插件实现（提供用户反馈产品召回质量的入口，收集用户反馈信息）
+- 阿里巴巴搜索页产品重复检查Chrome插件
+- 自动修改url添加实验参数Chrome插件
 
 # 业余项目
 - [云书CEO管理系统](http://ceo.qess.me/cloudBook/index.html)
 - 若干Chrome插件
-	1. 自动修改url添加实验参数
-    2. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
-	3. 搜索页产品重复检查
-	4. [无良黑心骗子莆田系医院检测器](https://github.com/zhangjh/chromeExt/tree/master/%E8%8E%86%E7%94%B0%E7%B3%BB%E5%8C%BB%E9%99%A2%E6%A3%80%E6%B5%8B%E5%99%A8)
-	...
+    1. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
+	2. [无良黑心骗子莆田系医院检测器](https://github.com/zhangjh/chromeExt/tree/master/%E8%8E%86%E7%94%B0%E7%B3%BB%E5%8C%BB%E9%99%A2%E6%A3%80%E6%B5%8B%E5%99%A8)
 - [网盘、电子书搜索](http://5941740.cn/search)，基于谷歌自定义搜索，需要科学上网
 - [天气预报](http://www.5941740.cn/local-weather/index.html)
 - [本技术博客](http://5941740.cn)
