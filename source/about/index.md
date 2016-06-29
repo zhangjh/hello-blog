@@ -17,7 +17,7 @@ date: 2015-09-23 14:27:34
 
 # 技能清单
 - #### 前端
-HTML/CSS/javascript，bootstrap,jQuery
+HTML/CSS/javascript，bootstrap,jQuery,requirejs
 
 - #### 后端 & 脚本
 nodejs，bash shell，awk/sed,Hadoop mapreduce
