@@ -47,6 +47,6 @@ git/svn，gulp
 - [网盘、电子书搜索](http://5941740.cn/search)，基于谷歌自定义搜索，需要科学上网
 - [天气预报](http://www.5941740.cn/local-weather/index.html)
 - [本技术博客](http://5941740.cn)
-- [网址收藏导航站-藏经阁](http://favlink.me)
+- [**网址收藏导航站-藏经阁**](http://favlink.me)(支持完全的个性化定制)]
 - 微信公众号：悖论爱好者
 ![](http://ww3.sinaimg.cn/mw690/62d95157gw1f3x0w08t3qj20760763yz.jpg)
