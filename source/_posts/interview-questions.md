@@ -31,10 +31,20 @@ categories: 技术人生
 		});
 	}
 
+	//也可以使用自带的setTimeout
+	function led2(color){
+		console.log(color);
+		return new Promise(function(resolve,reject){
+			setTimeout(function(){
+				resolve();
+			},3000);
+		});
+	}
+
 	led("green").then(function(){
-		led("red");
-	}).then(function(){
-		led("yellow");
+        led("red").then(function(){
+        	led("yellow");
+        });
 	});
 ```
 
