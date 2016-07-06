@@ -13,15 +13,27 @@
 }
 
 .powered-by,
-.theme-info { display: inline-block; }
+.ba-info,
+.theme-info { 
+	display: inline-block; 
+	font-size: small;
+}
 
-.powered-by {
+.powered-by,
+.ba-info {
   margin-right: 10px;
 
   &::after {
     content: "|";
     padding-left: 10px;
   }
+}
+
+.powered-by:last-child,
+.ba-info:last-child {
+	&::after {
+		display: none;
+	}
 }
 
 .cc-license {
