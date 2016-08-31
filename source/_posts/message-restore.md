@@ -58,6 +58,7 @@ echo '"address","person","date","date_sent","protocol","read","status","type","r
 
 while read line 
 do
+	//对于其他软件备份的csv格式文件，请自行数一下对应的字段在第几列，替换一下即可
 	address=`echo ${line} | awk -F',' '{print $3}'`
 	date=`echo ${line} | awk -F',' '{print $8}'`
 	body=`echo ${line} | awk -F',' '{print $11}'`
