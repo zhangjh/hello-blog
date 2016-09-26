@@ -17,19 +17,19 @@ date: 2015-09-23 14:27:34
 
 # 技能清单
 - #### 前端
-HTML/CSS/Javascript，bootstrap，jQuery，requirejs
+HTML/CSS/Javascript,bootstrap,jQuery,requirejs
 
 - #### 后端 & 脚本
-nodejs，bash shell，awk/sed，Hadoop mapreduce
+nodejs,bash shell,awk/sed,Hadoop mapreduce
 
 - #### 数据库（仅限于使用，对理论不懂）
-mongodb，mysql
+mongodb,mysql
 
 - #### 自动化测试领域
-casperjs，ruby+watir框架
+casperjs,ruby+watir框架
 
 - #### 代码管理及流程工具
-git/svn，gulp
+git/svn,gulp,webpack
 
 # 工具&平台 (公司内部项目未开源,内部可访问)
 - [塔普-casperjs自动化测试准入平台](http://tab.alibaba.net),nodejs全端实现
