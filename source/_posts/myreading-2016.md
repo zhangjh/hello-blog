@@ -8,12 +8,12 @@ categories: 阅历
 
 # 已读
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B019C5Y1Z8/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B019C5Y1Z8&linkCode=as2&tag=dante-23">
-    <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/17210792.jpg?v=1450766210.0" alt="指数基金投资指南" />
+    <img src="https://images-cn-4.ssl-images-amazon.com/images/I/51RVgZLRptL._SY346_.jpg" alt="指数基金投资指南" />
 </a>
 > 年过而立，是时候该考虑如何理财了。去年在大牛市时踏入股市，亏了个屁滚尿流。懵懵懂懂中接受了风险教育，实战中的教训给我这个小白上了结结实实的一课。如今对资本市场已经不再是"初生牛犊不怕虎"，充满敬畏之心的我开始思考从理论上补充知识。这是我近期完整读完的一本有关指数基金理财的书，书中介绍了指数基金的基本知识并结合实例说明了如何进行指数基金定投。由于基础知识的缺乏，部分内容如定投计划的制定看的并不太明白。总体说这本指数基金定投入门电子书还是不错的。
 
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&camp=536&creative=3200&index=aps&keywords=%E5%A4%A9%E6%9C%9D%E5%B4%9B%E8%B5%B7&linkCode=ur2&tag=dante-23">
-    <img src="https://img3.doubanio.com/lpic/s4053041.jpg" alt="天朝崛起" />
+    <img src="https://images-cn.ssl-images-amazon.com/images/I/41nyAcVvv3L.jpg" alt="天朝崛起" />
 </a>
 > 内容及写法都一般吧，看书名还以为是写"本朝"的崛起经历，由于是在百度阅读上下载的也没细看就下了。看了内容才发现这是一本有关历代封建王朝的兴衰简史。流水账式的叙述了王朝的兴起背景、王朝盛兴的过程及统治策略、王朝的特点。比较适合对中国史已经比较了解的看看，宏观上纵览下整个封建时代的王朝兴衰。
 
