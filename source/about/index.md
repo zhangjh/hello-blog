@@ -13,14 +13,15 @@ date: 2015-09-23 14:27:34
 
 # 职业经历
 - 2012.4 ~ 2014.4　　百度在线网络技术有限公司 　　网页搜索测试部高级测试开发工程师
-- 2014.5 ~ 至今　　　阿里巴巴网络技术有限公司 　　搜索广告测试部高级测试开发工程师
+- 2014.5 ~ 2016.9　　阿里巴巴网络技术有限公司 　　搜索广告测试部高级测试开发工程师
+- 2016.9 ~ 至今      阿里巴巴网络技术有限公司     工程效能技术部高级前端开发工程师
 
 # 技能清单
 - #### 前端
-HTML/CSS/Javascript,bootstrap,jQuery,requirejs
+HTML/CSS/Javascript,bootstrap,jQuery,requirejs,Vue.js,React
 
 - #### 后端 & 脚本
-nodejs,bash shell,awk/sed,Hadoop mapreduce
+nodejs,bash shell,awk/sed,Hadoop mapreduce,Java
 
 - #### 数据库（仅限于使用，对理论不懂）
 mongodb,mysql
@@ -32,6 +33,7 @@ casperjs,ruby+watir框架
 git/svn,gulp,webpack
 
 # 工具&平台 (公司内部项目未开源,内部可访问)
+- [宙斯盾-Issue/缺陷管理平台](http://defect.alibaba-inc.com),React + java + mysql,前端React全部 + Java部分
 - [塔普-casperjs自动化测试准入平台](http://tab.alibaba.net),nodejs全端实现
 - [光年-搜索广告工具集平台](http://guang.alibaba.net/index.htm)的前端工作
 - [特斯拉-组内对外的统一服务平台](http://tesla.alibaba.net)的前端工作
