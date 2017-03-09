@@ -14,3 +14,9 @@ categories: 阅历
     <img src="https://images-cn.ssl-images-amazon.com/images/I/51MUGfuqXzL.jpg" alt="富爸爸财务自由之路" />
 </a>
 > 一本没什么干货的鸡汤书，行文风格是我最不喜欢的类型，但盛名在外学习理财的过程中见好多人推荐于是列入了书单。值得借鉴的是"不要陷入成为专家的陷阱要多掌握其他的生存技能以及多买入资产少买入负债"的思想。
+
+<a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B00DOTC8C2/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00DOTC8C2&linkCode=as2&tag=dante-23
+">
+    <img src="https://images-cn.ssl-images-amazon.com/images/I/51b%2B19P-C1L.jpg" alt="独自旅行" />
+</a>
+> 失望，没有去德州，没有遇到电锯杀人狂...跟美国大片里说的不一样呢，遇到那么多好人呢，不可思议。说点正经的吧，很有诱惑的走在路上，通过旅行改变了人生，但为啥国内的穷游西藏的据说都是刷X呢？究竟是老美好人比国人多还是这书可信性不高呢？
