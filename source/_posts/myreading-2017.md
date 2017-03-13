@@ -20,3 +20,10 @@ categories: 阅历
     <img src="https://images-cn.ssl-images-amazon.com/images/I/51b%2B19P-C1L.jpg" alt="独自旅行" />
 </a>
 > 失望，没有去德州，没有遇到电锯杀人狂...跟美国大片里说的不一样呢，遇到那么多好人呢，不可思议。说点正经的吧，很有诱惑的走在路上，通过旅行改变了人生，但为啥国内的穷游西藏的据说都是刷X呢？究竟是老美好人比国人多还是这书可信性不高呢？
+
+<!--more-->
+
+<a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B00RRCUBIK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00RRCUBIK&linkCode=as2&tag=dante-23">
+    <img src="https://images-cn.ssl-images-amazon.com/images/I/51DSREx3TaL.jpg" alt="马伯庸笑翻中国简史" />
+</a>
+> 书是好书，只是文不对题。这本小册子从不为现代人所重视的王朝德性，五行相生相克的文化角度，阐述了整个华夏文明几千年来各王朝为了标榜自己的正统性，竭力从不同角度解释套用五德终始说的一系列趣事。角度算是别出心裁，跟其他的所有说史的书都不一样，还是值得一读的。
