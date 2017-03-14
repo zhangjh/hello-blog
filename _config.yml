@@ -114,7 +114,7 @@ plugin:
 sidebar: post
 
 #阅读全文
-scroll_to_more: true 
+scroll_to_more: false
 
 #为侧边栏文章的目录自动添加索引
 toc_list_number: true 
