@@ -66,7 +66,8 @@ sudo chown -R mysql:mysql *
 mysqladmin -u root password "new password"
 #添加新用户
 mysql -u root -p
-mysql> insert into mysql.user(Host,User,Password) values ("localhost","name",password("passwd"));
+#name处用用户替换，passwd处用密码替换
+mysql> GRANT USAGE ON *.* TO 'name'@'localhost' IDENTIFIED BY 'passwd' WITH GRANT OPTION;
 ```
 
 # 常见错误
