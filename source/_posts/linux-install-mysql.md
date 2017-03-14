@@ -9,7 +9,6 @@ categories: 技术人生
 
 # 安装步骤
 以安装mysql5.6版本为例，其他版本可以下载官网对应版本，然后查看附带的INSTALL文档。
-<!--more-->
 
 1. 下载
 `wget http://cdn.mysql.com/archives/mysql-5.6/mysql-5.6.26-linux-glibc2.5-x86_64.tar.gz `
@@ -30,6 +29,8 @@ sudo useradd -r -g mysql mysql
 ```
 sudo chown -R mysql:mysql *
 ```
+
+    <!--more-->
 
 5. 初始化数据库
 	```
