@@ -1,7 +1,7 @@
 title: Linux Shell中运行mysql命令
 show: true
 date: 2017-03-14 18:08:27
-tags: [Shell,mysql]
+tags: [shell,mysql]
 categories: 技术人生
 ---
 
