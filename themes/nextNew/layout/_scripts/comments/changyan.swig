@@ -1,4 +1,4 @@
-{% if (theme.changyan) %}
+{% if (theme.changyan) and page.comments %}
 
   {% if theme.changyan_appid %}
     {% set changyan_appid = theme.changyan_appid %}
