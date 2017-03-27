@@ -5,14 +5,18 @@
   {% endif %}
 
  <!--PC和WAP自适应版-->
- <script async src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js"></script>
- <div id="SOHUCS" sid=md5(window.location.pathname) ></div> 
+ <div id="SOHUCS"></div> 
+ 
+ <script src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js"></script>
  <script type="text/javascript"> 
-  (function(){ 
-  var appid = "{{changyan_appid}}"; 
-  var conf = 'prod_31fd1ae639cd8c3c05eb42e813735f5b'; 
-  var width = window.innerWidth || document.documentElement.clientWidth; 
-  if (width < 960) { 
-    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+   var sid = md5(window.location.pathname);
+   var ele = document.getElementById("SOHUCS");
+   ele.setAttribute("sid",sid);  (function(){ 
+    var appid = "{{changyan_appid}}"; 
+    var conf = 'prod_31fd1ae639cd8c3c05eb42e813735f5b'; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+ </script>
 
 {% endif %}
