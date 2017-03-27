@@ -180,7 +180,7 @@ mathjax:
 #duoshuo_share: true
 
 # changyan
-changyan: false
+changyan: true
 changyan_appid: cysUm65H9
 
 # Google Webmaster tools verification setting

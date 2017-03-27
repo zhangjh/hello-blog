@@ -30,6 +30,12 @@
         {% block sidebar %}{% endblock %}
       {% endif %}
     </main>
+	<!--多说评论-->
+	{% block comment_system %}
+      {% include '_scripts/comments/duoshuo.swig' %}
+	  {% include '_scripts/comments/disqus.swig' %}
+	  {% include '_scripts/comments/changyan.swig' %}
+	{% endblock %}
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
@@ -63,13 +69,7 @@
   {% block comment_system %}{% endblock %}
   {% include '_scripts/baidushare.swig' %}
   
-  <!--多说评论-->
-  {% block comment_system %}
-    {% include '_scripts/comments/duoshuo.swig' %}
-    {% include '_scripts/comments/disqus.swig' %}
-    {% include '_scripts/comments/changyan.swig' %}
-  {% endblock %}
-
+  
   <script src="/js/custom.js"></script> 
 </body>
 </html>
