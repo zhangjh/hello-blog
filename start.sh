@@ -2,6 +2,7 @@
 #source ~/.bash_profile
 
 function build(){
+    hexo clean
 	hexo g 
 	sed -i 's/\&/\%26/g' public/sitemap.xml
     ##gulp 压缩
