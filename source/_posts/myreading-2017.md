@@ -27,3 +27,8 @@ categories: 阅历
     <img src="https://images-cn.ssl-images-amazon.com/images/I/51DSREx3TaL.jpg" alt="马伯庸笑翻中国简史" />
 </a>
 > 书是好书，只是文不对题。这本小册子从不为现代人所重视的王朝德性，五行相生相克的文化角度，阐述了整个华夏文明几千年来各王朝为了标榜自己的正统性，竭力从不同角度解释套用五德终始说的一系列趣事。角度算是别出心裁，跟其他的所有说史的书都不一样，还是值得一读的。
+
+<a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B00FZEJ3M2">
+    <img src="https://images-cn.ssl-images-amazon.com/images/I/51b-Y%2BxDQiL._SX378_BO1,204,203,200_.jpg" alt="殷商玛雅征服史" />
+</a>
+> 抖机灵这事吧，偶尔为之是风趣幽默，全篇都是的话就很无聊了。此书看完完全没有收获，与我看来是烂书一本。
