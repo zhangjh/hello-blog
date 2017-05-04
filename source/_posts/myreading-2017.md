@@ -5,6 +5,13 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B019XQ9TEE/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B019XQ9TEE&linkCode=as2&tag=dante-23">
+    <img src="https://images-cn.ssl-images-amazon.com/images/I/51nymPcfMGL._SX340_BO1,204,203,200_.jpg" alt="新参者" />
+</a>
+> 每个人都有故事，案件的线索就隐藏在街巷生活的细节里。一如既往的与凶案中蕴含温情，能把探案小说写得温情动人，除却东野大概没人了吧。
+摘两句比较有感触的句子：
+"疼爱和重视不一样，所谓重视，是考虑孩子的未来，不断为他做出最好的选择，我却没能那么做，我只是为自己有了一个可以倾注爱的对象而极为高兴。 孩子总有一天会长大，不会永远那么可爱，有时还会闯祸。"'“加贺先生，原来您不是在调查案件啊。” “当然在调查啊，但刑警的工作不止这些。有人会因案件而留下心灵创伤，他们也是受害者。刑警的职责就是寻找能够拯救受害者的线索。”'
+
 <a class="fancybox" rel="group" href="https://images-cn.ssl-images-amazon.com/images/I/514%2B3MSfKNL.jpg">
     <img src="https://images-cn.ssl-images-amazon.com/images/I/514%2B3MSfKNL.jpg" alt="她死在QQ上" />
 </a>
