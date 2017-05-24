@@ -5,6 +5,9 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+![超新星纪元](https://img1.doubanio.com/lpic/s3700467.jpg)
+> 看到后面完全看不下去了，简直是胡闹加儿戏，这不是科幻！完全颠覆了我对大刘的期待。这世界如果只剩下了孩子就只会玩了？还会拿生命去大战那样的去玩？还会去玩中美两国互换这样的游戏？你要是个孩子你会没事那个机枪突突觉得好玩？
+
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B019XQ9TEE/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B019XQ9TEE&linkCode=as2&tag=dante-23">
     <img src="https://images-cn.ssl-images-amazon.com/images/I/51nymPcfMGL._SX340_BO1,204,203,200_.jpg" alt="新参者" />
 </a>
