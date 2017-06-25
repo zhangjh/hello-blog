@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B010PPI0K6/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B010PPI0K6&linkCode=as2&tag=dante-23">
+	<img src="https://images-cn.ssl-images-amazon.com/images/I/81BGJ0io7EL._SX341_BO1,204,203,200_.jpg" alt="时生" />
+</a>
+> 一如既往的温情，让坐在办公桌前的我都眼泛热泪。"能来到这个世上就已经很美好"，能跟自己的儿子一起胡闹，成长，体验应该不错。也许因为有了孩子之后感触更深，这本书带给我的感动比《解忧杂货铺》更强烈。
+
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B00ZHXYT7U/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00ZHXYT7U&linkCode=as2&tag=dante-23">
     <img src="https://images-cn.ssl-images-amazon.com/images/I/510wzE2j-EL._SX341_BO1,204,203,200_.jpg" alt="无声告白" />
 </a>
