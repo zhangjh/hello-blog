@@ -77,5 +77,5 @@ for(var i in weather_data){
 ```
 至于根据天气情况变换背景什么的，准备几张不同天气的背景图，根据不同的天气状况使用js替换相应的background-image的url就好了~
 
-[点击查看效果](http://www.5941740.cn/local-weather/index.html)
+[点击查看效果](/local-weather/index.html)
 [项目开源地址](https://github.com/zhangjh/localWeatherApp)。

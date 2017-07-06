@@ -2,7 +2,7 @@ title: 关于
 date: 2015-09-23 14:27:34
 ---
 # 个人信息
-![](http://www.5941740.cn/images/default_avatar.jpg)
+![](/images/default_avatar.jpg)
 张基宏 男 86年处女座一枚 骄傲的大蓝鲸人
 一个伪文青 一个Low Geek
 **个人邮箱**：<a href="mailto:njhxzhangjihong@126.com" target="_self">njhxzhangjihong@126.com</a>
@@ -46,9 +46,9 @@ git/svn,gulp,webpack
 - 若干Chrome插件
     1. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
 	2. [无良黑心骗子莆田系医院检测器](https://github.com/zhangjh/chromeExt/tree/master/%E8%8E%86%E7%94%B0%E7%B3%BB%E5%8C%BB%E9%99%A2%E6%A3%80%E6%B5%8B%E5%99%A8)
-- [网盘、电子书搜索](http://5941740.cn/search)，基于谷歌自定义搜索，需要科学上网
-- [天气预报](http://www.5941740.cn/local-weather/index.html)
-- [本技术博客](http://5941740.cn)
+- [网盘、电子书搜索](/search)，基于谷歌自定义搜索，需要科学上网
+- [天气预报](/local-weather/index.html)
+- [本技术博客](/)
 - [**网址收藏导航站-藏经阁**](http://favlink.cn)(支持完全的个性化定制)]
 - [岛国丽人](https://github.com/zhangjh/islandBeauty),一个基于Node编写的种子文件下载爬虫
 - [汤不热爬虫](https://github.com/zhangjh/node_tumblr_spider),一个专门爬取tumblr资源的爬虫项目
