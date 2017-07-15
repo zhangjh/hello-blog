@@ -27,7 +27,7 @@
               window.location.href = "http://5941740.cn" + pathname;
            }
         },1000);*/
-		alert(html);
+		alert("本站域名后续将切换为zhangjh.me(备案中暂时不能访问)");
     }
     if(location.indexOf("zhangjh") !== -1){
       window.location.href = "http://5941740.cn" + pathname;
