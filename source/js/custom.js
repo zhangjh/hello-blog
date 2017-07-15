@@ -18,7 +18,7 @@
     var location = window.location.host;
     var pathname = window.location.pathname;
 	if(location.indexOf("5941740") !== -1){
-        $("body").html(html);
+        /*$("body").html(html);
         var cnt = 2;
         var timer = setInterval(function(){
            $("#timer").text(cnt--);
@@ -26,7 +26,8 @@
               clearInterval(timer);
               window.location.href = "http://5941740.cn" + pathname;
            }
-        },1000);
+        },1000);*/
+		alert(html);
     }
     if(location.indexOf("zhangjh") !== -1){
       window.location.href = "http://5941740.cn" + pathname;
