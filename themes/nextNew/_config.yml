@@ -33,7 +33,7 @@ menu:
   tags: /tags
   search: /search
   commonweal: /404
-  issue: /issue
+  #issue: /issue
 
 # Enable/Disable menu icons.
 # Icon Mapping:
