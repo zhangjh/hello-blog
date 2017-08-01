@@ -53,5 +53,6 @@ git/svn,gulp,webpack
 - [岛国丽人](https://github.com/zhangjh/islandBeauty),一个基于Node编写的种子文件下载爬虫
 - [汤不热爬虫](https://github.com/zhangjh/node_tumblr_spider),一个专门爬取tumblr资源的爬虫项目
 - [React前端组件库](https://github.com/zhangjh/FE_Components),一个基于[ant-design](http://ant.design)编写的React组件库
+- [树莓派项目:定点播报时间和天气](https://github.com/zhangjh/raspberry_autoPlay)
 - 微信公众号：悖论爱好者
 ![](http://ww3.sinaimg.cn/mw690/62d95157gw1f3x0w08t3qj20760763yz.jpg)
