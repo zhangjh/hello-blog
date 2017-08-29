@@ -29,3 +29,10 @@
         },1000);
     }
 })();
+
+(function(){
+	var style = "font-size: 1.5em;color: dodgerblue";
+	console.info("%c既然这么有缘，少年你想进阿里吗？",style);
+	console.info("%c如果你正有此意，那么就给我发简历吧，我可以给你内推。",style);
+	console.info("%c简历请发送至：jihong.zjh@alibaba-inc.com，邮件标题请注明来自Dante Notes。",style);
+})();
