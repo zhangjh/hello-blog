@@ -21,12 +21,18 @@ OSSClient client = new OSSClient(ossHelper.getEndPoint(), ossHelper.getAccessKey
 	ossHelper.getAccessKeySecret());
 ObjectMetadata objectMetadata = new ObjectMetadata();
 objectMetadata.setContentType("application/vnd.ms-excel");
-objectMetadata.setContentEncoding("GBK");
+objectMetadata.setContentEncoding("UTF-8");
 objectMetadata.setContentDisposition("attachment; filename=" + fileName + ".csv");
 
 // 增加BOM头信息
 String bom = new String(new byte[] { (byte) 0xEF, (byte) 0xBB,(byte) 0xBF });
 
-client.putObject(ossHelper.getBucketName(), fileName,
-new ByteArrayInputStream((bom + exportFileString).getBytes()), objectMetadata);
+try {
+	// 以同样的编码获取字节流
+	client.putObject(ossHelper.getBucketName(), fileName,
+    new ByteArrayInputStream((bom + exportFileString).getBytes("UTF-8")), objectMetadata);
+}catch (UnsupportedEncodingException e){
+    e.printStackTrace();
+}
+
 ```
