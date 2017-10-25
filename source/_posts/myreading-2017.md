@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01HXJLN74/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01HXJLN74&linkCode=as2&tag=dante-23&linkId=835db5961ecc2e34cfe4b12e8dbea01b" />
+    <img src="https://img3.doubanio.com/lpic/s28688090.jpg" />
+</a>
+> 这是一本很有趣的科普书，以趣味的口吻讲述了进化论对人体如今这个样子是怎样塑造的。对进化论我一直很有兴趣，记得高中时的三大愿望是去研究微观、宇观或者生命起源。迫于现实的压力最终阴差阳错的走上了程序员的道路。其实从某方面来说计算机和人体很相似，计算机是0,1的二进制，人体其实也是一台高精密的仪器，是RNA的四进制'机器'。然而，某种程度上我对进化论还是持有怀疑的。在看过很多大自然的奇迹，诸如人体、诸如蝙蝠的声呐回声定位、蜜蜂的蜂巢、向日葵的种子呈对数螺线分布(星系、台风、花朵、海螺都是这样)...等等一系列有如神迹一般的现象，更不用说人体构成的复杂与精密。让人不生出冥冥之中有神创万物之感真的很难。进化论说，一些微小的变异加上漫长的时间演化，就可以造成这些神迹。果真是印证了那一句话，"时间是解决一切问题的所在"。另一方面，生物的活动，冥冥中都是基因在起作用，我们都是基因的奴隶，我们的生生不息的繁殖都是为了基因的延续，然而基因的永续延续又是为了什么呢？
+
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B003F25VPY/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B003F25VPY&linkCode=as2&tag=dante-23">
     <img src="https://images-cn.ssl-images-amazon.com/images/I/51FlI%2BU0TjL._SX343_BO1,204,203,200_.jpg" />
 </a>
