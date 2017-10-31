@@ -23,7 +23,7 @@ HTML/CSS/Javascript,bootstrap,jQuery,requirejs,Vue.js,React
 - #### 后端 & 脚本
 nodejs,bash shell,awk/sed,Hadoop mapreduce,Java
 
-- #### 数据库（仅限于使用，对理论不懂）
+- #### 数据库
 mongodb,mysql
 
 - #### 自动化测试领域
@@ -53,6 +53,9 @@ git/svn,gulp,webpack
 - [岛国丽人](https://github.com/zhangjh/islandBeauty),一个基于Node编写的种子文件下载爬虫
 - [汤不热爬虫](https://github.com/zhangjh/node_tumblr_spider),一个专门爬取tumblr资源的爬虫项目
 - [React前端组件库](https://github.com/zhangjh/FE_Components),一个基于[ant-design](http://ant.design)编写的React组件库
+- [mongodb连接客户端mongoose-client](https://www.npmjs.com/package/mongoose-client),一个用来简化MongoDB增删改查使用的客户端中间件
 - [树莓派项目:定点播报时间和天气](https://github.com/zhangjh/raspberry_autoPlay)
+- 小程序：今天你减肥了吗
+<img src="https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3508614149&token=813404082" style="width:200px" />
 - 微信公众号：悖论爱好者
-![](http://ww3.sinaimg.cn/mw690/62d95157gw1f3x0w08t3qj20760763yz.jpg)
+<img src="http://ww3.sinaimg.cn/mw690/62d95157gw1f3x0w08t3qj20760763yz.jpg" style="width:200px;" />
