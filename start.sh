@@ -4,7 +4,7 @@
 function build(){
     hexo clean
 	hexo g 
-	sed -i 's/\&/\%26/g' public/sitemap.xml
+	#sed -i 's/\&/\%26/g' public/sitemap.xml
     ##gulp 压缩
     gulp  
     if [ $? -ne 0 ];then
