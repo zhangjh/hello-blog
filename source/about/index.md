@@ -56,6 +56,6 @@ git/svn,gulp,webpack
 - [mongodb连接客户端mongoose-client](https://www.npmjs.com/package/mongoose-client),一个用来简化MongoDB增删改查使用的客户端中间件
 - [树莓派项目:定点播报时间和天气](https://github.com/zhangjh/raspberry_autoPlay)
 - 小程序：今天你减肥了吗
-<img src="https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3508614149&token=813404082" style="width:200px" />
+<img src="http://wx1.sinaimg.cn/mw690/62d95157gy1fl2sdk6dioj209k09kq4d.jpg" style="width:200px" />
 - 微信公众号：悖论爱好者
 <img src="http://ww3.sinaimg.cn/mw690/62d95157gw1f3x0w08t3qj20760763yz.jpg" style="width:200px;" />
