@@ -38,16 +38,18 @@ function upload(){
 }
 
 build
-sync myblog
-#sync JHspider
-upload myblog $1
-#upload JHspider $1
+#sync myblog
+#upload myblog $1
 
 ## 提交项目自身
 git status | grep -q "working directory clean"
 if [ $? -ne 0 ];then
     git add -A
-    git commit -a -m "add new pages"
+	msg="add new pages"
+	if [ "X$1" != "X" ];then
+		msg=$1
+	fi
+    git commit -a -m "${msg}"
     git push
 fi
 
