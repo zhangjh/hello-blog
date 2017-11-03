@@ -24,10 +24,14 @@
            $("#timer").text(cnt--);
 		   if(cnt === 0){
               clearInterval(timer);
-              window.location.href = "http://zhangjh.me" + pathname;
+              window.location.href = "https://zhangjh.me" + pathname;
            }
         },1000);
     }
+
+	if(window.location.protocol == "http:"){
+		window.location.href = "https://zhangjh.me";
+	}
 })();
 
 (function(){
