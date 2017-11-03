@@ -37,6 +37,15 @@ function upload(){
 	cd -
 }
 
+function run(){
+	sudo killall hexo
+	if [ $? -ne 0 ];then
+		echo "Kill hexo failed."
+		exit 1
+	fi
+	nohup hexo s &
+}
+
 build
 #sync myblog
 #upload myblog $1
@@ -53,3 +62,4 @@ if [ $? -ne 0 ];then
     git push
 fi
 
+run
