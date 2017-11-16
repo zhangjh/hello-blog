@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B019PP1WC0/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B019PP1WC0&linkCode=as2&tag=dante-23&linkId=2d600a89b8106e1f6919a70ad626ea0a" />
+	<img src="https://img3.doubanio.com/lpic/s1727466.jpg" />
+</a>
+> 不同于王小波的小说，王小波的这本杂文集，没有小黄文，没有太多不正经，没有太多晦涩难懂的东西，但一如既往的黑色幽默。如果说小说是虚构一个故事，将想说的话和道理掩盖在故事里让你去一层层揭示，那么杂文就是明白无误的针对某个事或观点发表自己的意见，将想说的话和道理平铺直叙的表露给读者。看这本书就像人说的，“读一本好书就像跟一个要好的朋友聊天”，小波先生在这本文集里将他的人生观价值观向读者一一道来。应该会看第二遍。我读王小波比较迟，也读的比较少，但算是一见如故的一个作家。第一本大概是《未来世界》，那时候的书评已经找不到了。初看一个陌生的写作者就跟与人交往一样，会有磨合期，你不了解他的生平、观点以及文风，就很难理解他文字的意图，就像王小波的黑色幽默，乍一看时你闹不懂他是正经还是不正经。王小波97年去世享年45岁，在这本文集里，谈论生活态度时，他说“我刚刚过44岁生日，在这个年龄上给自己做结论似乎还为时过早。但我总觉得，我这一生绝不会向虚无投降。我会一直战斗到死”，读来不免扎心不已。
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01HXJLN74/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01HXJLN74&linkCode=as2&tag=dante-23&linkId=835db5961ecc2e34cfe4b12e8dbea01b" />
     <img src="https://img3.doubanio.com/lpic/s28688090.jpg" />
 </a>
