@@ -16,5 +16,5 @@
 			var jd_union_pid = h_jd_union_pid[rand];
 		}
 	</script>
-	<script src="http://ads.union.jd.com/static/js/union.js"></script>
+	<script src="//ads.union.jd.com/static/js/union.js"></script>
 </div>
