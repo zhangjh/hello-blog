@@ -39,10 +39,6 @@ function upload(){
 
 function run(){
 	sudo killall hexo
-	if [ $? -ne 0 ];then
-		echo "Kill hexo failed."
-		exit 1
-	fi
 	nohup hexo s &
 }
 
