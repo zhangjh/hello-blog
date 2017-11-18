@@ -38,7 +38,7 @@ function upload(){
 }
 
 function run(){
-	sudo killall hexo
+	killall hexo
 	nohup hexo s &
 }
 
