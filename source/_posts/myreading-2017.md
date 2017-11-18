@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01BWKVEA6/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01BWKVEA6&linkCode=as2&tag=dante-23&linkId=438f975a0589d8b4e7e5246a9639195f">
+	<img src="https://img3.doubanio.com/lpic/s28576474.jpg" />
+</a>
+> 胡适先生这本著作更多的在于考据，我等凡人看的一头雾水。。很多上古文字直接贴一段了事了，根本不鸟你看懂不懂，毕竟北大教科书+_+
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B019PP1WC0/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B019PP1WC0&linkCode=as2&tag=dante-23&linkId=2d600a89b8106e1f6919a70ad626ea0a" />
 	<img src="https://img3.doubanio.com/lpic/s1727466.jpg" />
 </a>
