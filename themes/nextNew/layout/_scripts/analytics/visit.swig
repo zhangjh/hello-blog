@@ -1,6 +1,6 @@
 <script src="/vendors/firebase/firebase.js"></script>
 <script>
-    var firebase = new Firebase("https://zhangjh.firebaseio.com/");
+    var firebase = new Firebase("//zhangjh.firebaseio.com/");
     //将反斜杠替换成下划线,并将中文decode
     var curUrl = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
     //总数

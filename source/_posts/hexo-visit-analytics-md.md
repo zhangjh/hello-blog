@@ -69,7 +69,7 @@ firebase: true
 
 ```js
 //首先新建自己的firebase对象,使用自己创建应用时给的那个firebase URL
-var firebase = new Firebase("https://zhangjh.firebaseio.com");
+var firebase = new Firebase("http://zhangjh.firebaseio.com");
 
 //获取当前url作为记录的key，将"/"替换未"_"，并decode
 var curUrl = decodeURI(window.location.pathname.replace(/\/|\./g,"_"));
