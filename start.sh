@@ -13,29 +13,29 @@ function build(){
     fi
 }
 
-function sync(){
-	dst=$1
+#function sync(){
+#	dst=$1
     ##gulp压缩的替换
-    cp -r dst/* public/
-	rsync -arzv --delete public/* ${dst}
-}
+#    cp -r dst/* public/
+#	rsync -arzv --delete public/* ${dst}
+#}
 
-function upload(){
-	dst=$1
-	msg=$2
-	if [ "${msg}" == "" ];then
-		msg="add new page"
-	fi
-	cd ${dst}
-	git add -A
-	git commit -a -m "${msg}"
-	git push
-	if [ $? -ne 0 ];then
-		echo "git push failed"
-		exit 1
-	fi 
-	cd -
-}
+#function upload(){
+#	dst=$1
+#	msg=$2
+#	if [ "${msg}" == "" ];then
+#		msg="add new page"
+#	fi
+#	cd ${dst}
+#	git add -A
+#	git commit -a -m "${msg}"
+#	git push
+#	if [ $? -ne 0 ];then
+#		echo "git push failed"
+#		exit 1
+#	fi 
+#	cd -
+#}
 
 function run(){
 	killall hexo
