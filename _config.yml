@@ -101,6 +101,8 @@ zhanzhang_analytics: yes
 
 # site search
 swiftype_key: kqk6Yx61eKS5JujMK_Zq
+baidu_search: true
+swiftype_search: false
 
 # since
 since: 2015
