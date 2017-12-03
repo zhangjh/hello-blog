@@ -214,6 +214,11 @@
         <div class="post-eof"></div>
       {% endif %}
     </footer>
+
+	<!-- alipay -->
+	<div id="alipay">
+		<img src="http://wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg" />
+	</div>
   </article>
 
 {% endmacro %}
