@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01AVMSGA2/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=dante-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B01AVMSGA2&linkId=573592cd869096cbb18470c28a9b5b15">
+	<img src="https://img3.doubanio.com/lpic/s28390784.jpg" />
+</a>
+> 快递故事是好故事，文字写的不好，任务太多内容太散。书名《快递中国》但全书基本讲的都是中通。
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01BWKVEA6/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B01BWKVEA6&linkCode=as2&tag=dante-23&linkId=438f975a0589d8b4e7e5246a9639195f">
 	<img src="https://img3.doubanio.com/lpic/s28576474.jpg" />
 </a>
