@@ -43,7 +43,7 @@
 		var userAgent = navigator.userAgent.toLowerCase();
 		if(userAgent.indexOf("android") != -1 || userAgent.indexOf("linux") != -1 || 
 			userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1 ||
-			userAgent.indexOf("ipod") != -1 || userAgent.indexOf("micromessenger") != -1){
+			userAgent.indexOf("ipod") != -1 /*|| userAgent.indexOf("micromessenger") != -1*/){
 			return true;
 		}
 		return false;
