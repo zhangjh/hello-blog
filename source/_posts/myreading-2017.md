@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B001NMTX9S/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=dante-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B001NMTX9S&linkId=56d51e50cc70df4fda05d1c657108556">
+	<img src="https://img3.doubanio.com/lpic/s5968156.jpg" />
+</a>
+> 别被封面图骗了，这其实是一本薄薄的小册子，没有长篇大论，基本都是mysql的实践操作，是一本非常适合入门mysql的书。看完这本书，我的简介里终于可以说自己不单单只会简单的mysql查询了。
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01AVMSGA2/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=dante-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B01AVMSGA2&linkId=573592cd869096cbb18470c28a9b5b15">
 	<img src="https://img3.doubanio.com/lpic/s28390784.jpg" />
 </a>
