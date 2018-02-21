@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B01JLEYPX8/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dante-23&creative=3200&linkCode=as2&creativeASIN=B01JLEYPX8&linkId=f228299417aa3d21faa8475b1572a00e">
+	<img src="https://img1.doubanio.com/lpic/s29440008.jpg" />
+</a>
+> 断断续续看完了，说实话对于不太懂经济学的我来说有点枯燥了，以至于7个小时的阅读时长断断续续估计得拖了有一个月，可想而知阅读成效了。虽然很多内容已经忘了差不多了，但好在作者这本书基本上主要讲的还是一个观点，然后反复论证说明，"中国的城镇化发展还远未截止，城市的发展、人口的集聚是大趋势是解决很多问题的方法以及当前政策尤其是限制人口流动违反了城市发展的基本经济学原理"。
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B001NMTX9S/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=dante-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B001NMTX9S&linkId=56d51e50cc70df4fda05d1c657108556">
 	<img src="https://img3.doubanio.com/lpic/s5968156.jpg" />
 </a>
@@ -35,6 +40,7 @@ categories: 阅历
 </a>
 > "人生在世最大的两个危险，一个是过早死去，另一个是活得太久"。看到这句真的是"振聋发聩"，有多少人期盼长寿，又有多少人会意识到过于长寿可能带来的穷困潦倒的老年生活危机？"理财要趁早，养老计划要趁早"是我读该书获得的收获，至于怎样理财投资，路漫漫其修远。
 
+<!--more-->
 <a class="fancybox" rel="group" href="https://www.amazon.cn/gp/product/B010PPI0K6/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B010PPI0K6&linkCode=as2&tag=dante-23">
 	<img src="https://images-cn.ssl-images-amazon.com/images/I/81BGJ0io7EL._SX341_BO1,204,203,200_.jpg" alt="时生" />
 </a>
@@ -44,8 +50,6 @@ categories: 阅历
     <img src="https://images-cn.ssl-images-amazon.com/images/I/510wzE2j-EL._SX341_BO1,204,203,200_.jpg" alt="无声告白" />
 </a>
 > "我们终此一生，就是要摆脱他人的期待，找到真正的自己"，曾经我也是如同莉迪亚一样在殷切的期望下成长，好在万金油的我能够承受。有时候家庭就是一个人的宿命，我们要做一个好儿子、好丈夫、好父亲，s哪有多少机会去做真正的自己。虽然我现在依然摆脱不了他人的期待，但我希望我以后对下一代的教育不要再像我们的父辈一样，充分引导让孩子选择如何正确地做他自己即可。
-
-<!--more-->
 
 ![超新星纪元](https://img1.doubanio.com/lpic/s3700467.jpg)
 > 看到后面完全看不下去了，简直是胡闹加儿戏，这不是科幻！完全颠覆了我对大刘的期待。这世界如果只剩下了孩子就只会玩了？还会拿生命去大战那样的去玩？还会去玩中美两国互换这样的游戏？你要是个孩子你会没事那个机枪突突觉得好玩？
