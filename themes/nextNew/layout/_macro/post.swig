@@ -174,7 +174,7 @@
 		<div>
 			<div id="rewardTip">赞 赏</div>
 			<div id="dsWrapper">
-				<p>我只是玩下新功能，如果你觉得本文还不错的话也可以赞赏一点~</p>
+				<p>如果你觉得本文还不错的话也可以赞赏一点~</p>
 				<img src="/images/zfb.png" />
 			</div>
 		</div>
