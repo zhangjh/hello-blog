@@ -86,6 +86,14 @@ social:
   douban: http://douban.com/people/48165389
 #  wechat: wechat.jpg
 
+# rss feed
+feed:
+    type: rss2
+    path: rss2.xml
+    limit: 5
+    hub:
+    content: 'true'
+
 # duoshuo评论
 #duoshuo_shortname: zhangjh
 
