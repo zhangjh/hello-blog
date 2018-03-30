@@ -5,7 +5,7 @@ tags: 口才
 categories: 文摘采撷
 ---
 
-<i class="iconfont" style="color: #1296db">&#xe65d;</i>  5/53，每周一篇博，坚持！
+<i class="iconfont" style="color: #1296db">&#xe65d;</i>  6/53，每周一篇博，坚持！
 
 [续上篇](http://zhangjh.me/2018/03/24/kcxl/)
 
