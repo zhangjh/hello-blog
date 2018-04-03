@@ -138,6 +138,8 @@
 	         // 刷新评论
 	         notie.alert({type: 1,text: "发表成功."});
 	         getComment(comment.url);
+	      }else {
+	        notie.alert({type: 3,text: ret.errorMsg});
 	      }
 	    });
 	  }
@@ -214,7 +216,11 @@
 	  $(".modal-footer .save").click(function(){
       check();
       // 保存数据
-      comment.website = $("modal-body input[name='website']").val();
+      let website = $(".modal-body input[name='website']").val();
+      if(!/^http/.test(website)){
+        website = "//" + website;
+      }
+      comment.website = website;
       loginModalHide();
       $(".header-user").text(comment.name);
       loginBtnHide();
