@@ -38,18 +38,18 @@
 	console.info("%c简历请发送至：jihong.zjh@alibaba-inc.com，邮件标题请注明来自Dante Notes。",style);
 })();
 
-(function(){
-	function isPhone(){
-		var userAgent = navigator.userAgent.toLowerCase();
-		if(userAgent.indexOf("android") != -1 || userAgent.indexOf("linux") != -1 || 
-			userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1 ||
-			userAgent.indexOf("ipod") != -1 /*|| userAgent.indexOf("micromessenger") != -1*/){
-			return true;
-		}
-		return false;
-	}
-
-	if(isPhone()){
-		window.open("http://zfb.zhangjh.me");
-	}
-})();
+// (function(){
+// 	function isPhone(){
+// 		var userAgent = navigator.userAgent.toLowerCase();
+// 		if(userAgent.indexOf("android") != -1 || userAgent.indexOf("linux") != -1 ||
+// 			userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1 ||
+// 			userAgent.indexOf("ipod") != -1 /*|| userAgent.indexOf("micromessenger") != -1*/){
+// 			return true;
+// 		}
+// 		return false;
+// 	}
+//
+// 	if(isPhone()){
+// 		window.open("http://zfb.zhangjh.me");
+// 	}
+// })();

@@ -182,7 +182,7 @@ mathjax:
 #duoshuo_share: true
 
 # changyan
-changyan: true
+changyan: false
 changyan_appid: cysUm65H9
 
 # Google Webmaster tools verification setting
@@ -220,9 +220,8 @@ facebook_sdk:
 ##firebase统计支持
 firebase: true
 
-
-
-
+## 自研评论系统
+comment: true
 
 
 

@@ -35,6 +35,7 @@
       {% include '_scripts/comments/duoshuo.swig' %}
 	  {% include '_scripts/comments/disqus.swig' %}
 	  {% include '_scripts/comments/changyan.swig' %}
+	  {% include '_scripts/comments/comment.swig' %}
 	{% endblock %}
 
     <footer id="footer" class="footer">
