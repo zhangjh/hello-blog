@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var babel = require('gulp-babel');
 var plugins = require('gulp-load-plugins')();
 
 gulp.task("clean",function() {
@@ -15,6 +16,7 @@ gulp.task("css",function(){
 
 gulp.task("js",function(){
     var stream = gulp.src(["public/**/*.js","!public/**/*.min.js"])
+		.pipe(babel({presets: ['env']}))
         .pipe(plugins.uglify())
         .pipe(gulp.dest("./public/"));
     return stream;

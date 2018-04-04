@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "gulp": "~3.9.1",
+    "gulp-babel": "^7.0.1",
     "gulp-clean": "~0.3.1",
     "gulp-load-plugins": "~1.2.0",
     "gulp-minify-css": "~1.2.3",
@@ -27,5 +28,10 @@
     "hexo-renderer-marked": "^0.2.4",
     "hexo-renderer-stylus": "~0.2.3",
     "hexo-server": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
