@@ -164,7 +164,7 @@
 	        let html = "";
           for(const item of commentList){
             let contentItem = "<div class='content-item'>";
-            contentItem += "<div class='user-info'><span class='user' data-website=" + item.website + ">" + item.name + "</span>"
+            contentItem += "<div class='user-info'><span class='user' data-website='" + item.website + "'>" + item.name + "</span>"
                         + "<span class='time'>" + parseTime(item.gmtCreate) + "</span></div>";
             contentItem += "<div class='content'>" + item.content + "</div>";
             contentItem += "<div class='operate' data-id='" + item["_id"] + "' data-content='" + item.content + "' data-name='" + item.name + "'>回复</div></div>";

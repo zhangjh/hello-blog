@@ -3,9 +3,60 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}--一个理想主义文青的IT自留地</title>
+  <style>
+    #msg-tip {
+      background-color: orangered;
+      color: white;
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+    }
+    #msg-modal {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      width: 400px;
+      margin-left: -200px;
+      z-index: 2;
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      padding: 5px 20px;
+      background: white;
+      display: none;
+    }
+    #msg-modal h5 {
+      float: left;
+    }
+    #msg-modal .close {
+      float: right;
+    }
+    #modal-body {
+      clear: both;
+    }
+    #modal-body .item a {
+      color: #219bde;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="msg-tip">
+    ❗️你有<span>0</span>条未读消息
+  </div>
+
+  <div id="msg-modal">
+    <div id="modal-header">
+      <h5>消息列表</h5>
+      <span class="close">X</span>
+    </div>
+    <div id="modal-body">
+
+    </div>
+  </div>
 
   {% include '_partials/old-browsers.swig' %}
 
@@ -43,7 +94,7 @@
         {% include '_partials/footer.swig' %}
 		<!--访问统计-->
 		<br>
-		{% include '_scripts/analytics.swig' %} 
+		{% include '_scripts/analytics.swig' %}
       </div>
     </footer>
 
@@ -59,18 +110,18 @@
 
   {% include '_scripts/fancy-box.swig' %}
   {% include '_scripts/helpers.swig' %}
-  {% include '_scripts/motion.swig' %} 
+  {% include '_scripts/motion.swig' %}
 
   {% block script_extra %}{% endblock %}
-  
+
   <script type="text/javascript" src="{{ url_for(theme.js) }}/bootstrap.js"></script>
-  
+
   {% include '_scripts/tinysou.swig' %}
   {% include '_scripts/mathjax.swig' %}
   {% block comment_system %}{% endblock %}
   {% include '_scripts/baidushare.swig' %}
-  
-  
-  <script src="/js/custom.js"></script> 
+
+
+  <script src="/js/custom.js"></script>
 </body>
 </html>
