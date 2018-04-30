@@ -95,6 +95,7 @@ function msgClickReg() {
             url: queryUrl,
             data: {
                 name: name,
+				url: url,
                 isDeleted: false
             }
         }).done(function (ret) {
