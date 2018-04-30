@@ -43,7 +43,7 @@
 
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
-<link rel="canonical" href="http://zhangjh.me" />
+<link rel="canonical" href="https://zhangjh.me" />
 
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
