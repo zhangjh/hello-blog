@@ -160,7 +160,7 @@ use_font_lato: false
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax: 
+mathjax:
 
 
 # Swiftype Search API Key
@@ -180,6 +180,9 @@ mathjax:
 
 # Share
 #duoshuo_share: true
+
+# Share
+baidu_share: true
 
 # changyan
 changyan: false

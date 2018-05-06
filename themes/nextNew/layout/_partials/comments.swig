@@ -1,5 +1,5 @@
 {% if page.comments %}
-  <div class="comments" id="comments">
+  <!--div class="comments" id="comments">
     {% if (theme.changyan) %}
       <div class="ds-thread" data-thread-key="{{ page.path }}"
            data-title="{{ page.title }}" data-url="{{ page.permalink }}">
@@ -9,5 +9,5 @@
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </div>
     {% endif %}
-  </div>
+  </div-->
 {% endif %}
