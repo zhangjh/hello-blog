@@ -1,4 +1,4 @@
-title: [翻译]GitHub的光明未来
+title: 【翻译】GitHub的光明未来
 show: true
 date: 2018-06-05 22:57:10
 tags: [翻译]
