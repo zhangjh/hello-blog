@@ -120,11 +120,11 @@
 	    comment.email = $(".modal-body input[name='email']").val();
 	    if(!comment.name){
 	      notie.alert({type: 3,text: "大侠请留名！"});
-	      return;
+	      return false;
 	    }
 	    if(!comment.email){
         notie.alert({type: 3,text: "邮箱必填！"});
-        return;
+        return false;
       }
 	  }
 
@@ -214,7 +214,9 @@
 	  $(".header-login").click(loginModalShow);
 	  $(".modal-footer .cancel").click(loginModalHide);
 	  $(".modal-footer .save").click(function(){
-      check();
+      if(!check()){
+		return;
+	  }
       // 保存数据
       let website = $(".modal-body input[name='website']").val();
       if(!/^http/.test(website)){
