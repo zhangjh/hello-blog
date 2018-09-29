@@ -2,7 +2,7 @@
 	//将反斜杠替换成下划线,并将中文decode
     var curUrl = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
    
-	var statUrl = "//favlink.cn/visit";
+	var statUrl = "https://favlink.cn/visit";
 
 	// 总数
 	$.ajax({
