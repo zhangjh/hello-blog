@@ -6,12 +6,12 @@ categories: 阅历
 ---
 # 已读
 <a class="fancybox" rel="group" href="https://amzn.to/2P22egC">
-	<img src="https://img3.doubanio.com/view/subject/l/public/s28607882.jpg" />
+	<img src="https://img3.doubanio.com/view/subject/s/public/s28607882.jpg" />
 </a>
 > 系统性学习Spring的第一本书，前面Spring核心基础原理部分讲的感觉有收获。后面关于各个Spring中间件的讲述感觉就一般了比较杂比较细节偏操作层面，且脱离实际生产实际，一般中间件实际使用的跟书中不太一致。
 
 <a class="fancybox" rel="group" href="https://amzn.to/2P22H2m">
-	<img src="https://img3.doubanio.com/view/subject/l/public/s28588050.jpg" />
+	<img src="https://img3.doubanio.com/view/subject/s/public/s28588050.jpg" />
 </a>
 > 偏实操，比较粗略的过了一遍。
 
@@ -27,8 +27,8 @@ categories: 阅历
 </a>
 > 系统了解一下Maven的工具书，写的还挺详细的。跟作者一起踢过球，挺逗的一人。
 
-<a class="fancybox" rel="group" href="">
-    <img src=""https://img3.doubanio.com/view/subject/l/public/s27814883.jpg />
+<a class="fancybox" rel="group" href="https://amzn.to/2PdPIuo">
+    <img src="https://img3.doubanio.com/view/subject/s/public/s27814883.jpg" />
 </a>
 > 很好的一本书，从原始人类到现在的万物之长到未来有可能智人被替代，尤瓦尔为我们描述了整个人类的发展历程 。他的观点独特而具有启发，他认为智人之所以能成为万物之长，语言及“说故事”的能力起了决定性的作用，只有智人可以通过语言组织一些虚构的事物将成千上万的人类凝聚起来。
  而人类历史的发展，方向也许是偶然的，但却是不可逆转的。农业革命就是个“陷阱”，虽然农业革命 让人类能获得更稳定的食物来源，但也将人类固定在了一个地方，同时也带来了人口的爆炸，需要付出更多艰辛的劳动来满足食物的需求。农业革命没有让人类过上更悠闲的生活，反而让他们比采集者祖先们过着更“悲惨”的生活。但人类已经无法再回到采集者的生活模式了。
