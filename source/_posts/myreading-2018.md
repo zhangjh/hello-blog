@@ -6,12 +6,12 @@ categories: 阅历
 ---
 # 已读
 <a class="fancybox" rel="group" href="https://amzn.to/2P22egC">
-	<img src="https://img3.doubanio.com/view/subject/s/public/s28607882.jpg" />
+	<img src="https://img3.doubanio.com/lpic/s28607882.jpg" />
 </a>
 > 系统性学习Spring的第一本书，前面Spring核心基础原理部分讲的感觉有收获。后面关于各个Spring中间件的讲述感觉就一般了比较杂比较细节偏操作层面，且脱离实际生产实际，一般中间件实际使用的跟书中不太一致。
 
 <a class="fancybox" rel="group" href="https://amzn.to/2P22H2m">
-	<img src="https://img3.doubanio.com/view/subject/s/public/s28588050.jpg" />
+	<img src="https://img3.doubanio.com/lpic/s28588050.jpg" />
 </a>
 > 偏实操，比较粗略的过了一遍。
 
