@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amzn.to/2Px8cX1">
+	<img src="https://img3.doubanio.com/view/subject/s/public/s3042670.jpg" />
+<a>
+> 很不错的哲学入门书，以后我会推荐给我儿子在十几岁的时候看。写作也很有趣味，写了一个类似《盗梦空间》的书中书。哲学思辨也很有启发，但即便我们都是“缸中之脑”又能如何呢？现实生活中有这么多的问题需要去解决，追寻人生的意义什么的只能在偶尔的闲暇中去发问一下。也许我们穷其一生也不能活明白，也许人生哪有什么意义，只不过都是一个基因传承的载体罢了。
+
 <a class="fancybox" rel="group" href="https://amzn.to/2P22egC">
 	<img src="https://img3.doubanio.com/lpic/s28607882.jpg" />
 </a>
