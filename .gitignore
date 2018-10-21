@@ -4,3 +4,4 @@ public
 *.json
 .deploy_git
 git.sh
+nohup.out
