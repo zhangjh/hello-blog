@@ -5,7 +5,7 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
-<a class="fancybox" rel="group" hrefp="https://amazon.cn/gp/product/B00U6AAFHW/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dante-23&creative=3200&linkCode=as2&creativeASIN=B00U6AAFHW&linkId=19b04f058e15751e3c064cbb61b8ae76">
+<a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B00U6AAFHW/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dante-23&creative=3200&linkCode=as2&creativeASIN=B00U6AAFHW&linkId=19b04f058e15751e3c064cbb61b8ae76">
 	<img src="https://img3.doubanio.com/lpic/s6175071.jpg" />
 </a>
 > 非常赞非常实用的一本SQL书，实乃程序员之居家旅行必备。看完数据库编程基本没啥大问题了。
