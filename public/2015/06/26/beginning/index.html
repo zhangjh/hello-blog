@@ -1,0 +1,441 @@
+<!doctype html><html class="theme-next use-motion"><head><meta name=generator content="Hexo 3.8.0"><meta charset=UTF-8><meta http-equiv=Content-Language content=zh-CN><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"><meta http-equiv=Cache-Control content=no-transform><meta http-equiv=Cache-Control content=no-siteapp><meta http-equiv=Cache-Control content="max-age=864000"><meta name=google-site-verification content=4uI2zlyLHcOQWwwZFmW5SB6dj9mlInB8lIUfeM_L8d8><meta name=baidu_union_verify content=9f6bc0068b476b9afebdb405dbd92112><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel=stylesheet type=text/css><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel=stylesheet type=text/css><link href="/css/main.css?v=1.0.0.0" rel=stylesheet type=text/css><link rel=canonical href=https://zhangjh.me><meta name=keywords content=开篇,心情,><link rel=alternate href=/rss2.xml title=但丁笔记 type=application/atom+xml><link rel="shortcut icon" type=image/x-icon href="/favicon.ico?v=1.0.0.0"><meta name=description content="每在一个网站安家，第一篇”Hello world”必然是《开篇》，这回有点不太一样，这回是在自己的网站上了。 絮叨这个博客是使用Hexo技术搭建的，因此第一篇日志也保留了自动生成的”Hello world”，算是一种鸣谢，也可以作为自己日后继续折腾Hexo时的一个查看document的便捷入口。"><meta name=keywords content=开篇,心情><meta property=og:type content=article><meta property=og:title content=开篇><meta property=og:url content=http://zhangjh.me/2015/06/26/beginning/index.html><meta property=og:site_name content=但丁笔记><meta property=og:description content="每在一个网站安家，第一篇”Hello world”必然是《开篇》，这回有点不太一样，这回是在自己的网站上了。 絮叨这个博客是使用Hexo技术搭建的，因此第一篇日志也保留了自动生成的”Hello world”，算是一种鸣谢，也可以作为自己日后继续折腾Hexo时的一个查看document的便捷入口。"><meta property=og:locale content=zh-Hans><meta property=og:updated_time content=2018-10-19T18:30:07.976Z><meta name=twitter:card content=summary><meta name=twitter:title content=开篇><meta name=twitter:description content="每在一个网站安家，第一篇”Hello world”必然是《开篇》，这回有点不太一样，这回是在自己的网站上了。 絮叨这个博客是使用Hexo技术搭建的，因此第一篇日志也保留了自动生成的”Hello world”，算是一种鸣谢，也可以作为自己日后继续折腾Hexo时的一个查看document的便捷入口。"><script type=text/javascript id=hexo.configuration>
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'hide',
+    motion: true
+  };
+</script><script type=text/javascript src="/vendors/jquery/index.js?v=2.1.3"></script><title>开篇 | 但丁笔记 --一个理想主义文青的IT自留地</title><style>
+    #msg-tip {
+      background-color: orangered;
+      color: white;
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+    }
+    #msg-modal {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      width: 400px;
+      margin-left: -200px;
+      z-index: 2;
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      padding: 5px 20px;
+      background: white;
+      display: none;
+    }
+    #msg-modal h5 {
+      float: left;
+    }
+    #msg-modal .close {
+      float: right;
+    }
+    #modal-body {
+      clear: both;
+    }
+    #modal-body .item a {
+      color: #219bde;
+    }
+  </style></head><body><div id=msg-tip>❗️你有<span>0</span>条未读消息</div><div id=msg-modal><div id=modal-header><h5>消息列表</h5><span class=close>X</span></div><div id=modal-body></div></div><div class="container one-column page-post-detail"><div class=headband></div><header id=header class=header><div class=header-inner><div class=site-meta><div class=custom-logo-site-title><a href="/" class=brand rel=start><span class=logo-line-before><i></i></span> <span class=site-title>但丁笔记</span> <span class=logo-line-after><i></i></span></a></div><p class=site-subtitle></p></div><div class=site-nav-toggle><button><span class=btn-bar></span> <span class=btn-bar></span> <span class=btn-bar></span></button></div><nav class=site-nav><ul id=menu class="menu menu-left"><li class="menu-item menu-item-home"><a href="/" rel=section><i class="menu-item-icon fa fa-home fa-fw"></i><br>首页</a></li><li class="menu-item menu-item-categories"><a href=/categories rel=section><i class="menu-item-icon fa fa-th fa-fw"></i><br>分类</a></li><li class="menu-item menu-item-about"><a href=/about rel=section><i class="menu-item-icon fa fa-user fa-fw"></i><br>关于</a></li><li class="menu-item menu-item-archives"><a href=/archives rel=section><i class="menu-item-icon fa fa-archive fa-fw"></i><br>归档</a></li><li class="menu-item menu-item-tags"><a href=/tags rel=section><i class="menu-item-icon fa fa-tags fa-fw"></i><br>标签</a></li><li class="menu-item menu-item-search"><a href=/search rel=section><i class="menu-item-icon fa fa-question-circle fa-fw"></i><br>搜索</a></li><li class="menu-item menu-item-commonweal"><a href=/404 rel=section style="font-weight: bold"><i class="menu-item-icon fa fa-heartbeat fa-fw"></i><br>公益404</a></li></ul><div class=site-search><form class=site-search-form target=_blank action=http://zhannei.baidu.com/cse/site><input type=text name=q size=30 placeholder=站内搜索> <input type=hidden name=cc value=zhangjh.me></form></div></nav></div></header><main id=main class=main><div class=main-inner><div id=content class=content><div id=posts class=posts-expand><article class="post post-type-normal" itemscope itemtype=//schema.org/Article><header class=post-header><h1 class=post-title itemprop="name headline">开篇</h1><div class=post-meta><span class=post-time>发表于<time itemprop=dateCreated datetime=2015-06-26T22:39:00+08:00 content=2015-06-26>2015-06-26</time></span> <span class=post-category>&nbsp; | &nbsp; 分类于 <span itemprop=about itemscope itemtype=https://schema.org/Thing><a href="/categories/心情杂感/" itemprop=url rel=index><span itemprop=name>心情杂感</span></a></span></span> <span class=post-visit-count>&nbsp; | &nbsp; <i class="fa fa-eye"></i>&nbsp; <span id=detail_cnt>1</span></span></div></header><div class=post-body><span itemprop=articleBody><p>每在一个网站安家，第一篇”Hello world”必然是《开篇》，这回有点不太一样，这回是在自己的网站上了。</p><h1 id=絮叨><a href=#絮叨 class=headerlink title=絮叨></a>絮叨</h1><p>这个博客是使用<a href="https://hexo.io/" target=_blank rel=noopener>Hexo技术</a>搭建的，因此第一篇日志也保留了自动生成的”Hello world”，算是一种鸣谢，也可以作为自己日后继续折腾Hexo时的一个查看document的便捷入口。<br><a id=more></a><br>刚开始时只是纯粹的想练习下nodejs建站的水平，自从来了阿里后，接触到了nodejs的东西，就被nodejs迷的不行了，工作中使用nodejs搭建了平台，于是也想到要不自己也搞一个属于自己的网站练练手吧。怎奈工作繁忙下班只想呼呼，念头刚生的时候就调研了阿里云、BAE等虚拟主机，当阿里云短信提醒我订购的虚拟主机即将到期时我在服务器上的node环境还没有安装好。。。<br>想了想，要完全自己写一个可用的网站，数据库不可少吧，评论留言不可少吧，现如今移动互联时代移动端响应式不可少吧。。。这么一来，交了一年的服务器钱网站估计还没写出来呢。。于是放弃了那个自以为是的想法，学习nodejs还是工作的时候折腾好了。一个偶然的机会（在github上看到octopress，一个类似WordPress的博客系统），了解到Hexo是一个基于nodejs的博客系统，比octopress还要简单易用，正好又是nodejs的，于是决定选择Hexo来搭建一个属于我自己的博客网站。</p><h1 id=关于动机><a href=#关于动机 class=headerlink title=关于动机></a>关于动机</h1><p>记得在研二的时候自己在115模板的基础上折腾了一个网址导航网站，那个时候多半是觉得”有一个属于自己的网站是件很牛逼的事情”，现在想想不免嘴角微翘：在现在这个互联网时代，有个网站算个什么事儿啊。<br>这么些年来尝试过在很多网站上写过东西，人人网的日志、CSDN的技术博客、写过一些情感纠结的野生百度贴吧、记述观感的豆瓣影评、小众而优雅的Lofter、新浪微博的长微博，甚至微信的段子，无一例外，这些都没能很长久的坚持下去。一部分原因是因为自己的懒惰，一部分也由社交网络的人气转移导致，再一个很大的一点，这些网站在商业化的过程中充斥了越来越多的广告，而社交网络里，那些充斥我信息流的美景、美食、美女们中间我突然穿插那么一段文字，看起来让人觉得很二逼很装逼。在满屏的转载里我找不到在这些网站的归属感，那么干脆搞个自己的网站吧。为自己的网站丰富内容，应该还是会坚持下去吧。</p><h1 id=关于域名><a href=#关于域名 class=headerlink title=关于域名></a>关于域名</h1><p>为什么会取一个一串数字的域名？<a href=http://www.5941740.cn target=_blank rel=noopener>5941740</a>这串数字来源于我对中国互联网审查制度的痛恨。<br>5941740谐音是”我就是要气死你”，大家都知道如果在中国要搞个网站是必须要备案的，以前在上学时搞的那个导航网站，为了不备案（主要是没钱买空间），采用了国外的免费虚拟空间，然后在网站的底部赤裸裸的调戏工信部：”本网站空间来自国外，无需备案请勿跨省追捕。”这个博客网站本来是准备部署在阿里云主机上，我已经做好了屈服的准备，备案手续已经办的差不多了，结果没想到的是最后的步骤还要去xx特定地方去做信息采集，照相什么。。我为了折腾一下自己的小玩具用得着费这么大劲吗？我身份证、家庭地址什么的都告诉你了，还有什么不放心的呢？官老爷们你们牛，我还是乖乖不备案用免费空间去吧。得，其实是”我被您气死了呢”~</p><h1 id=关于博客><a href=#关于博客 class=headerlink title=关于博客></a>关于博客</h1><p>关于这个博客，我希望它能督促我持续不断的记录下去。在长时间混迹社交网络之后，现在的我想个超过140字的句子总是显得很费力，有的时候满腹千言无从下笔，我想你们也是，想曾经我也是写过中篇长文的呢，呵呵。<br>好记性不如烂笔头，希望在长时间的积累后，能找到点思考以及行文的能力，也将日常工作中值得记录的内容记录在案，方便查找以及温故知新。<br>写博客跟写日记一样，明明是只写给自己，但写的时候仿佛又是期待别人来看。真是矛盾的呢。。<br>我的计划，大概会分几个类目，一个是技术人生，专门记录日常工作中的一些与技术相关的内容，一个是读书笔记，相当于取代豆瓣的功能，简短记录每年所看的书目，一个是心情杂感，随便扯点有的没的，毕竟我感性那是自己都害怕，一个是文青空间，有可能不会存在的类目，以目前的文笔来看，基本写不出个什么狗屎来了，还一个就是图片墙，用来专门晒图，还一个就是文摘采撷，摘录一些觉得有用的内容。<br>以上是为记。</p></span></div><div><div id=rewardTip>赞 赏</div><div id=dsWrapper><p>如果你觉得本文还不错的话也可以赞赏一点~</p><img src=/images/zfb.png></div></div><footer class=post-footer><div class=post-tags><a href="/tags/开篇/" rel=tag>#开篇</a> <a href="/tags/心情/" rel=tag>#心情</a></div><div class=post-nav><div class="post-nav-next post-nav-item"><a href="/2015/06/25/hello-world/" rel=next title="Hello World"><i class="fa fa-chevron-left"></i> Hello World</a></div><div class="post-nav-prev post-nav-item"><a href="/2015/06/29/markdown-learning/" rel=prev title=markdown常用语法标记>markdown常用语法标记 <i class="fa fa-chevron-right"></i></a></div></div></footer><div id=alipay><img src=//wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg></div></article><hr>推荐书目：<div id=recommendBooks><a rel=nofollow target=_blank href="//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlodAREHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhQKEQRVBAJQXk83JxklRnV2YVN%2BCU1eSQYlHTpvXHd8NRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQBEwRQElgRMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGVBNYFgINXhBHBg%3D%3D">JavaScript框架设计</a><script async>
+	var books_links = [];
+	var books_name = ["JavaScript编程实战","JavaScript设计模式","编写可维护的JavaScript","JavaScript框架设计","HTML5和JavaScript Web应用开发","网站设计项目化教程","Web前端开发案例教程","JavaScript面向对象精要","PHP.MySQL.JavaScript和CSS","JavaScript面向对象编程指南"];
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlIXChYHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhwAGgNVBAJQXk83UWAzTAsMfyt5UhJGU3hWSEVdBERaJRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQCEAZVGlgTMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGXBlTEQINXhBHBg%3D%3D");	
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG18QBRAPVSsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUGFwBXE1sKW1dbCCsvFwdCeAwTAndKFVozYjx3WhYOAVMdGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwddGFIVCxs3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUR5cFwoSGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUGFsTARIEXCsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhYCFARVGFIKW1dbCCslZnhsBABwLXYFSnsHRSFvClYOCEg7GQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwddEl4XABM3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMEVR1YFQEbGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlodAREHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhQKEQRVBAJQXk83JxklRnV2YVN%2BCU1eSQYlHTpvXHd8NRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQBEwRQElgRMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGVBNYFgINXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUGVgSAhQOVCsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhcBFQdTEloKW1dbCCtSYXFQQShcAnZaTkMtWz1CWllaMlorGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRVGlgUChs3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMFVhxbEwsTGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG1wVBxQPXSsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUFEgJTE1MKW1dbCCsCFEoReg5cOHdbTm8PGxgUAnFyAUQdGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRVGVgcCxQ3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUhteEwoaGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG14TBRQBVisfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUHFABTHVgKW1dbCCslXWBwRzFDBHBfSk40clNxY0dwPn8dGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRWG1odBhU3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUB1cEwQRGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCFQRWGVoUAxYHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSAFYYWRQDEwNVBAJQXk83T0NbRUlNcyZ4CBJqcH0LYwNcAmVPAxdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEQNUE1oUMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSAREFVBpaEQINXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCEgFcHFwRAREEZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSB1MSXBIGEQRWBAJQXk83CRxBTHxsdwF%2BDF1CdHcXZw4WWWd6ExdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEQ5WE1MdMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVBBsAUh9YFgENXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCFw5RElgVAxsPZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSAlwfUhYCEw5dBAJQXk83IEsAS2pSY1x%2BM1EYUEYDTw1VWUAdNRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEAJUGlsWMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQCxYOVhtaHAoNXhBHBg%3D%3D");
+	var content = "";
+	var w = document.body.clientWidth,
+		h = document.body.clientHeight;
+	var len = books_links.length;
+	if(w < h){
+		len = 8;
+	}
+	for(var i=0;i<len;i++){
+		content += "<a target='_blank' rel='nofollow' href='" + books_links[i] +  "'>" + books_name[i] +"</a>";
+	}
+	
+	$("#recommendBooks").html(content);
+</script></div><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9562106186826042",
+    enable_page_level_ads: true
+  });
+</script><hr><div id=bottom_ads><div id=jd_channel><script>
+		var w = document.body.clientWidth,
+			h = document.body.clientHeight;
+		var jd_union_euid="";
+		var w_jd_union_pid = [418069133,418076177,418077094],
+			h_jd_union_pid = [418082137,418074315,418080094];
+		if(w > h){
+			//宽屏广告
+			var rand = Math.floor(Math.random() * w_jd_union_pid.length);
+			var jd_union_pid = w_jd_union_pid[rand];
+		}else {
+			//窄屏广告
+			var rand = Math.floor(Math.random() * h_jd_union_pid.length);
+			var jd_union_pid = h_jd_union_pid[rand];
+		}
+	</script><script src=//ads.union.jd.com/static/js/union.js></script></div></div><div class=post-spread><div class=bdsharebuttonbox><a href=# class=bds_more data-cmd=more></a><a href=# class=bds_qzone data-cmd=qzone title=分享到QQ空间></a><a href=# class=bds_tsina data-cmd=tsina title=分享到新浪微博></a><a href=# class=bds_tqq data-cmd=tqq title=分享到腾讯微博></a><a href=# class=bds_renren data-cmd=renren title=分享到人人网></a><a href=# class=bds_weixin data-cmd=weixin title=分享到微信></a></div><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","tsina","weixin","renren","tieba","douban","sqq","youdao","fbook","twi","linkedin","evernotecn","copy"],"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div></div></div></div><div class=sidebar-toggle><div class=sidebar-toggle-line-wrap><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id=sidebar class=sidebar><div class=sidebar-inner><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target=post-toc-wrap>文章目录</li><li class=sidebar-nav-overview data-target=site-overview>站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop=author itemscope itemtype=//schema.org/Person><img class=site-author-image src=/images/default_avatar.jpg alt=但丁 itemprop=image><p class=site-author-name itemprop=name>但丁</p></div><p class="site-description motion-element" itemprop=description>一个伪文青，一个low geek 孤单的坚持码字</p><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href=/archives><span class=site-state-item-count>80</span> <span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories><span class=site-state-item-count>5</span> <span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags><span class=site-state-item-count>130</span> <span class=site-state-item-name>标签</span></a></div></nav><div class="feed-link motion-element"><a href=/rss2.xml rel=alternate><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class=links-of-author-item><a href=https://github.com/zhangjh target=_blank><i class="fa fa-globe"></i> github</a></span> <span class=links-of-author-item><a href=http://weibo.com/jhspider target=_blank><i class="fa fa-globe"></i> weibo</a></span> <span class=links-of-author-item><a href=http://douban.com/people/48165389 target=_blank><i class="fa fa-globe"></i> douban</a></span></div><div class="cc-license motion-element" itemprop=license><a href=//creativecommons.org/licenses/by-nc-sa/4.0 class=cc-opacity target=_blank><img src=/images/cc-by-nc-sa.svg alt="Creative Commons"></a></div><div class="links-of-author motion-element"></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc-indicator-top post-toc-indicator"><i class="fa fa-angle-double-up"></i></div><div class=post-toc><div class=post-toc-content><ol class=nav><li class="nav-item nav-level-1"><a class=nav-link href=#絮叨><span class=nav-number>1.</span> <span class=nav-text>絮叨</span></a></li><li class="nav-item nav-level-1"><a class=nav-link href=#关于动机><span class=nav-number>2.</span> <span class=nav-text>关于动机</span></a></li><li class="nav-item nav-level-1"><a class=nav-link href=#关于域名><span class=nav-number>3.</span> <span class=nav-text>关于域名</span></a></li><li class="nav-item nav-level-1"><a class=nav-link href=#关于博客><span class=nav-number>4.</span> <span class=nav-text>关于博客</span></a></li></ol></div></div><div class="post-toc-indicator-bottom post-toc-indicator"><i class="fa fa-angle-double-down"></i></div></section></div></aside></main><div class=login-modal><div class=modal-header><h4>我要评论</h4></div><div class=modal-body><div><span>名 号:</span> <input type=text name=name placeholder=大侠请留名></div><div><span>邮 箱:</span> <input type=text name=email placeholder=邮箱必填，以便收取回复提醒></div><div><span>个人网址:</span> <input type=text name=website placeholder=选填，如果你也有博客，可以留个网址，以http开头></div></div><div class=modal-footer><div style="float: right;" class=remember><label>记住个人信息？</label> <input type=checkbox></div><div><button class=save>保存</button> <button class=cancel>取消</button></div></div></div><div id=comment-wrap><div class=comment-header><div class="header-login border">登录</div><div class="header-user border"></div></div><div class=comment-body id=comment-text><textarea class=border placeholder=大侠说点什么吧~></textarea></div><div class=comment-footer><button class=commit>评论一番</button></div><div class=comment-list><div class=comment-list-header><div class=comment-title>评论</div><div class=comment-list-border></div><div class=comment-sum><span>0</span>条评论</div></div><div class=comment-content><div class=comment-empty>还没有评论，大侠坐个沙发？</div></div></div></div><script src=https://unpkg.com/notie></script><script>
+	  let comment = {};
+	  const url = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
+    comment.url = url;
+
+    function parseTime(timeStr){
+      const time = new Date(timeStr);
+      const year = time.getFullYear();
+      const month = time.getMonth() + 1;
+      const day = time.getDate();
+      const hour = time.getHours();
+      const minute = time.getMinutes();
+      return year + "年" + month + "月" + day + "日 " + hour + ":" + minute;
+    }
+
+	  function loginModalShow(){
+	    $(".login-modal").show();
+	  }
+
+	  function loginModalHide(){
+	    $(".login-modal").hide();
+	  }
+
+	  function loginBtnShow(){
+	    $(".header-login").show();
+	    $(".header-user").hide();
+	  }
+
+	  function loginBtnHide(){
+      $(".header-login").hide();
+      $(".header-user").show();
+    }
+
+    function commentEmptyShow(){
+      $(".comment-empty").show();
+    }
+
+    function commentEmptyHide(){
+      $(".comment-empty").hide();
+    }
+
+	  function check(){
+	    comment.name = $(".modal-body input[name='name']").val();
+	    comment.email = $(".modal-body input[name='email']").val();
+	    if(!comment.name){
+	      notie.alert({type: 3,text: "大侠请留名！"});
+	      return false;
+	    }
+	    if(!comment.email){
+        notie.alert({type: 3,text: "邮箱必填！"});
+        return false;
+      }
+		return true;
+	  }
+
+	  function saveComment(){
+	    $.ajax({
+	      url: "https://favlink.cn/comment/save",
+	      type: "post",
+	      data: comment
+	    }).done(function(ret){
+	      if(ret.status){
+	         // 刷新评论
+	         notie.alert({type: 1,text: "发表成功."});
+	         getComment(comment.url);
+	      }else {
+	        notie.alert({type: 3,text: ret.errorMsg});
+	      }
+	    });
+	  }
+
+	  function getComment(url){
+	    $.ajax({
+	      url: "https://favlink.cn/comment/queryList",
+	      data: {
+	        url: url
+	      }
+	    }).done(function(ret){
+	      if(ret.status){
+	        const total = ret.total;
+	        if(total === 0){
+	          commentEmptyShow();
+	          return;
+	        }else {
+	          commentEmptyHide();
+	          $(".comment-sum span").text(total);
+	        }
+	        const commentList = ret.data;
+	        let html = "";
+          for(const item of commentList){
+            let contentItem = "<div class='content-item'>";
+            contentItem += "<div class='user-info'><span class='user' data-website='" + item.website + "'>" + item.name + "</span>"
+                        + "<span class='time'>" + parseTime(item.gmtCreate) + "</span></div>";
+            contentItem += "<div class='content'>" + item.content + "</div>";
+            contentItem += "<div class='operate' data-id='" + item["_id"] + "' data-content='" + item.content + "' data-name='" + item.name + "'>回复</div></div>";
+            html += contentItem;
+          }
+          $(".comment-content").html(html);
+          // 注册用户名点击事件
+          $(".content-item .user").click(function(){
+            const website = $(this).attr("data-website");
+            if(website != "undefined"){
+              window.open(website);
+            }
+          });
+          // 注册回复点击事件
+          $(".content-item .operate").click(function(){
+            const replyId = $(this).attr("data-id");
+            const content = $(this).attr("data-content");
+            const name = $(this).attr("data-name");
+            comment.replyId = replyId;
+            $(".comment-body textarea").val("<blockquote><pre>引用" + name + "的发言:</pre>" + content + "</blockquote>");
+            window.location.href = "#comment-text";
+          });
+	      }
+	    });
+	  }
+
+    // 获取评论
+    getComment(comment.url);
+
+	  // 获取用户信息
+	  const localStorage = window.localStorage;
+	  const userInfo = localStorage.getItem("userInfo");
+	  if(!userInfo){
+	    loginBtnShow();
+	  }else {
+	    // 解析用户信息
+      const userInfoJson = JSON.parse(userInfo);
+      comment.name = userInfoJson.name;
+      comment.email = userInfoJson.email;
+      comment.website = userInfoJson.website;
+      //$(".modal-body input[name='name']").val(userInfoJson.name);
+      //$(".modal-body input[name='email']").val(userInfoJson.email);
+      //$(".modal-body input[name='website']").val(userInfoJson.website);
+      $(".header-user").text(comment.name);
+      loginBtnHide();
+	  }
+	  $(".header-login").click(loginModalShow);
+	  $(".modal-footer .cancel").click(loginModalHide);
+	  $(".modal-footer .save").click(function(){
+      if(!check()){
+		return;
+	  }
+      // 保存数据
+      let website = $(".modal-body input[name='website']").val();
+      if(!/^http/.test(website)){
+        website = "//" + website;
+      }
+      comment.website = website;
+      loginModalHide();
+      $(".header-user").text(comment.name);
+      loginBtnHide();
+      if($(".remember input[type='checkbox']").is(":checked")){
+        // 记住个人信息
+        localStorage.setItem("userInfo",JSON.stringify(comment));
+      }
+	  });
+	  $(".commit").click(function(){
+	    comment.content = $(".comment-body textarea").val();
+	    if(!comment.content){
+	      notie.alert({type: 3,text: "大侠，一个字都不写没法发表！"});
+	      return;
+	    }
+	    saveComment();
+	  });
+	</script><footer id=footer class=footer><div class=footer-inner><div class=copyright>&copy; 2015 - <span itemprop=copyrightYear>2018</span> <span class=with-love><i class="icon-next-heart fa fa-heart"></i></span> <span class=author itemprop=copyrightHolder>但丁</span></div><div class=powered-by><span id=cnzz_stat_icon_1255577055></span><script src="//s4.cnzz.com/stat.php?id=1255577055&show=pic"></script></div><div class=powered-by>主题 - <a class=theme-link href=javascript:;>NexT.Mist</a></div><div class=powered-by-noline><a href=/issue>网站大事记</a></div><div class=ba-wrapper><div class=ba-info><a target=_blank href="http://www.miitbeian.gov.cn/">浙ICP备16000871-1号</a></div><div class=ba-info><a target=_blank href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005049"><img src=/images/beian.png> 浙公网安备 33010802005049号</a></div></div><script>
+	//将反斜杠替换成下划线,并将中文decode
+    var curUrl = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
+   
+	var statUrl = "https://favlink.cn/visit";
+
+	// 总数
+	$.ajax({
+		url: statUrl,
+		data: {
+			url: "sum"
+		}
+	}).done(function(ret){
+		if(ret.cnt > 1){
+			if($("#totalCnt").length){
+					$("#totalCnt").remove();
+			}
+			$("span.author").append(" | <span id='totalCnt'>自2016.4.12起总访问量：" + ret.cnt + "次");
+		}
+	});
+
+	// 明细
+	if(curUrl !== "_") {
+		$.ajax({
+			url: statUrl,
+			data: {
+				url: curUrl
+			}
+		}).done(function(ret){
+			if(ret.cnt >1){
+				$("#detail_cnt").text(ret.cnt);
+			}	
+		});
+	}
+</script><br></div></footer><div class=back-to-top></div></div><script type=text/javascript src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type=text/javascript src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type=text/javascript src=/vendors/fancybox/source/jquery.fancybox.pack.js></script><script type=text/javascript src="/js/fancy-box.js?v=1.0.0.0"></script><script type=text/javascript src="/js/helpers.js?v=1.0.0.0"></script><script type=text/javascript src=/vendors/velocity/velocity.min.js></script><script type=text/javascript src=/vendors/velocity/velocity.ui.min.js></script><script type=text/javascript src="/js/motion.js?v=1.0.0.0" id=motion.global></script><script type=text/javascript src="/js/bootstrap.scrollspy.js?v=1.0.0.0" id=bootstrap.scrollspy.custom></script><script type=text/javascript id=sidebar.toc.highlight>
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script><script type=text/javascript id=sidebar.nav>
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script><script type=text/javascript src=/js/bootstrap.js></script><script src=/js/custom.js></script></body></html>

@@ -1,0 +1,441 @@
+<!doctype html><html class="theme-next use-motion"><head><meta name=generator content="Hexo 3.8.0"><meta charset=UTF-8><meta http-equiv=Content-Language content=zh-CN><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"><meta http-equiv=Cache-Control content=no-transform><meta http-equiv=Cache-Control content=no-siteapp><meta http-equiv=Cache-Control content="max-age=864000"><meta name=google-site-verification content=4uI2zlyLHcOQWwwZFmW5SB6dj9mlInB8lIUfeM_L8d8><meta name=baidu_union_verify content=9f6bc0068b476b9afebdb405dbd92112><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel=stylesheet type=text/css><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel=stylesheet type=text/css><link href="/css/main.css?v=1.0.0.0" rel=stylesheet type=text/css><link rel=canonical href=https://zhangjh.me><meta name=keywords content=javascript,算法，字符串,><link rel=alternate href=/rss2.xml title=但丁笔记 type=application/atom+xml><link rel="shortcut icon" type=image/x-icon href="/favicon.ico?v=1.0.0.0"><meta name=description content="背景 好记性不如烂笔头。 freecodecamp是一个开源社区项目，提供免费的在线编程学习训练，主要以前端为主。完成相应的内容还可以获得freecodecamp颁发的电子认证，该电子认证在领英上还可以像普通学历一样作为一项个人的教育经历。不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基"><meta name=keywords content=javascript,算法，字符串><meta property=og:type content=article><meta property=og:title content=freecodecamp算法题解系列（一）--初级算法><meta property=og:url content=http://zhangjh.me/2016/02/28/freecodecamp-Basic-Algorithm-Scripting/index.html><meta property=og:site_name content=但丁笔记><meta property=og:description content="背景 好记性不如烂笔头。 freecodecamp是一个开源社区项目，提供免费的在线编程学习训练，主要以前端为主。完成相应的内容还可以获得freecodecamp颁发的电子认证，该电子认证在领英上还可以像普通学历一样作为一项个人的教育经历。不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基"><meta property=og:locale content=zh-Hans><meta property=og:updated_time content=2018-10-19T18:30:07.978Z><meta name=twitter:card content=summary><meta name=twitter:title content=freecodecamp算法题解系列（一）--初级算法><meta name=twitter:description content="背景 好记性不如烂笔头。 freecodecamp是一个开源社区项目，提供免费的在线编程学习训练，主要以前端为主。完成相应的内容还可以获得freecodecamp颁发的电子认证，该电子认证在领英上还可以像普通学历一样作为一项个人的教育经历。不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基"><script type=text/javascript id=hexo.configuration>
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'hide',
+    motion: true
+  };
+</script><script type=text/javascript src="/vendors/jquery/index.js?v=2.1.3"></script><title>freecodecamp算法题解系列（一）--初级算法 | 但丁笔记 --一个理想主义文青的IT自留地</title><style>
+    #msg-tip {
+      background-color: orangered;
+      color: white;
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      z-index: 2;
+      display: none;
+      cursor: pointer;
+    }
+    #msg-modal {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      width: 400px;
+      margin-left: -200px;
+      z-index: 2;
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      padding: 5px 20px;
+      background: white;
+      display: none;
+    }
+    #msg-modal h5 {
+      float: left;
+    }
+    #msg-modal .close {
+      float: right;
+    }
+    #modal-body {
+      clear: both;
+    }
+    #modal-body .item a {
+      color: #219bde;
+    }
+  </style></head><body><div id=msg-tip>❗️你有<span>0</span>条未读消息</div><div id=msg-modal><div id=modal-header><h5>消息列表</h5><span class=close>X</span></div><div id=modal-body></div></div><div class="container one-column page-post-detail"><div class=headband></div><header id=header class=header><div class=header-inner><div class=site-meta><div class=custom-logo-site-title><a href="/" class=brand rel=start><span class=logo-line-before><i></i></span> <span class=site-title>但丁笔记</span> <span class=logo-line-after><i></i></span></a></div><p class=site-subtitle></p></div><div class=site-nav-toggle><button><span class=btn-bar></span> <span class=btn-bar></span> <span class=btn-bar></span></button></div><nav class=site-nav><ul id=menu class="menu menu-left"><li class="menu-item menu-item-home"><a href="/" rel=section><i class="menu-item-icon fa fa-home fa-fw"></i><br>首页</a></li><li class="menu-item menu-item-categories"><a href=/categories rel=section><i class="menu-item-icon fa fa-th fa-fw"></i><br>分类</a></li><li class="menu-item menu-item-about"><a href=/about rel=section><i class="menu-item-icon fa fa-user fa-fw"></i><br>关于</a></li><li class="menu-item menu-item-archives"><a href=/archives rel=section><i class="menu-item-icon fa fa-archive fa-fw"></i><br>归档</a></li><li class="menu-item menu-item-tags"><a href=/tags rel=section><i class="menu-item-icon fa fa-tags fa-fw"></i><br>标签</a></li><li class="menu-item menu-item-search"><a href=/search rel=section><i class="menu-item-icon fa fa-question-circle fa-fw"></i><br>搜索</a></li><li class="menu-item menu-item-commonweal"><a href=/404 rel=section style="font-weight: bold"><i class="menu-item-icon fa fa-heartbeat fa-fw"></i><br>公益404</a></li></ul><div class=site-search><form class=site-search-form target=_blank action=http://zhannei.baidu.com/cse/site><input type=text name=q size=30 placeholder=站内搜索> <input type=hidden name=cc value=zhangjh.me></form></div></nav></div></header><main id=main class=main><div class=main-inner><div id=content class=content><div id=posts class=posts-expand><article class="post post-type-normal" itemscope itemtype=//schema.org/Article><header class=post-header><h1 class=post-title itemprop="name headline">freecodecamp算法题解系列（一）--初级算法</h1><div class=post-meta><span class=post-time>发表于<time itemprop=dateCreated datetime=2016-02-28T17:08:49+08:00 content=2016-02-28>2016-02-28</time></span> <span class=post-category>&nbsp; | &nbsp; 分类于 <span itemprop=about itemscope itemtype=https://schema.org/Thing><a href="/categories/技术人生/" itemprop=url rel=index><span itemprop=name>技术人生</span></a></span></span> <span class=post-visit-count>&nbsp; | &nbsp; <i class="fa fa-eye"></i>&nbsp; <span id=detail_cnt>1</span></span></div></header><div class=post-body><span itemprop=articleBody><h4 id=背景><a href=#背景 class=headerlink title=背景></a>背景</h4><blockquote><p>好记性不如烂笔头。</p></blockquote><p><a href="http://www.freecodecamp.com/" target=_blank rel=noopener>freecodecamp</a>是一个开源社区项目，提供免费的在线编程学习训练，主要以前端为主。完成相应的内容还可以获得freecodecamp颁发的电子认证，该电子认证在领英上还可以像普通学历一样作为一项个人的教育经历。<br>不过，freecodecamp最近频繁的更新导致用户体验反而不如之前好了：现在所有你做过的题目都一股脑的放在了一起没有分类了。。以前会按照HTML、CSS、基础算法、中级算法、高级算法、后端等等分门别类一目了然。这些分类在未做题列表里还是这么分，做过的题也有标记，不过如果点进已经做过的题会发现之前的解决方案已经不再自动展现出来了。总之就是很麻烦，如果你想review的话。<br>如此这般就把做过的算法题作为博文梳理下吧，以便日后review巩固用法。</p><h4 id=Basic-Algorithm><a href=#Basic-Algorithm class=headerlink title="Basic Algorithm"></a>Basic Algorithm</h4><p>本篇梳理基础算法，大多数都很简单，如果你有更好的方法欢迎分享，毕竟我的算法水平真的很烂。。梳理只是自己备忘，如果不幸有大神来看过，板砖轻拍。</p><h6 id=1-Reverse-a-String><a href=#1-Reverse-a-String class=headerlink title="1. Reverse a String"></a>1. <a href=http://www.freecodecamp.com/challenges/reverse-a-string target=_blank rel=noopener>Reverse a String</a></h6><blockquote><p>Reverse the provided string.<br>You may need to turn the string into an array before you can reverse it.<br>Your result must be a string.</p></blockquote><p>将给定字符串逆序输出<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>reverseString</span>(<span class=params>str</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>return</span> str.split(<span class=string>""</span>).reverse().join(<span class=string>""</span>);</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>reverseString(<span class=string>"hello"</span>);</span><br></pre></td></tr></table></figure></p><a id=more></a><h6 id=2-Factorialize-a-Number><a href=#2-Factorialize-a-Number class=headerlink title="2. Factorialize a Number"></a>2. <a href=http://www.freecodecamp.com/challenges/factorialize-a-number target=_blank rel=noopener>Factorialize a Number</a></h6><blockquote><p>Return the factorial of the provided integer.<br>If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.<br>Factorials are often represented with the shorthand notation n!<br>For example: 5! = 1 <em>2</em> 3 <em>4</em> 5 = 120</p></blockquote><p>输出给定数字的阶乘<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>factorialize</span>(<span class=params>num</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>if</span>(num === <span class=number>0</span>)<span class=keyword>return</span> <span class=number>1</span>;</span><br><span class=line>    <span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>return</span> num * factorialize(num - <span class=number>1</span>);</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>factorialize(<span class=number>5</span>);</span><br></pre></td></tr></table></figure></p><h6 id=3-Check-for-Palindromes><a href=#3-Check-for-Palindromes class=headerlink title="3. Check for Palindromes"></a>3. <a href=http://www.freecodecamp.com/challenges/check-for-palindromes target=_blank rel=noopener>Check for Palindromes</a></h6><blockquote><p>Return true if the given string is a palindrome. Otherwise, return false.<br>A palindrome is a word or sentence that’s spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p></blockquote><p>检查回文<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>palindrome</span>(<span class=params>str</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> newStr1 = str.replace(<span class=regexp>/[\s\.,]/g</span>,<span class=string>""</span>).toLowerCase().replace(<span class=regexp>/[\(\)\-_:\\\/]/g</span>,<span class=string>""</span>);</span><br><span class=line></span><br><span class=line>    <span class=keyword>var</span> newStr2 = str.replace(<span class=regexp>/[\s\.,]/g</span>,<span class=string>""</span>).toLowerCase().split(<span class=string>""</span>).reverse().join(<span class=string>""</span>).replace(<span class=regexp>/[\(\)\-_:\\\/]/g</span>,<span class=string>""</span>);</span><br><span class=line>    <span class=keyword>return</span> newStr1 == newStr2;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>palindrome(<span class=string>"eye"</span>);</span><br></pre></td></tr></table></figure></p><p>这题需要注意的是，根据题目给出的tester case以及题干的提示，所有的非字母数字字符（标点，空格以及符号）都不影响回文串的判断。因此使用正则表达式先剔除无效字符再将每个字符逆序后与原串对比。</p><h6 id=4-Find-the-Longest-Word-in-a-String><a href=#4-Find-the-Longest-Word-in-a-String class=headerlink title="4. Find the Longest Word in a String"></a>4. <a href=http://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string target=_blank rel=noopener>Find the Longest Word in a String</a></h6><blockquote><p>Return the length of the longest word in the provided sentence.</p></blockquote><p>找出给定句子中最长的单词。<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>findLongestWord</span>(<span class=params>str</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> tmp = str.split(<span class=string>" "</span>);</span><br><span class=line>    <span class=keyword>var</span> len = <span class=number>0</span>;</span><br><span class=line>    tmp.map(<span class=function><span class=keyword>function</span>(<span class=params>val</span>)</span>&#123;</span><br><span class=line>        len = len &lt; val.length ? val.length : len;</span><br><span class=line>    &#125;);</span><br><span class=line>    <span class=keyword>return</span> len;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>findLongestWord(<span class=string>"The quick brown fox jumped over the lazy dog"</span>);</span><br></pre></td></tr></table></figure></p><h6 id=5-Title-Case-a-Sentence><a href=#5-Title-Case-a-Sentence class=headerlink title="5. Title Case a Sentence"></a>5. <a href=http://www.freecodecamp.com/challenges/title-case-a-sentence target=_blank rel=noopener>Title Case a Sentence</a></h6><blockquote><p>Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.<br>For the purpose of this exercise, you should also capitalize connecting words like “the” and “of”.</p></blockquote><p>将给定词首字母大写，其他的小写。<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>titleCase</span>(<span class=params>str</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> tmp = str.toLowerCase().split(<span class=string>" "</span>);</span><br><span class=line>    <span class=keyword>var</span> res = <span class=string>""</span>;</span><br><span class=line>    tmp.map(<span class=function><span class=keyword>function</span>(<span class=params>val</span>)</span>&#123;</span><br><span class=line>        <span class=keyword>var</span> first = val.charAt(<span class=number>0</span>);</span><br><span class=line>        <span class=keyword>var</span> preNew = val.replace(first,first.toUpperCase());</span><br><span class=line>        res === <span class=literal>undefined</span> ? res = preNew + <span class=string>" "</span> : res += preNew + <span class=string>" "</span>;</span><br><span class=line>    &#125;);</span><br><span class=line>    <span class=keyword>return</span> (res.replace(<span class=regexp>/\s$/</span>,<span class=string>''</span>));</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>titleCase(<span class=string>"I'm a little tea pot"</span>);</span><br><span class=line>titleCase(<span class=string>"sHoRt AnD sToUt"</span>);</span><br><span class=line>titleCase(<span class=string>"HERE IS MY HANDLE HERE IS MY SPOUT"</span>);</span><br></pre></td></tr></table></figure></p><h6 id=6-Return-Largest-Numbers-in-Array><a href=#6-Return-Largest-Numbers-in-Array class=headerlink title="6. Return Largest Numbers in Array"></a>6. <a href=http://www.freecodecamp.com/challenges/return-largest-numbers-in-arrays target=_blank rel=noopener>Return Largest Numbers in Array</a></h6><blockquote><p>Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.</p></blockquote><p>返回数组最大值，当然多维数组要返回数组，否则也太简单了<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>largestOfFour</span>(<span class=params>arr</span>) </span>&#123;</span><br><span class=line><span class=keyword>var</span> ret = [];</span><br><span class=line><span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>,len=arr.length;i&lt;len;i++)&#123;</span><br><span class=line>    <span class=keyword>var</span> max = arr[i][<span class=number>0</span>];</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> j=<span class=number>0</span>,len2=arr[i].length;j&lt;len2;j++)&#123;</span><br><span class=line>        <span class=keyword>if</span>(arr[i][j] &gt; max)&#123;</span><br><span class=line>            max = arr[i][j];</span><br><span class=line>        &#125;</span><br><span class=line>        <span class=keyword>if</span>(j == len2 - <span class=number>1</span>)&#123;</span><br><span class=line>            ret.push(max);</span><br><span class=line>        &#125;</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line><span class=keyword>return</span> (ret);</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>largestOfFour([[<span class=number>13</span>, <span class=number>27</span>, <span class=number>18</span>, <span class=number>26</span>], [<span class=number>4</span>, <span class=number>5</span>, <span class=number>1</span>, <span class=number>3</span>], [<span class=number>32</span>, <span class=number>35</span>, <span class=number>37</span>, <span class=number>39</span>], [<span class=number>1000</span>, <span class=number>1001</span>, <span class=number>857</span>, <span class=number>1</span>]]);</span><br></pre></td></tr></table></figure></p><h6 id=7-Confirm-the-Ending><a href=#7-Confirm-the-Ending class=headerlink title="7. Confirm the Ending"></a>7. <a href=http://www.freecodecamp.com/challenges/confirm-the-ending target=_blank rel=noopener>Confirm the Ending</a></h6><blockquote><p>Check if a string (first argument) ends with the given target string (second argument).</p></blockquote><p>检查给定字串是否以给定目标字串结尾<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>end</span>(<span class=params>str, target</span>) </span>&#123;</span><br><span class=line>    <span class=comment>/*</span></span><br><span class=line><span class=comment>    if(new RegExp(target + "$").test(str))&#123;</span></span><br><span class=line><span class=comment>        return true;</span></span><br><span class=line><span class=comment>    &#125;else return false;</span></span><br><span class=line><span class=comment>    */</span></span><br><span class=line>    <span class=keyword>var</span> targetLen = target.length;</span><br><span class=line>    <span class=keyword>if</span>(str.substr(-targetLen) === target)&#123;</span><br><span class=line>        <span class=keyword>return</span> <span class=literal>true</span>;</span><br><span class=line>    &#125;<span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>return</span> <span class=literal>false</span>;</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line>end(<span class=string>"He has to give me a new name"</span>, <span class=string>"name"</span>);</span><br></pre></td></tr></table></figure></p><h6 id=8-Repeat-a-string-repeat-a-string><a href=#8-Repeat-a-string-repeat-a-string class=headerlink title="8. Repeat a string repeat a string"></a>8. <a href=http://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string target=_blank rel=noopener>Repeat a string repeat a string</a></h6><blockquote><p>Repeat a given string (first argument) num times (second argument). Return an empty string if num is a negative number.</p></blockquote><p>以给定的次数重复指定字串<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>repeat</span>(<span class=params>str, num</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>if</span>(num&lt;<span class=number>0</span>)&#123;</span><br><span class=line>        <span class=keyword>return</span> <span class=string>""</span>;</span><br><span class=line>    &#125;<span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>var</span> tmp=<span class=string>""</span>;</span><br><span class=line>        <span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>;i&lt;num;i++)&#123;</span><br><span class=line>            tmp = tmp + str;</span><br><span class=line>        &#125;</span><br><span class=line>        <span class=keyword>return</span> (tmp);</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line>repeat(<span class=string>"abc"</span>, <span class=number>3</span>);</span><br></pre></td></tr></table></figure></p><h6 id=9-Truncate-a-string><a href=#9-Truncate-a-string class=headerlink title="9. Truncate a string"></a>9. <a href=http://www.freecodecamp.com/challenges/truncate-a-string target=_blank rel=noopener>Truncate a string</a></h6><blockquote><p>Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a “…” ending.</p></blockquote><p>截断字符串<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>truncate</span>(<span class=params>str, num</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>if</span>(str.length &lt;= num)&#123;</span><br><span class=line>        <span class=keyword>return</span> str;</span><br><span class=line>    &#125;<span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>if</span>(num &gt; <span class=number>3</span>)&#123;</span><br><span class=line>            num -= <span class=number>3</span>;</span><br><span class=line>        &#125;</span><br><span class=line>        <span class=keyword>var</span> truncted = str.substr(<span class=number>0</span>,num);</span><br><span class=line></span><br><span class=line>        <span class=keyword>return</span> truncted + <span class=string>"..."</span>;</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>truncate(<span class=string>"A-tisket a-tasket A green and yellow basket"</span>, <span class=number>11</span>);</span><br></pre></td></tr></table></figure></p><h6 id=10-Chunky-Monkey><a href=#10-Chunky-Monkey class=headerlink title="10. Chunky Monkey"></a>10. <a href=http://www.freecodecamp.com/challenges/chunky-monkey target=_blank rel=noopener>Chunky Monkey</a></h6><blockquote><p>Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.</p></blockquote><p>将指定数组按给定长度分割<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>chunk</span>(<span class=params>arr, size</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> res = [];</span><br><span class=line>    <span class=keyword>var</span> tmp = [];</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>,len=arr.length;i&lt;len;i++)&#123;</span><br><span class=line>        tmp.push(arr[i]);</span><br><span class=line>        <span class=keyword>if</span>((i+<span class=number>1</span>)%size === <span class=number>0</span> || i === len - <span class=number>1</span>)&#123;</span><br><span class=line>            res.push(tmp);</span><br><span class=line>            tmp = [];</span><br><span class=line>        &#125;</span><br><span class=line>    &#125;</span><br><span class=line><span class=keyword>return</span> ( res );</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>chunk([<span class=string>"a"</span>, <span class=string>"b"</span>, <span class=string>"c"</span>, <span class=string>"d"</span>], <span class=number>2</span>);</span><br></pre></td></tr></table></figure></p><h6 id=11-Slasher-Flick><a href=#11-Slasher-Flick class=headerlink title="11. Slasher Flick"></a>11. <a href=http://www.freecodecamp.com/challenges/slasher-flick target=_blank rel=noopener>Slasher Flick</a></h6><blockquote><p>Return the remaining elements of an array after chopping off n elements from the head.<br>The head means the beginning of the array, or the zeroth index.</p></blockquote><p>返回指定数组去除某些给定元素后的结果<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>slasher</span>(<span class=params>arr, howMany</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>if</span>(howMany &gt;= arr.length)&#123;</span><br><span class=line>        <span class=keyword>return</span> arr.slice(arr.length);</span><br><span class=line>    &#125;<span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>return</span> arr.slice(-arr.length + howMany);</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>slasher([<span class=number>1</span>, <span class=number>2</span>, <span class=number>3</span>], <span class=number>4</span>);</span><br></pre></td></tr></table></figure></p><h6 id=12-Mutations-http-www-freecodecamp-com-challenges-mutations><a href=#12-Mutations-http-www-freecodecamp-com-challenges-mutations class=headerlink title="12. [Mutations](http://www.freecodecamp.com/challenges/mutations"></a>12. [Mutations](<a href=http://www.freecodecamp.com/challenges/mutations target=_blank rel=noopener>http://www.freecodecamp.com/challenges/mutations</a></h6><blockquote><p>Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.</p></blockquote><p>判断两个给定数组的包含关系<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>mutation</span>(<span class=params>arr</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> first =  arr[<span class=number>0</span>].toLowerCase(),</span><br><span class=line>    sec = arr[<span class=number>1</span>].toLowerCase();</span><br><span class=line>    <span class=keyword>var</span> cnt = <span class=number>0</span>;</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>,len=sec.length;i&lt;len;i++)&#123;</span><br><span class=line>        <span class=keyword>if</span>(first.indexOf(sec[i]) != <span class=number>-1</span>)&#123;</span><br><span class=line>            cnt ++;</span><br><span class=line>        &#125;</span><br><span class=line>    &#125;</span><br><span class=line>    <span class=keyword>if</span>(cnt === len)&#123;</span><br><span class=line>        <span class=keyword>return</span> <span class=literal>true</span>;</span><br><span class=line>    &#125;<span class=keyword>else</span> &#123;</span><br><span class=line>        <span class=keyword>return</span> <span class=literal>false</span>;</span><br><span class=line>    &#125;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>mutation([<span class=string>"hello"</span>, <span class=string>"hey"</span>]);</span><br></pre></td></tr></table></figure></p><h6 id=13-Falsy-Bouncer><a href=#13-Falsy-Bouncer class=headerlink title="13. Falsy Bouncer"></a>13. <a href=http://www.freecodecamp.com/challenges/falsy-bouncer target=_blank rel=noopener>Falsy Bouncer</a></h6><blockquote><p>Remove all falsy values from an array.</p></blockquote><p>去除数组所有假值<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>bouncer</span>(<span class=params>arr</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>return</span> arr.filter(<span class=function><span class=keyword>function</span>(<span class=params>val</span>)</span>&#123;</span><br><span class=line>        <span class=keyword>return</span> val;</span><br><span class=line>    &#125;);</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>bouncer([<span class=number>7</span>, <span class=string>"ate"</span>, <span class=string>""</span>, <span class=literal>false</span>, <span class=number>9</span>]);</span><br><span class=line>bouncer([<span class=literal>false</span>, <span class=literal>null</span>, <span class=number>0</span>, <span class=literal>NaN</span>, <span class=literal>undefined</span>, <span class=string>""</span>]);</span><br></pre></td></tr></table></figure></p><h6 id=14-Seek-and-Destroy><a href=#14-Seek-and-Destroy class=headerlink title="14. Seek and Destroy"></a>14. <a href=http://www.freecodecamp.com/challenges/seek-and-destroy target=_blank rel=noopener>Seek and Destroy</a></h6><blockquote><p>You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.</p></blockquote><p>去除指定数组中包含给定参数的值<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br><span class=line>18</span><br><span class=line>19</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>destroyer</span>(<span class=params>arr</span>) </span>&#123;</span><br><span class=line>    <span class=keyword>var</span> tmp = <span class=built_in>arguments</span>[<span class=number>0</span>];</span><br><span class=line>    <span class=keyword>var</span> newArr = [];</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>,len = tmp.length;i&lt;len;i++)&#123;</span><br><span class=line>        <span class=keyword>var</span> flag = <span class=literal>false</span>;</span><br><span class=line>        <span class=keyword>for</span>(<span class=keyword>var</span> j=<span class=number>0</span>,len2 = <span class=built_in>arguments</span>.length - <span class=number>1</span>;j&lt;=len2;j++)&#123;</span><br><span class=line>            <span class=keyword>if</span>(tmp[i] == <span class=built_in>arguments</span>[j]) &#123;</span><br><span class=line>                flag = <span class=literal>true</span>;</span><br><span class=line>            &#125;</span><br><span class=line>        &#125;</span><br><span class=line>        <span class=keyword>if</span>(!flag)&#123;</span><br><span class=line>            newArr.push(tmp[i]);</span><br><span class=line>        &#125;</span><br><span class=line>    &#125;</span><br><span class=line></span><br><span class=line>    <span class=keyword>return</span> newArr;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>destroyer([<span class=number>1</span>, <span class=number>2</span>, <span class=number>3</span>, <span class=number>1</span>, <span class=number>2</span>, <span class=number>3</span>], <span class=number>2</span>, <span class=number>3</span>);</span><br></pre></td></tr></table></figure></p><h6 id=15-Where-do-I-belong><a href=#15-Where-do-I-belong class=headerlink title="15. Where do I belong"></a>15. <a href=http://www.freecodecamp.com/challenges/where-do-i-belong target=_blank rel=noopener>Where do I belong</a></h6><blockquote><p>Return the lowest index at which a value (second argument) should be inserted into an array (first argument) once it has been sorted.</p></blockquote><p>查找给定参数待插入指定数组的索引位置<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br><span class=line>18</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>where</span>(<span class=params>arr, num</span>) </span>&#123;</span><br><span class=line>    <span class=comment>// Find my place in this sorted array.</span></span><br><span class=line>    <span class=comment>//1，先排序</span></span><br><span class=line>    <span class=comment>//2.找到插入位置</span></span><br><span class=line>    <span class=comment>//3.注意排序规则</span></span><br><span class=line>    <span class=comment>//4.注意边界条件</span></span><br><span class=line>    <span class=keyword>var</span> arr = arr.sort(<span class=function><span class=keyword>function</span>(<span class=params>a,b</span>)</span>&#123;</span><br><span class=line>        <span class=keyword>return</span> a - b;</span><br><span class=line>    &#125;);</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> i=<span class=number>0</span>,len=arr.length;i&lt;len;i++)&#123;</span><br><span class=line>        <span class=keyword>if</span>(arr[i] &lt; num)<span class=keyword>continue</span>;</span><br><span class=line>        <span class=keyword>else</span> <span class=keyword>return</span> i;</span><br><span class=line>    &#125;</span><br><span class=line>    <span class=keyword>return</span> arr.length;</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line>where([<span class=number>40</span>, <span class=number>60</span>], <span class=number>50</span>);</span><br><span class=line>where([<span class=number>5</span>, <span class=number>3</span>, <span class=number>20</span>, <span class=number>3</span>], <span class=number>5</span>);</span><br></pre></td></tr></table></figure></p><h6 id=16-Caesars-Cipher><a href=#16-Caesars-Cipher class=headerlink title="16. Caesars Cipher"></a>16. <a href=http://www.freecodecamp.com/challenges/caesars-cipher target=_blank rel=noopener>Caesars Cipher</a></h6><blockquote><p>One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.</p></blockquote><p>不多解释，实现凯撒密码解密加密的字符串<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br><span class=line>18</span><br><span class=line>19</span><br><span class=line>20</span><br><span class=line>21</span><br><span class=line>22</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>rot13</span>(<span class=params>str</span>) </span>&#123; </span><br><span class=line>    <span class=comment>/*</span></span><br><span class=line><span class=comment>    var inStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";</span></span><br><span class=line><span class=comment>    var outStr = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";</span></span><br><span class=line><span class=comment>    var ret = [];</span></span><br><span class=line><span class=comment>    var i=0,j=0,len = str.length,leng = outStr.length;</span></span><br><span class=line><span class=comment>    for(i=0;i&lt;len;i++)&#123;</span></span><br><span class=line><span class=comment>        for(j=0;j&lt;leng;j++)&#123;</span></span><br><span class=line><span class=comment>            if(outStr[j] === str[i])&#123;</span></span><br><span class=line><span class=comment>                ret.push(inStr[j]);</span></span><br><span class=line><span class=comment>                break;</span></span><br><span class=line><span class=comment>            &#125;</span></span><br><span class=line><span class=comment>        &#125;</span></span><br><span class=line><span class=comment>        if(j === leng)&#123;</span></span><br><span class=line><span class=comment>            ret.push(str[i]);</span></span><br><span class=line><span class=comment>        &#125;</span></span><br><span class=line><span class=comment>    &#125;</span></span><br><span class=line><span class=comment>    return ret.join("");</span></span><br><span class=line><span class=comment>    */</span></span><br><span class=line>&#125;</span><br><span class=line><span class=comment>// Change the inputs below to test</span></span><br><span class=line>rot13(<span class=string>"SERR PBQR PNZC"</span>);</span><br></pre></td></tr></table></figure></p><p>以上方法采用了穷举密码对，看起来有点”蠢笨”，但其实是很好的一种方法。只是用了穷举映射但还是避免不了要循环查找相应地性能并没有多少提升。<br>按照题干提示的采用<code>String API</code>的方式，可以如下解决：<br><figure class="highlight js"><table><tr><td class=gutter><pre><span class=line>1</span><br><span class=line>2</span><br><span class=line>3</span><br><span class=line>4</span><br><span class=line>5</span><br><span class=line>6</span><br><span class=line>7</span><br><span class=line>8</span><br><span class=line>9</span><br><span class=line>10</span><br><span class=line>11</span><br><span class=line>12</span><br><span class=line>13</span><br><span class=line>14</span><br><span class=line>15</span><br><span class=line>16</span><br><span class=line>17</span><br></pre></td><td class=code><pre><span class=line><span class=function><span class=keyword>function</span> <span class=title>rot13</span>(<span class=params>str</span>) </span>&#123; <span class=comment>// LBH QVQ VG!</span></span><br><span class=line>    <span class=keyword>var</span> ret = [];</span><br><span class=line>    <span class=keyword>for</span>(<span class=keyword>var</span> i = <span class=number>0</span>,len=str.length;i&lt;len;i++)&#123;</span><br><span class=line>        <span class=keyword>if</span>(<span class=regexp>/\w/</span>.test(str[i])) &#123;       </span><br><span class=line>            <span class=keyword>var</span> t = str[i].charCodeAt() + <span class=number>13</span></span><br><span class=line>            <span class=comment>//根据题干的要求，密文的范围在大写字母内，90为"Z"的ASCII码，13为凯撒13密码的加密方法：平移13位</span></span><br><span class=line>            t = t &gt; <span class=number>90</span> ? (str[i].charCodeAt() - <span class=number>13</span> : t; </span><br><span class=line>            ret.push(<span class=built_in>String</span>.fromCharCode(t));</span><br><span class=line>        &#125;<span class=keyword>else</span>&#123;</span><br><span class=line>            ret.push(str[i]);</span><br><span class=line>        &#125;</span><br><span class=line>    &#125;</span><br><span class=line>    <span class=keyword>return</span> ret.join(<span class=string>""</span>);</span><br><span class=line>&#125;</span><br><span class=line></span><br><span class=line><span class=comment>// Change the inputs below to test</span></span><br><span class=line><span class=built_in>console</span>.log(rot13(<span class=string>"SERR PBQR PNZC"</span>));</span><br></pre></td></tr></table></figure></p><p>初级算法都比较简单，基本上利用String的API就解决了。</p></span></div><div><div id=rewardTip>赞 赏</div><div id=dsWrapper><p>如果你觉得本文还不错的话也可以赞赏一点~</p><img src=/images/zfb.png></div></div><footer class=post-footer><div class=post-tags><a href="/tags/javascript/" rel=tag>#javascript</a> <a href="/tags/算法，字符串/" rel=tag>#算法，字符串</a></div><div class=post-nav><div class="post-nav-next post-nav-item"><a href="/2016/02/21/FormData/" rel=next title="使用HTML5 FormData上传文件"><i class="fa fa-chevron-left"></i> 使用HTML5 FormData上传文件</a></div><div class="post-nav-prev post-nav-item"><a href="/2016/03/04/css-learning/" rel=prev title=[转载]史上最全CSS学习资料大全>[转载]史上最全CSS学习资料大全 <i class="fa fa-chevron-right"></i></a></div></div></footer><div id=alipay><img src=//wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg></div></article><hr>推荐书目：<div id=recommendBooks><a rel=nofollow target=_blank href="//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlodAREHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhQKEQRVBAJQXk83JxklRnV2YVN%2BCU1eSQYlHTpvXHd8NRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQBEwRQElgRMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGVBNYFgINXhBHBg%3D%3D">JavaScript框架设计</a><script async>
+	var books_links = [];
+	var books_name = ["JavaScript编程实战","JavaScript设计模式","编写可维护的JavaScript","JavaScript框架设计","HTML5和JavaScript Web应用开发","网站设计项目化教程","Web前端开发案例教程","JavaScript面向对象精要","PHP.MySQL.JavaScript和CSS","JavaScript面向对象编程指南"];
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlIXChYHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhwAGgNVBAJQXk83UWAzTAsMfyt5UhJGU3hWSEVdBERaJRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQCEAZVGlgTMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGXBlTEQINXhBHBg%3D%3D");	
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG18QBRAPVSsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUGFwBXE1sKW1dbCCsvFwdCeAwTAndKFVozYjx3WhYOAVMdGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwddGFIVCxs3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUR5cFwoSGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUGFsTARIEXCsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhYCFARVGFIKW1dbCCslZnhsBABwLXYFSnsHRSFvClYOCEg7GQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwddEl4XABM3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMEVR1YFQEbGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCGwZdGlodAREHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSDlQTWhQKEQRVBAJQXk83JxklRnV2YVN%2BCU1eSQYlHTpvXHd8NRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNRwBEwRSK14VCxMOVRpTFTISAlIcXBQBEwRQElgRMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVscAxoGVBNYFgINXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUGVgSAhQOVCsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhcBFQdTEloKW1dbCCtSYXFQQShcAnZaTkMtWz1CWllaMlorGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRVGlgUChs3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMFVhxbEwsTGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG1wVBxQPXSsfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUFEgJTE1MKW1dbCCsCFEoReg5cOHdbTm8PGxgUAnFyAUQdGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRVGVgcCxQ3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUhteEwoaGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5bEQMWDlwaWSUCEwZUG14TBRQBVisfSlpMWGVCHlBDGRlLQx5BXg1cAAQJS14MB1QaWhUHFABTHVgKW1dbCCslXWBwRzFDBHBfSk40clNxY0dwPn8dGQ4iAlUdWRwFFwNXK1sUAxMGVBlSFgUiNzRpa1RsGwRUGFwlBxIOVBJbFAoSN1UeXBIFEwRWG1odBhU3Ug%3D%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsUAxMHUB1cEwQRGAxeB0g%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCFQRWGVoUAxYHZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSAFYYWRQDEwNVBAJQXk83T0NbRUlNcyZ4CBJqcH0LYwNcAmVPAxdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEQNUE1oUMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsSAREFVBpaEQINXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCEgFcHFwRAREEZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSB1MSXBIGEQRWBAJQXk83CRxBTHxsdwF%2BDF1CdHcXZw4WWWd6ExdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEQ5WE1MdMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsVBBsAUh9YFgENXhBHBg%3D%3D");
+	books_links.push("//union.click.jd.com/jdc?e=&p=AyIHZR5aEwMaAlIaXyUCFw5RElgVAxsPZV8ETVxNNwxeHlQJDBkNXg9JHUlSSkkFSRwSAlwfUhYCEw5dBAJQXk83IEsAS2pSY1x%2BM1EYUEYDTw1VWUAdNRdXJQcSAVcSXBAGEDdVGloUAxMFXBhcJTJzdWVaNREHEw5cK14VCxMOVRpTFTISAlIcXBQBEAJUGlsWMhU%3D&t=W1dCFBBFC1pXUwkEAEAdQFkJBVsQCxYOVhtaHAoNXhBHBg%3D%3D");
+	var content = "";
+	var w = document.body.clientWidth,
+		h = document.body.clientHeight;
+	var len = books_links.length;
+	if(w < h){
+		len = 8;
+	}
+	for(var i=0;i<len;i++){
+		content += "<a target='_blank' rel='nofollow' href='" + books_links[i] +  "'>" + books_name[i] +"</a>";
+	}
+	
+	$("#recommendBooks").html(content);
+</script></div><script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js></script><script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9562106186826042",
+    enable_page_level_ads: true
+  });
+</script><hr><div id=bottom_ads><div id=jd_channel><script>
+		var w = document.body.clientWidth,
+			h = document.body.clientHeight;
+		var jd_union_euid="";
+		var w_jd_union_pid = [418069133,418076177,418077094],
+			h_jd_union_pid = [418082137,418074315,418080094];
+		if(w > h){
+			//宽屏广告
+			var rand = Math.floor(Math.random() * w_jd_union_pid.length);
+			var jd_union_pid = w_jd_union_pid[rand];
+		}else {
+			//窄屏广告
+			var rand = Math.floor(Math.random() * h_jd_union_pid.length);
+			var jd_union_pid = h_jd_union_pid[rand];
+		}
+	</script><script src=//ads.union.jd.com/static/js/union.js></script></div></div><div class=post-spread><div class=bdsharebuttonbox><a href=# class=bds_more data-cmd=more></a><a href=# class=bds_qzone data-cmd=qzone title=分享到QQ空间></a><a href=# class=bds_tsina data-cmd=tsina title=分享到新浪微博></a><a href=# class=bds_tqq data-cmd=tqq title=分享到腾讯微博></a><a href=# class=bds_renren data-cmd=renren title=分享到人人网></a><a href=# class=bds_weixin data-cmd=weixin title=分享到微信></a></div><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","tsina","weixin","renren","tieba","douban","sqq","youdao","fbook","twi","linkedin","evernotecn","copy"],"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div></div></div></div><div class=sidebar-toggle><div class=sidebar-toggle-line-wrap><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id=sidebar class=sidebar><div class=sidebar-inner><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target=post-toc-wrap>文章目录</li><li class=sidebar-nav-overview data-target=site-overview>站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop=author itemscope itemtype=//schema.org/Person><img class=site-author-image src=/images/default_avatar.jpg alt=但丁 itemprop=image><p class=site-author-name itemprop=name>但丁</p></div><p class="site-description motion-element" itemprop=description>一个伪文青，一个low geek 孤单的坚持码字</p><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href=/archives><span class=site-state-item-count>80</span> <span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories><span class=site-state-item-count>5</span> <span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags><span class=site-state-item-count>130</span> <span class=site-state-item-name>标签</span></a></div></nav><div class="feed-link motion-element"><a href=/rss2.xml rel=alternate><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class=links-of-author-item><a href=https://github.com/zhangjh target=_blank><i class="fa fa-globe"></i> github</a></span> <span class=links-of-author-item><a href=http://weibo.com/jhspider target=_blank><i class="fa fa-globe"></i> weibo</a></span> <span class=links-of-author-item><a href=http://douban.com/people/48165389 target=_blank><i class="fa fa-globe"></i> douban</a></span></div><div class="cc-license motion-element" itemprop=license><a href=//creativecommons.org/licenses/by-nc-sa/4.0 class=cc-opacity target=_blank><img src=/images/cc-by-nc-sa.svg alt="Creative Commons"></a></div><div class="links-of-author motion-element"></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc-indicator-top post-toc-indicator"><i class="fa fa-angle-double-up"></i></div><div class=post-toc><div class=post-toc-content><ol class=nav><li class="nav-item nav-level-4"><a class=nav-link href=#背景><span class=nav-number>1.</span> <span class=nav-text>背景</span></a></li><li class="nav-item nav-level-4"><a class=nav-link href=#Basic-Algorithm><span class=nav-number>2.</span> <span class=nav-text>Basic Algorithm</span></a><ol class=nav-child><li class="nav-item nav-level-6"><a class=nav-link href=#1-Reverse-a-String><span class=nav-number>2.0.1.</span> <span class=nav-text>1. Reverse a String</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#2-Factorialize-a-Number><span class=nav-number>2.0.2.</span> <span class=nav-text>2. Factorialize a Number</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#3-Check-for-Palindromes><span class=nav-number>2.0.3.</span> <span class=nav-text>3. Check for Palindromes</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#4-Find-the-Longest-Word-in-a-String><span class=nav-number>2.0.4.</span> <span class=nav-text>4. Find the Longest Word in a String</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#5-Title-Case-a-Sentence><span class=nav-number>2.0.5.</span> <span class=nav-text>5. Title Case a Sentence</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#6-Return-Largest-Numbers-in-Array><span class=nav-number>2.0.6.</span> <span class=nav-text>6. Return Largest Numbers in Array</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#7-Confirm-the-Ending><span class=nav-number>2.0.7.</span> <span class=nav-text>7. Confirm the Ending</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#8-Repeat-a-string-repeat-a-string><span class=nav-number>2.0.8.</span> <span class=nav-text>8. Repeat a string repeat a string</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#9-Truncate-a-string><span class=nav-number>2.0.9.</span> <span class=nav-text>9. Truncate a string</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#10-Chunky-Monkey><span class=nav-number>2.0.10.</span> <span class=nav-text>10. Chunky Monkey</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#11-Slasher-Flick><span class=nav-number>2.0.11.</span> <span class=nav-text>11. Slasher Flick</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#12-Mutations-http-www-freecodecamp-com-challenges-mutations><span class=nav-number>2.0.12.</span> <span class=nav-text>12. [Mutations](http://www.freecodecamp.com/challenges/mutations</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#13-Falsy-Bouncer><span class=nav-number>2.0.13.</span> <span class=nav-text>13. Falsy Bouncer</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#14-Seek-and-Destroy><span class=nav-number>2.0.14.</span> <span class=nav-text>14. Seek and Destroy</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#15-Where-do-I-belong><span class=nav-number>2.0.15.</span> <span class=nav-text>15. Where do I belong</span></a></li><li class="nav-item nav-level-6"><a class=nav-link href=#16-Caesars-Cipher><span class=nav-number>2.0.16.</span> <span class=nav-text>16. Caesars Cipher</span></a></li></ol></li></ol></div></div><div class="post-toc-indicator-bottom post-toc-indicator"><i class="fa fa-angle-double-down"></i></div></section></div></aside></main><div class=login-modal><div class=modal-header><h4>我要评论</h4></div><div class=modal-body><div><span>名 号:</span> <input type=text name=name placeholder=大侠请留名></div><div><span>邮 箱:</span> <input type=text name=email placeholder=邮箱必填，以便收取回复提醒></div><div><span>个人网址:</span> <input type=text name=website placeholder=选填，如果你也有博客，可以留个网址，以http开头></div></div><div class=modal-footer><div style="float: right;" class=remember><label>记住个人信息？</label> <input type=checkbox></div><div><button class=save>保存</button> <button class=cancel>取消</button></div></div></div><div id=comment-wrap><div class=comment-header><div class="header-login border">登录</div><div class="header-user border"></div></div><div class=comment-body id=comment-text><textarea class=border placeholder=大侠说点什么吧~></textarea></div><div class=comment-footer><button class=commit>评论一番</button></div><div class=comment-list><div class=comment-list-header><div class=comment-title>评论</div><div class=comment-list-border></div><div class=comment-sum><span>0</span>条评论</div></div><div class=comment-content><div class=comment-empty>还没有评论，大侠坐个沙发？</div></div></div></div><script src=https://unpkg.com/notie></script><script>
+	  let comment = {};
+	  const url = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
+    comment.url = url;
+
+    function parseTime(timeStr){
+      const time = new Date(timeStr);
+      const year = time.getFullYear();
+      const month = time.getMonth() + 1;
+      const day = time.getDate();
+      const hour = time.getHours();
+      const minute = time.getMinutes();
+      return year + "年" + month + "月" + day + "日 " + hour + ":" + minute;
+    }
+
+	  function loginModalShow(){
+	    $(".login-modal").show();
+	  }
+
+	  function loginModalHide(){
+	    $(".login-modal").hide();
+	  }
+
+	  function loginBtnShow(){
+	    $(".header-login").show();
+	    $(".header-user").hide();
+	  }
+
+	  function loginBtnHide(){
+      $(".header-login").hide();
+      $(".header-user").show();
+    }
+
+    function commentEmptyShow(){
+      $(".comment-empty").show();
+    }
+
+    function commentEmptyHide(){
+      $(".comment-empty").hide();
+    }
+
+	  function check(){
+	    comment.name = $(".modal-body input[name='name']").val();
+	    comment.email = $(".modal-body input[name='email']").val();
+	    if(!comment.name){
+	      notie.alert({type: 3,text: "大侠请留名！"});
+	      return false;
+	    }
+	    if(!comment.email){
+        notie.alert({type: 3,text: "邮箱必填！"});
+        return false;
+      }
+		return true;
+	  }
+
+	  function saveComment(){
+	    $.ajax({
+	      url: "https://favlink.cn/comment/save",
+	      type: "post",
+	      data: comment
+	    }).done(function(ret){
+	      if(ret.status){
+	         // 刷新评论
+	         notie.alert({type: 1,text: "发表成功."});
+	         getComment(comment.url);
+	      }else {
+	        notie.alert({type: 3,text: ret.errorMsg});
+	      }
+	    });
+	  }
+
+	  function getComment(url){
+	    $.ajax({
+	      url: "https://favlink.cn/comment/queryList",
+	      data: {
+	        url: url
+	      }
+	    }).done(function(ret){
+	      if(ret.status){
+	        const total = ret.total;
+	        if(total === 0){
+	          commentEmptyShow();
+	          return;
+	        }else {
+	          commentEmptyHide();
+	          $(".comment-sum span").text(total);
+	        }
+	        const commentList = ret.data;
+	        let html = "";
+          for(const item of commentList){
+            let contentItem = "<div class='content-item'>";
+            contentItem += "<div class='user-info'><span class='user' data-website='" + item.website + "'>" + item.name + "</span>"
+                        + "<span class='time'>" + parseTime(item.gmtCreate) + "</span></div>";
+            contentItem += "<div class='content'>" + item.content + "</div>";
+            contentItem += "<div class='operate' data-id='" + item["_id"] + "' data-content='" + item.content + "' data-name='" + item.name + "'>回复</div></div>";
+            html += contentItem;
+          }
+          $(".comment-content").html(html);
+          // 注册用户名点击事件
+          $(".content-item .user").click(function(){
+            const website = $(this).attr("data-website");
+            if(website != "undefined"){
+              window.open(website);
+            }
+          });
+          // 注册回复点击事件
+          $(".content-item .operate").click(function(){
+            const replyId = $(this).attr("data-id");
+            const content = $(this).attr("data-content");
+            const name = $(this).attr("data-name");
+            comment.replyId = replyId;
+            $(".comment-body textarea").val("<blockquote><pre>引用" + name + "的发言:</pre>" + content + "</blockquote>");
+            window.location.href = "#comment-text";
+          });
+	      }
+	    });
+	  }
+
+    // 获取评论
+    getComment(comment.url);
+
+	  // 获取用户信息
+	  const localStorage = window.localStorage;
+	  const userInfo = localStorage.getItem("userInfo");
+	  if(!userInfo){
+	    loginBtnShow();
+	  }else {
+	    // 解析用户信息
+      const userInfoJson = JSON.parse(userInfo);
+      comment.name = userInfoJson.name;
+      comment.email = userInfoJson.email;
+      comment.website = userInfoJson.website;
+      //$(".modal-body input[name='name']").val(userInfoJson.name);
+      //$(".modal-body input[name='email']").val(userInfoJson.email);
+      //$(".modal-body input[name='website']").val(userInfoJson.website);
+      $(".header-user").text(comment.name);
+      loginBtnHide();
+	  }
+	  $(".header-login").click(loginModalShow);
+	  $(".modal-footer .cancel").click(loginModalHide);
+	  $(".modal-footer .save").click(function(){
+      if(!check()){
+		return;
+	  }
+      // 保存数据
+      let website = $(".modal-body input[name='website']").val();
+      if(!/^http/.test(website)){
+        website = "//" + website;
+      }
+      comment.website = website;
+      loginModalHide();
+      $(".header-user").text(comment.name);
+      loginBtnHide();
+      if($(".remember input[type='checkbox']").is(":checked")){
+        // 记住个人信息
+        localStorage.setItem("userInfo",JSON.stringify(comment));
+      }
+	  });
+	  $(".commit").click(function(){
+	    comment.content = $(".comment-body textarea").val();
+	    if(!comment.content){
+	      notie.alert({type: 3,text: "大侠，一个字都不写没法发表！"});
+	      return;
+	    }
+	    saveComment();
+	  });
+	</script><footer id=footer class=footer><div class=footer-inner><div class=copyright>&copy; 2015 - <span itemprop=copyrightYear>2018</span> <span class=with-love><i class="icon-next-heart fa fa-heart"></i></span> <span class=author itemprop=copyrightHolder>但丁</span></div><div class=powered-by><span id=cnzz_stat_icon_1255577055></span><script src="//s4.cnzz.com/stat.php?id=1255577055&show=pic"></script></div><div class=powered-by>主题 - <a class=theme-link href=javascript:;>NexT.Mist</a></div><div class=powered-by-noline><a href=/issue>网站大事记</a></div><div class=ba-wrapper><div class=ba-info><a target=_blank href="http://www.miitbeian.gov.cn/">浙ICP备16000871-1号</a></div><div class=ba-info><a target=_blank href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005049"><img src=/images/beian.png> 浙公网安备 33010802005049号</a></div></div><script>
+	//将反斜杠替换成下划线,并将中文decode
+    var curUrl = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));
+   
+	var statUrl = "https://favlink.cn/visit";
+
+	// 总数
+	$.ajax({
+		url: statUrl,
+		data: {
+			url: "sum"
+		}
+	}).done(function(ret){
+		if(ret.cnt > 1){
+			if($("#totalCnt").length){
+					$("#totalCnt").remove();
+			}
+			$("span.author").append(" | <span id='totalCnt'>自2016.4.12起总访问量：" + ret.cnt + "次");
+		}
+	});
+
+	// 明细
+	if(curUrl !== "_") {
+		$.ajax({
+			url: statUrl,
+			data: {
+				url: curUrl
+			}
+		}).done(function(ret){
+			if(ret.cnt >1){
+				$("#detail_cnt").text(ret.cnt);
+			}	
+		});
+	}
+</script><br></div></footer><div class=back-to-top></div></div><script type=text/javascript src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type=text/javascript src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type=text/javascript src=/vendors/fancybox/source/jquery.fancybox.pack.js></script><script type=text/javascript src="/js/fancy-box.js?v=1.0.0.0"></script><script type=text/javascript src="/js/helpers.js?v=1.0.0.0"></script><script type=text/javascript src=/vendors/velocity/velocity.min.js></script><script type=text/javascript src=/vendors/velocity/velocity.ui.min.js></script><script type=text/javascript src="/js/motion.js?v=1.0.0.0" id=motion.global></script><script type=text/javascript src="/js/bootstrap.scrollspy.js?v=1.0.0.0" id=bootstrap.scrollspy.custom></script><script type=text/javascript id=sidebar.toc.highlight>
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script><script type=text/javascript id=sidebar.nav>
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script><script type=text/javascript src=/js/bootstrap.js></script><script src=/js/custom.js></script></body></html>
