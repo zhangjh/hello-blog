@@ -3,3 +3,4 @@ public
 *.log
 *.json
 .deploy_git
+git.sh
