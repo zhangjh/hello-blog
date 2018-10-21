@@ -1,5 +1,0 @@
-User-agent:* 
-Disallow: /%E7%BB%93%E5%A9%9A%E7%85%A7.html
-Disallow: /结婚照.html
-Disallow: /2015/12/09/wedding/
-Disallow: /about
