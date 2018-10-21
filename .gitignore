@@ -1,0 +1,5 @@
+node_modules
+public
+*.log
+*.json
+.deploy_git
