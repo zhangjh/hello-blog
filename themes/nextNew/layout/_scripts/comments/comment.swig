@@ -126,6 +126,7 @@
         notie.alert({type: 3,text: "邮箱必填！"});
         return false;
       }
+		return true;
 	  }
 
 	  function saveComment(){
