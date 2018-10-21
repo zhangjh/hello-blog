@@ -5,9 +5,14 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" hrefp="https://amazon.cn/gp/product/B00U6AAFHW/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dante-23&creative=3200&linkCode=as2&creativeASIN=B00U6AAFHW&linkId=19b04f058e15751e3c064cbb61b8ae76">
+	<img src="https://img3.doubanio.com/lpic/s6175071.jpg" />
+</a>
+> 非常赞非常实用的一本SQL书，实乃程序员之居家旅行必备。看完数据库编程基本没啥大问题了。
+
 <a class="fancybox" rel="group" href="https://amzn.to/2Px8cX1">
 	<img src="https://img3.doubanio.com/lpic/s3042670.jpg" />
-<a>
+</a>
 > 很不错的哲学入门书，以后我会推荐给我儿子在十几岁的时候看。写作也很有趣味，写了一个类似《盗梦空间》的书中书。哲学思辨也很有启发，但即便我们都是“缸中之脑”又能如何呢？现实生活中有这么多的问题需要去解决，追寻人生的意义什么的只能在偶尔的闲暇中去发问一下。也许我们穷其一生也不能活明白，也许人生哪有什么意义，只不过都是一个基因传承的载体罢了。
 
 <a class="fancybox" rel="group" href="https://amzn.to/2P22egC">
