@@ -42,6 +42,7 @@ function run(){
 	nohup hexo s &
 }
 
+. ~/.bash_profile
 build
 #sync myblog
 #upload myblog $1
