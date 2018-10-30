@@ -5,6 +5,11 @@ tags: 阅读
 categories: 阅历
 ---
 # 已读
+<a class="fancybox" rel="group" href="https://amzn.to/2PwCX1B">
+	<img src="https://img3.doubanio.com/lpic/s27313762.jpg" />
+</a>
+> 还不错，内容比较详细，让我这个装修小白多少入了点门了。
+
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B00U6AAFHW/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=dante-23&creative=3200&linkCode=as2&creativeASIN=B00U6AAFHW&linkId=19b04f058e15751e3c064cbb61b8ae76">
 	<img src="https://img3.doubanio.com/lpic/s6175071.jpg" />
 </a>
