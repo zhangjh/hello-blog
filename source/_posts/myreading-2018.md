@@ -8,7 +8,7 @@ categories: 阅历
 <a class="fancybox" rel="group" href="https://amazon.cn/gp/product/B00BTCMI76/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00BTCMI76&linkCode=as2&tag=dante-23&linkId=c4b0c51ecf1a28e6431f93d7328ac991">
 	<img src="https://img3.doubanio.com/lpic/s7015915.jpg" />
 </a>
-> 作为一个Java经验不太丰富的Javaer，这本书给我的提点还是不少的。就是花了比较长的时间断续看完的，很难受收获有多深刻，许多点还是看完忘记了，需要多看几遍。
+> 作为一个Java经验不太丰富的Javaer，这本书给我的提点还是不少的。就是花了比较长的时间断续看完的，很难说收获有多深刻，许多点还是看完忘记了，需要多看几遍。
 
 <a class="fancybox" rel="group" href="https://amzn.to/2PwCX1B">
 	<img src="https://img3.doubanio.com/lpic/s27313762.jpg" />
