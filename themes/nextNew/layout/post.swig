@@ -20,9 +20,7 @@
 		{% include '_scripts/ads/jd_recommend_books.swig' %}
 	</div>
 
-	{# 停止google广告
-		{% include '_scripts/ads/googleads.swig' %}
-	#}
+	{% include '_scripts/ads/googleads.swig' %}
 
 	<hr>
 	<div id="bottom_ads">

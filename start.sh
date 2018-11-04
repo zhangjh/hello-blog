@@ -1,6 +1,10 @@
 #!/bin/bash
 #source ~/.bash_profile
 
+function install(){
+	npm i -d
+}
+
 function build(){
     hexo clean
 	hexo g 
@@ -42,6 +46,8 @@ function run(){
 	nohup hexo s &
 }
 
+. ~/.bash_profile
+install
 build
 #sync myblog
 #upload myblog $1
