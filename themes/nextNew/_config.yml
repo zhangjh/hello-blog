@@ -176,13 +176,16 @@ mathjax:
 #disqus_shortname:
 
 # Share
-#jiathis:
+jiathis: false
 
 # Share
-#duoshuo_share: true
+duoshuo_share: false
 
 # Share
-baidu_share: true
+baidu_share: false
+
+# Share.js
+share_js: true
 
 # changyan
 changyan: false

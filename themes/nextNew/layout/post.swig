@@ -37,6 +37,8 @@
         {% include '_partials/share/duoshuo_share.swig' %}
       {% elseif theme.baidu_share %}
         {% include '_partials/share/baidu_share.swig' %}
+      {% elseif theme.share_js %}
+        {% include '_partials/share/share_js.swig' %}
       {% endif %}
     </div>
   </div>
