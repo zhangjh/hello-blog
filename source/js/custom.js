@@ -10,27 +10,6 @@
 	});
 })();
 
-// 域名切换
-(function(){
-    var html = '<div style="width:600px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-300px;margin-top:-300px;border:1px solid darkblue;border-radius:6px;padding:20px"><div>本站域名后续将切换为<a href="http://zhangjh.me"><span style="color:red;font-weight:bold;font-size:1.2em;font-style:oblique;">zhangjh.me</span></a></div>' + 
-               '<div><span id="timer">3</span>秒后自动跳转</div></div>';
-
-    var location = window.location.host;
-    var pathname = window.location.pathname;
-	if(location.indexOf("5941740") !== -1){
-        $("body").html(html);
-        var cnt = 2;
-        var timer = setInterval(function(){
-           $("#timer").text(cnt--);
-		   if(cnt === 0){
-              clearInterval(timer);
-              window.location.href = "http://zhangjh.me" + pathname;
-           }
-        },1000);
-    }
-
-})();
-
 (function(){
 	var style = "font-size: 1.5em;color: dodgerblue";
 	console.info("%c既然这么有缘，少年你想进阿里吗？",style);
@@ -38,21 +17,17 @@
 	console.info("%c简历请发送至：jihong.zjh@alibaba-inc.com，邮件标题请注明来自Dante Notes。",style);
 })();
 
-// (function(){
-// 	function isPhone(){
-// 		var userAgent = navigator.userAgent.toLowerCase();
-// 		if(userAgent.indexOf("android") != -1 || userAgent.indexOf("linux") != -1 ||
-// 			userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1 ||
-// 			userAgent.indexOf("ipod") != -1 /*|| userAgent.indexOf("micromessenger") != -1*/){
-// 			return true;
-// 		}
-// 		return false;
-// 	}
-//
-// 	if(isPhone()){
-// 		window.open("http://zfb.zhangjh.me");
-// 	}
-// })();
+(function () {
+    $().ready(function () {
+        let r = Math.random();
+        let img = "//wx2.sinaimg.cn/mw690/62d95157ly1fwvvhwbv9fj20ku0xck27.jpg";
+        if(r > 0.5){
+            img = "//wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg";
+        }
+        $("#alipay").attr("src",img);
+        $("#alipay img").attr("src",img);
+    });
+})();
 
 function getUrl(decodeStr) {
     return decodeStr.replace(new RegExp("_","g"),"/");

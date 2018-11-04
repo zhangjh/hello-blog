@@ -218,7 +218,7 @@
 	{% if not is_index %}
 		<!-- alipay -->
 		<div id="alipay">
-			<img src="//wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg" />
+			<img src="" />
 		</div>
 	{% endif %}
 
