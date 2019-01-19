@@ -9,35 +9,30 @@ date: 2015-09-23 14:27:34
 **毕业时间**：2012.4
 **学　　历**：计算机硕士
 **Github**： https://github.com/zhangjh
-**CSDN**：http://blog.csdn.net/zhang_j_h （学生期间写过一些，已经废弃不更新）
 
 # 职业经历
 - 2012.4 ~ 2014.4　　百度在线网络技术有限公司 　　高级测试开发工程师
-- 2014.5 ~ 2016.9　　阿里巴巴网络技术有限公司 　　高级测试开发工程师
-- 2016.9 ~ 至今      阿里巴巴网络技术有限公司     高级开发工程师
+- 2014.5 ~ 至今      阿里巴巴网络技术有限公司     高级开发工程师
 
 # 技能清单
 - #### 前端
-HTML/CSS/Javascript,bootstrap,jQuery,requirejs,Vue.js,React
+HTML/CSS/JavaScript,bootstrap,jQuery,React
 
 - #### 后端 & 脚本
-nodejs,bash shell,awk/sed,Hadoop mapreduce,Java
+Java,nodejs,bash shell,awk/sed
 
 - #### 数据库
-mongodb,mysql
-
-- #### 自动化测试领域
-casperjs,ruby+watir框架
+mysql,mongodb
 
 - #### 代码管理及流程工具
 git/svn,gulp,webpack
 
-# 工具&平台 (公司内部项目未开源,内部可访问)
-- [宙斯盾-Issue/缺陷管理平台](http://defect.alibaba-inc.com),React + java + mysql,前端React全部 + Java部分
-- [塔普-casperjs自动化测试准入平台](http://tab.alibaba.net),nodejs全端实现
-- [光年-搜索广告工具集平台](http://guang.alibaba.net/index.htm)的前端工作
-- [特斯拉-组内对外的统一服务平台](http://tesla.alibaba.net)的前端工作
-- 阿里巴巴搜索产品评测系统Chrome插件实现（提供用户反馈产品召回质量的入口，收集用户反馈信息）
+# 工具&平台 (团队项目太多了不一一列举，毕竟不是求职简历)
+- 宙斯盾-Issue/缺陷管理平台
+- 塔普-casperjs自动化测试准入平台
+- 光年-搜索广告工具集平台
+- 特斯拉-组内对外的统一服务平台
+- 阿里巴巴搜索产品评测系统Chrome插件实现
 - 阿里巴巴搜索页产品重复检查Chrome插件
 - 自动修改url添加实验参数Chrome插件
 
