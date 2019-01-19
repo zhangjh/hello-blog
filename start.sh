@@ -42,7 +42,11 @@ function build(){
 #}
 
 function run(){
-	killall hexo
+	#killall hexo
+	pid=`netstat -nap | grep 4000 | grep hexo | awk '{print $7}' | cut -d / -f 1`
+	if [[ "X${pid}" != "X" ]];then 
+		kill -9 ${pid}
+	fi
 	nohup hexo s &
 }
 
