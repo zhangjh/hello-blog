@@ -38,7 +38,7 @@ git/svn,gulp,webpack
 - 自动修改url添加实验参数Chrome插件
 
 # 业余项目
-- [云书CEO管理系统](http://ceo.qess.me/cloudBook/index.html)
+- 云书CEO管理系统
 - 若干Chrome插件
     1. [自动去广告插件](https://github.com/zhangjh/chromeExt/tree/master/%E5%8E%BB%E5%B9%BF%E5%91%8A)
 	2. [无良黑心骗子莆田系医院检测器](https://github.com/zhangjh/chromeExt/tree/master/%E8%8E%86%E7%94%B0%E7%B3%BB%E5%8C%BB%E9%99%A2%E6%A3%80%E6%B5%8B%E5%99%A8)
