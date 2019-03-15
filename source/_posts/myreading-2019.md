@@ -4,12 +4,8 @@ date: 2019-03-03 14:53:00
 tags: 阅读
 categories: 阅历
 ---
-<a class="fancybox" rel="group" href="https://amzn.to/2UiSqSe">
-	<img src="https://img3.doubanio.com/view/subject/s/public/s29957881.jpg" />
-</a>
+![Effective Java中文版(第三版)](https://img3.doubanio.com/view/subject/s/public/s29957881.jpg)
 > 如何写优雅代码？Java程序猿进阶必备
 
-<a class="fancybox" rel="group" href="https://amzn.to/2Uk7X44" >
-	<img src="https://img3.doubanio.com/view/subject/s/public/s5961934.jpg" />
-</a>
+![流浪地球](https://img3.doubanio.com/view/subject/s/public/s5961934.jpg)
 > 过年期间在一片超高预期的贺岁片中选择了看《流浪地球》，给我的观影感受跟那年看《钢铁侠3》似的，"特效没的说，绝对的震撼，但剧情真的让我不那么感兴趣"。我原本是冲着宣传的硬核科幻去看的，不指望能有《三体》中智子、黑暗森林理论、二向箔、降维打击等如此硬核的概念和设想让人震撼，但也没料想所谓的硬核科幻基本上就是行星发动机及木星引力突变科普了一波洛希极限了。不谈逻辑上的硬伤，但在人类甚至地球生存存亡之际靠一个小女孩强行煽情推动剧情真的看的人尴尬，私以为这部片的两个小孩真的是败笔。扯远了，于是乎找来了大刘的流浪地球原著想看看改编到底有多大，结果什么小男孩小女孩，木星撕碎地球压根没有的事，想来也是，连木星这关都过不去，还扯什么流浪2500年，这不闹着玩吗？大刘这本书里基本上跟电影没有多少关系，书里的主角似乎连个名字都没有，主要描写了主角在即将地球流浪之际的世界见闻，也思考了在末日之际人类的亲情、爱情之类人性可能的变化，甚至有联合政府的坚守和叛军的反叛等等，故事没电影那么戏剧，但逻辑依然在线依然硬核。
