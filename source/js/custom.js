@@ -116,3 +116,5 @@ function msgClickReg() {
     }
 })();
 
+// 控制鼠标特效开启
+loadSpecialEffects();

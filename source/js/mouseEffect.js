@@ -1,6 +1,6 @@
 // 鼠标点击特效（2019.3.17）
 // 网上瞎逛的时候看到一个"牢记社会主义核心价值观的鼠标特效"，于是借鉴来了，源出：http://www.bianxiaofeng.com
-(function loadSpecialEffects() {
+function loadSpecialEffects() {
     var a_idx = 0;
     jQuery(document).ready(function ($) {
         $("body").click(function (e) {
@@ -90,4 +90,4 @@
             setTimeout(e, 1e3 / 60);
         }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r();
     }(window, document);
-})();
+}
