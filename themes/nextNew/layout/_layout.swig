@@ -121,7 +121,7 @@
   {% block comment_system %}{% endblock %}
   {% include '_scripts/baidushare.swig' %}
 
-
+  <script src="/js/mouseEffect.js"></script>
   <script src="/js/custom.js"></script>
 </body>
 </html>
