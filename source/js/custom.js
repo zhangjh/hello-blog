@@ -116,5 +116,3 @@ function msgClickReg() {
     }
 })();
 
-// 鼠标特效
-loadSpecialEffects();
