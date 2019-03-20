@@ -1,16 +1,16 @@
-title: 手写Tomcat框架--手写实现Servlet
+title: 手写Tomcat框架
 show: true
 date: 2019-03-20 14:18:50
 tags: [Tomcat,Servlet]
 categories: 技术人生
 ---
 ### 背景
-TomCat是我们Java Web程序员每天都要打交道的东西，但很多应用框架的存在让我们感觉不到它的存在，，"动动手配置下"，框架就帮我们把一切封装好了。
-框架的使用接大地方便了我们开发，但仅仅停留在会用阶段还是不够的，做一个"API调用工程师"技术的天花板太低了，这篇博客就记录一下我在学习TomCat工作原理后手写的一个简单的demo框架。
+TomCat是我们Java Web程序员每天都要打交道的东西，但很多应用框架的存在让我们感觉不到它的存在，"动动手配置下"，框架就帮我们把一切封装好了。
+框架的使用极大地方便了我们开发，但仅仅停留在会用阶段还是不够的，做一个"API调用工程师"技术的天花板太低了，这篇博客就记录一下我在学习TomCat工作原理后手写的一个简单的demo框架。
 
 ### 思路
 > The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
-引用一句Tomcat官网上的话，Tomcat其实就是一个Servlet的开源实现，因此手写Tomcat就是手写实现一个Servlet。
+引用一句Tomcat官网上的话，Tomcat其实就是一个Servlet的开源实现，因此手写Tomcat也就是手写实现一个Servlet。
 
 写之前我们理一下思路，我们的Tomcat要满足哪些需求？
 
@@ -24,7 +24,8 @@ TomCat是我们Java Web程序员每天都要打交道的东西，但很多应用
 
 ### 实现
 1. 封装请求和响应
-使用Servlet请求参数是HttpServletRequest，响应是HttpServletResponse，两个类内部都有各种请求头，响应头相关的参数设置。这里，我们简化掉其他的，只实现必须的部分。
+
+使用Servlet，请求参数是HttpServletRequest，响应是HttpServletResponse，两个类内部都有各种请求头，响应头相关的参数设置。这里，我们简化掉其他的，只实现必须的部分。
 请求类我们只关心必须的请求路径和方法类型，响应类我们只关心html文本类型的输出。
 
 1.1 请求类Request的封装
@@ -93,9 +94,12 @@ public class Response {
 "HTTP/1.1 200"是http请求响应的规范格式，"Content-Type: text/html"写死了返回html格式文本。响应类将输出流按UTF8格式输出为浏览器可以识别的文本。
 
 2. Servlet初始化配置
+
 Servlet的配置主要是用来设定请求某个Url时分发给哪个Servlet服务类来进行处理。
 Servlet的配置可以通过web.xml文件也可以通过纯Java配置的方式。这里框架对两种配方式都予以说明。
+
 2.1 web.xml方式配置
+
 首先我们在项目中创建web.xml文件，像配置Servlet一样配置我们的Servlet
 ```xml
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -144,6 +148,7 @@ Servlet的配置可以通过web.xml文件也可以通过纯Java配置的方式�
 ```
 
 2.2 纯Java方式配置
+
 使用纯Java配置，我们首先需要建立一个配置POJO，用来保存Servlet的配置信息。
 ```java
 public class ServletMapping {
@@ -176,6 +181,7 @@ public class ServletMappingConfig {
 ```
 
 3. 定义Servlet处理类
+
 Servlet服务启动后，真正处理业务的方法为service方法。查看Servlet的HttpServlet类可以看到其除了主要的service方法外，还定义了很多诸如doGet，doPost，doPut，doXxx的方法去处理各类不同的请求。
 而service方法主要逻辑即根据请求方法的类型去请求对应的doXx方法。
 类似地，我们可以定义我们的Servlet处理类如下：
@@ -198,6 +204,7 @@ public abstract class BaseServlet {
 这里定义为抽象类，主要是为了让各子类自行实现自己的doXX方法。service根据类型请求相应方法。具体的Servlet处理类主要实现doXX方法，示例为打印字符串，这里不赘述。
 
 4. TomCat启动流程
+
 TomCat启动之前首先要加载上述配置的配置文件，然后开启Socket连接监听输入流，当有请求过来时，根据配置找到对应的Servlet处理类并实例化，然后调用处理类的service方法进行业务处理。
 这里为了演示两种配置方式的启动，将实例化两个TomCat，启动方式是一致的，区别只在于启动前的配置初始化。因此我们定义TomCat抽象基类如下：
 
@@ -317,6 +324,7 @@ public static void main(String[] args) {
 ```
 
 5. 优化
+
 上述的TomCat框架每个请求到来时都会新建一个线程，真实的TomCat容器是线程池机制。
 我们也可以将demo框架进行优化。
 首先我们定义一些线程池参数如下：
