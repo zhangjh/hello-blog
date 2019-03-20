@@ -24,12 +24,11 @@ TomCat是我们Java Web程序员每天都要打交道的东西，但很多应用
 
 ### 实现
 1. 封装请求和响应
-
-使用Servlet，请求参数是HttpServletRequest，响应是HttpServletResponse，两个类内部都有各种请求头，响应头相关的参数设置。这里，我们简化掉其他的，只实现必须的部分。
+	使用Servlet，请求参数是HttpServletRequest，响应是HttpServletResponse，两个类内部都有各种请求头，响应头相关的参数设置。这里，我们简化掉其他的，只实现必须的部分。
 请求类我们只关心必须的请求路径和方法类型，响应类我们只关心html文本类型的输出。
 
-1.1 请求类Request的封装
-```java
+	1.1 Request的封装
+	```java
 public class Request {
 
     private String method;
@@ -52,10 +51,10 @@ public class Request {
 	... ...
 }
 ```
-通过输入流解析，获取请求头里的请求方法类型和请求路径。
+	通过输入流解析，获取请求头里的请求方法类型和请求路径。
 
-1.2 Response类的封装
-```java
+	1.2 Response类的封装
+ 	```java
 public class Response {
 
     private OutputStream outputStream;
@@ -91,17 +90,15 @@ public class Response {
     }
 }
 ```
-"HTTP/1.1 200"是http请求响应的规范格式，"Content-Type: text/html"写死了返回html格式文本。响应类将输出流按UTF8格式输出为浏览器可以识别的文本。
+	"HTTP/1.1 200"是http请求响应的规范格式，"Content-Type: text/html"写死了返回html格式文本。响应类将输出流按UTF8格式输出为浏览器可以识别的文本。
 
 2. Servlet初始化配置
+	Servlet的配置主要是用来设定请求某个Url时分发给哪个Servlet服务类来进行处理。
+	Servlet的配置可以通过xml文件也可以通过纯Java配置的方式。这里框架对两种配方式都予以说明。
 
-Servlet的配置主要是用来设定请求某个Url时分发给哪个Servlet服务类来进行处理。
-Servlet的配置可以通过web.xml文件也可以通过纯Java配置的方式。这里框架对两种配方式都予以说明。
-
-2.1 web.xml方式配置
-
-首先我们在项目中创建web.xml文件，像配置Servlet一样配置我们的Servlet
-```xml
+	2.1 xml方式配置
+	首先我们在项目中创建web.xml文件，像配置Servlet一样配置我们的Servlet
+	```xml
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
@@ -134,11 +131,11 @@ Servlet的配置可以通过web.xml文件也可以通过纯Java配置的方式�
 
 </web-app>
 ```
-配置文件配置了两个示例Servlet，分别处理"/test1"和和"/test2"请求。
-对应的处理类下面会说到。
+	配置文件配置了两个示例Servlet，分别处理"/test1"和和"/test2"请求。
+	对应的处理类下面会说到。
 
-使用xml配置那么必须要能够解析xml文件，这里使用dom4j。工程的pom依赖里要加上依赖项。
-```xml
+	使用xml配置那么必须要能够解析xml文件，这里使用dom4j。工程的pom依赖里要加上依赖项。
+	```xml
  <!-- xml配置方式解析xml文件 -->
 <dependency>
 	<groupId>dom4j</groupId>
@@ -146,11 +143,9 @@ Servlet的配置可以通过web.xml文件也可以通过纯Java配置的方式�
 	<version>1.6.1</version>
 </dependency>
 ```
-
-2.2 纯Java方式配置
-
-使用纯Java配置，我们首先需要建立一个配置POJO，用来保存Servlet的配置信息。
-```java
+	2.2 纯Java方式配置
+	使用纯Java配置，我们首先需要建立一个配置POJO，用来保存Servlet的配置信息。
+	```java
 public class ServletMapping {
 
     private String servletName;
@@ -167,8 +162,8 @@ public class ServletMapping {
 	... ...
 }
 ```
-并像xml配置一样，指明url路径分发到哪个Servlet：
-```java
+	并像xml配置一样，指明url路径分发到哪个Servlet：
+	```java
 public class ServletMappingConfig {
 
     public static final List<ServletMapping> SERVLET_MAPPINGS = new ArrayList<ServletMapping>();
@@ -181,11 +176,10 @@ public class ServletMappingConfig {
 ```
 
 3. 定义Servlet处理类
-
-Servlet服务启动后，真正处理业务的方法为service方法。查看Servlet的HttpServlet类可以看到其除了主要的service方法外，还定义了很多诸如doGet，doPost，doPut，doXxx的方法去处理各类不同的请求。
-而service方法主要逻辑即根据请求方法的类型去请求对应的doXx方法。
-类似地，我们可以定义我们的Servlet处理类如下：
-```java
+	Servlet服务启动后，真正处理业务的方法为service方法。查看Servlet的HttpServlet类可以看到其除了主要的service方法外，还定义了很多诸如doGet，doPost，doPut，doXxx的方法去处理各类不同的请求。
+	而service方法主要逻辑即根据请求方法的类型去请求对应的doXx方法。
+	类似地，我们可以定义我们的Servlet处理类如下：
+	```java
 public abstract class BaseServlet {
 
     void service(Request request, Response response) {
@@ -201,14 +195,13 @@ public abstract class BaseServlet {
     public abstract void doPost(Request request, Response response);
 }
 ```
-这里定义为抽象类，主要是为了让各子类自行实现自己的doXX方法。service根据类型请求相应方法。具体的Servlet处理类主要实现doXX方法，示例为打印字符串，这里不赘述。
+	这里定义为抽象类，主要是为了让各子类自行实现自己的doXX方法。service根据类型请求相应方法。具体的Servlet处理类主要实现doXX方法，示例为打印字符串，这里不赘述。
 
 4. TomCat启动流程
+	TomCat启动之前首先要加载上述配置的配置文件，然后开启Socket连接监听输入流，当有请求过来时，根据配置找到对应的Servlet处理类并实例化，然后调用处理类的service方法进行业务处理。
+	这里为了演示两种配置方式的启动，将实例化两个TomCat，启动方式是一致的，区别只在于启动前的配置初始化。因此我们定义TomCat抽象基类如下：
 
-TomCat启动之前首先要加载上述配置的配置文件，然后开启Socket连接监听输入流，当有请求过来时，根据配置找到对应的Servlet处理类并实例化，然后调用处理类的service方法进行业务处理。
-这里为了演示两种配置方式的启动，将实例化两个TomCat，启动方式是一致的，区别只在于启动前的配置初始化。因此我们定义TomCat抽象基类如下：
-
-```java
+	```java
 abstract class BaseTomCat {
     /** 启动端口 */
     private int port;
@@ -252,7 +245,6 @@ abstract class BaseTomCat {
 				Request = new Request(socket.getInputStream());
 				Response = new Response(socket.getOutputStream());
 				dispatch(request, response);
-				socket.close();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -260,9 +252,8 @@ abstract class BaseTomCat {
     }
 }
 ```
-
-子类只需实现自己的初始化方法即可：
-```java
+	子类只需实现自己的初始化方法即可：
+	```java
 // 纯java配置方式
 @Override
     public void init() {
@@ -283,7 +274,7 @@ abstract class BaseTomCat {
     }
 ```
 
-```java
+	```java
 // xml配置方式，UtilsXml封装了对xml文件的读操作
 @Override
     void init() {
@@ -314,8 +305,8 @@ abstract class BaseTomCat {
         }
     }
 ```
-至此，框架已经可以运行了。编写main方法实例化TomCat启动：
-```java
+	至此，框架已经可以运行了。编写main方法实例化TomCat启动：
+	```java
 public static void main(String[] args) {
 	MyTomCatWithXml myTomCat = new MyTomCatWithXml(8080);
 
@@ -324,11 +315,10 @@ public static void main(String[] args) {
 ```
 
 5. 优化
-
-上述的TomCat框架每个请求到来时都会新建一个线程，真实的TomCat容器是线程池机制。
-我们也可以将demo框架进行优化。
-首先我们定义一些线程池参数如下：
-```java
+	上述的TomCat框架每个请求到来时都会新建一个线程，真实的TomCat容器是线程池机制。
+	我们也可以将demo框架进行优化。
+	首先我们定义一些线程池参数如下：
+	```java
 /** 线程池最大线程数 */
 private static final int THREAD_POOL_MAX_SIZE = 200;
 /** 线程池常驻线程数 */
@@ -336,8 +326,8 @@ private static final int THREAD_CORE_POOL_SIZE = 10;
 /** 闲置线程存活时间 */
 private static final int THREAD_KEEP_ALIVE = 30;
 ```
-生成线程池：
-```java
+	生成线程池：
+	```java
 // 自定义线程名显示格式，为了使用ThreadFactoryBuilder需要依赖google.guava
 ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("Tomcat-work-%d").build();
 ExecutorService exec = new ThreadPoolExecutor(
@@ -349,8 +339,8 @@ ExecutorService exec = new ThreadPoolExecutor(
 	threadFactory
 );
 ```
-偷懒的话，也可以直接通过`Executors.newFixedThreadPool(100)`生成固定数目的线程池。
+	偷懒的话，也可以直接通过`Executors.newFixedThreadPool(100)`生成固定数目的线程池。
 
-线程任务也可以单独抽取成一个类，不赘述了，可以参看完整项目源码。
+	线程任务也可以单独抽取成一个类，不赘述了，可以参看完整项目源码。
 
 6. 完整项目源码可以参看[**write_tomcat_servlet_in_hand**](https://github.com/zhangjh/write_tomcat_servlet_in_hand)
