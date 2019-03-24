@@ -343,4 +343,4 @@ ExecutorService exec = new ThreadPoolExecutor(
 
 	线程任务也可以单独抽取成一个类，不赘述了，可以参看完整项目源码。
 
-6. 完整项目源码可以参看[**write_tomcat_servlet_in_hand**](https://github.com/zhangjh/write_tomcat_servlet_in_hand)
+6. 完整项目源码可以参看[**write_tomcat_servlet_in_hand**](https://github.com/zhangjh/write_tomcat_springmvc_in_hand/tree/master/tomcat)
