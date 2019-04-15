@@ -136,7 +136,10 @@ aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all -c -D
 ```
 
 ##### transmission
-1. 安装不赘述
+1. 安装
+```
+sudo apt-get install transmission-daemon
+```
 
 2. 配置
 ```
