@@ -50,7 +50,7 @@ function run(){
 	nohup hexo s &
 }
 
-. ~/.bash_profile
+#. ~/.bash_profile
 install
 build
 #sync myblog
