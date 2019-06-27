@@ -8,7 +8,7 @@ categories: 技术人生
 <i class="iconfont" style="color: #1296db">&#xe65d;</i> 16/53，每周一篇博，坚持！
 
 (翻译自[Github blog](https://blog.github.com/2018-06-04-github-microsoft/))
-![](//wx2.sinaimg.cn/mw690/62d95157gy1fs0pfox35cj21ut0z5q58.jpg)
+![](http://wx2.sinaimg.cn/mw690/62d95157gy1fs0pfox35cj21ut0z5q58.jpg)
 
 我很高兴地宣布，微软正在谋求收购Github并且有望在今年年底完成收购协议。虽然最终达成收购还需要几个月的时间，但我们想尽快分享这个消息给大家。
 
