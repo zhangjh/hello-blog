@@ -4,7 +4,7 @@ date: 2019-03-03 14:53:00
 tags: 阅读
 categories: 阅历
 ---
-![乡村教师](https://img3.doubanio.com/lpic/s24493339.jpg
+![乡村教师](https://img3.doubanio.com/lpic/s24493339.jpg)
 > 大刘一如既往的人文关怀，科幻外衣下的歌颂人民教师的短篇，值得一读。我在想，如果大牛去写一篇农村题材的长篇，会不会也会很成功。
 
 ![Effective Java中文版(第三版)](//img3.doubanio.com/lpic/s29957881.jpg)
