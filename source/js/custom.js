@@ -22,7 +22,7 @@
         //let r = Math.random();
         //let img = "//wx2.sinaimg.cn/mw690/62d95157ly1fwvvhwbv9fj20ku0xck27.jpg";
         //if(r > 0.5){
-            img = "//wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg";
+            img = "http://wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg";
         //}
         $("#alipay").attr("src",img);
         $("#alipay img").attr("src",img);
