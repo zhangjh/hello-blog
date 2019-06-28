@@ -15,14 +15,16 @@
 
 	<!--底部广告内容-->
 	<hr />
+	<!--
 	推荐书目：
 	<div id="recommendBooks">
 		{% include '_scripts/ads/jd_recommend_books.swig' %}
 	</div>
-
+	
 	{% include '_scripts/ads/googleads.swig' %}
 
-	<hr>
+	<hr />
+	-->
 	<div id="bottom_ads">
 		{% include '_scripts/ads/bottom-jd-ads.swig' %}
 	</div>
