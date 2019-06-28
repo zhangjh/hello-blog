@@ -21,5 +21,5 @@
 
 <div id="vultr">
     <span style="color:red"">便宜好用的大牌VPS--Vultr，每月2.5美元，新人注册送50美元使用抵扣</span>
-    <a href="https://www.vultr.com/?ref=8068356"><img src="https://www.vultr.com/media/banners/banner_728x90.png" width="728" height="90"></a>
+    <a href="https://www.vultr.com/?ref=8068356"><img src="//favlink.cn/img/banner_728x90.png" width="728" height="90"></a>
 </div>
