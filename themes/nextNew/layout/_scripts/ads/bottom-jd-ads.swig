@@ -1,5 +1,5 @@
 <!-- jd 底部宽幅广告 -->
-<div id="jd_channel">
+<!--div id="jd_channel">
 	<script>
 		var w = document.body.clientWidth,
 			h = document.body.clientHeight;
@@ -17,4 +17,6 @@
 		}
 	</script>
 	<script src="http://ads.union.jd.com/static/js/union.js"></script>
-</div>
+</div-->
+
+<a href="https://www.vultr.com/?ref=8068356"><img src="https://www.vultr.com/media/banners/banner_468x60.png" width="468" height="60"></a>
