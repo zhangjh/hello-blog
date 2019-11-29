@@ -4,6 +4,9 @@ date: 2019-03-03 14:53:00
 tags: 阅读
 categories: 阅历
 ---
+![漫画算法：小灰的算法之旅](https://img3.doubanio.com/view/subject/l/public/s32299271.jpg)
+> 很棒的一本算法入门书，风趣简明。粗读了一遍，需要多读几遍并动手实现一下。
+
 ![地球大炮](https://images-cn.ssl-images-amazon.com/images/I/41etfnr6V7L.jpg)
 > 神奇的想象力！我们几乎小时候都想过穿越地球到达另一半地球的事情，想过后就觉得荒诞完全不可行，这就是普通人；不但将凿穿地球可行化还利用地球通道将通道变成加速人的巨大炮管进行肉身宇航，这™就是科幻作家！
 
