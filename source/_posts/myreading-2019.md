@@ -4,10 +4,10 @@ date: 2019-03-03 14:53:00
 tags: 阅读
 categories: 阅历
 ---
-![代码整洁之道](https://img9.doubanio.com/view/subject/l/public/s29376034.jpg)
+![代码整洁之道](https://img9.doubanio.com/view/subject/s/public/s29376034.jpg)
 > 不是我想象中的讲述代码如何写才可以整洁的书，这本书更是一本过来人讲述职业生涯经验的书。从中可以看到大佬也是跌跌撞撞成长起来的，作者告诉我们如何做才算是一个专业的程序员。部分可以借鉴，但整体收获不算大。
 
-![漫画算法：小灰的算法之旅](https://img3.doubanio.com/view/subject/l/public/s32299271.jpg)
+![漫画算法：小灰的算法之旅](https://img3.doubanio.com/view/subject/s/public/s32299271.jpg)
 > 很棒的一本算法入门书，风趣简明。粗读了一遍，需要多读几遍并动手实现一下。
 
 ![地球大炮](https://images-cn.ssl-images-amazon.com/images/I/41etfnr6V7L.jpg)
