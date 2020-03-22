@@ -28,7 +28,7 @@
 	</div>
 	<div class="ba-info">
 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005049">
-			<img src="/images/beian.png" />
+			<img src="https://dante.oss-cn-hangzhou.aliyuncs.com/beian.png" />
 			浙公网安备 33010802005049号
 		</a>
 	</div>

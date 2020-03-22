@@ -95,4 +95,5 @@
 </script>
 
 <!--jquery提前加载-->
-<script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
+<!--script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script-->
+<script src="https://dante.oss-cn-hangzhou.aliyuncs.com/index.js?v=2.1.3"></script>

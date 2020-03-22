@@ -106,7 +106,8 @@
   {% block script_extra_before %}{% endblock %}
 
   <script type="text/javascript" src="{{ url_for(theme.vendors) }}/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <!--script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script-->
+  <script src="https://dante.oss-cn-hangzhou.aliyuncs.com/jquery.lazyload.js?v=1.9.7"></script>
 
   {% include '_scripts/fancy-box.swig' %}
   {% include '_scripts/helpers.swig' %}

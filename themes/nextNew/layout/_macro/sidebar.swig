@@ -25,7 +25,9 @@
 
       <section class="site-overview sidebar-panel {% if not display_toc %} sidebar-panel-active {% endif %}">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
-          <img class="site-author-image" src="{{ theme.avatar or url_for(theme.images) + '/default_avatar.jpg' }}" alt="{{ theme.author }}" itemprop="image"/>
+          <img class="site-author-image"
+			 src="https://dante.oss-cn-hangzhou.aliyuncs.com/default_avatar.jpg"
+			 alt="{{ theme.author }}" itemprop="image"/>
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
         </div>
         <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
