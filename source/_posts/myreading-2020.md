@@ -5,7 +5,7 @@ tags: 阅读
 categories: 阅历
 ---
 
-![算法图解](https://img9.doubanio.com/view/subject/l/public/s29358625.jpg)
+![算法图解](https://img9.doubanio.com/view/subject/s/public/s29358625.jpg)
 > 最近在研究算法，有些年头不搞忘的七七八八了，脉脉上听人推荐了这本书，说是算法入门，没想到也太入门了点。。。与我没啥收货浪费几十块钱。本来应该看电子书的，想到搞算法这么严肃认真的事情还是应该买本实体书的，大意了轻信了网友的推荐
 
 ![如何获得真正的财富](https://img3.doubanio.com/view/subject/s/p/s29751621.jpg)
