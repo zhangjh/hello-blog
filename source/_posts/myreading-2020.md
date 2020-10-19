@@ -16,3 +16,6 @@ categories: 阅历
 
 ![聪明人是怎样用钱赚钱的](https://img1.doubanio.com/view/subject/s/p/s29684008.jpg)
 > 前半部分一些理论知识还是有所启发的，后面的没啥用处。理财类的书基本上应该就这样了，看不到什么新的内容了。后面就是践行了应该不再会看类似的书了。
+
+![](https://img1.doubanio.com/view/subject/s/p/s32344999.jpg)
+> 很简洁的一本小册子，介绍了TED PPT设计的原则。然而我还是那个，"懂得很多原则，却依然做不好PPT"的人。。。
