@@ -4,6 +4,8 @@ date: 2020-02-26 15:15:00
 tags: 阅读
 categories: 阅历
 ---
+![分布式系统常用技术及案例分析](https://img3.doubanio.com/view/subject/s/public/s29345560.jpg)
+> 没啥干货。。
 
 ![人生护城河](https://img1.doubanio.com/view/subject/s/public/s33313187.jpg)
 > 人到中年，危机感也愈来愈重，有很多的困惑找不到答案，于是身心都很困苦，现在才稍有理解佛家说“众生皆苦”。辉哥的这本书多少有点启发，是一本值的二读的书。
