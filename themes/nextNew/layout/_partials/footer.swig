@@ -24,7 +24,7 @@
 
 <div class="ba-wrapper">
 	<div class="ba-info">
-		<a target="_blank" href="http://www.miitbeian.gov.cn/">浙ICP备16000871-1号</a>
+		<a target="_blank" href="https://beian.miit.gov.cn">浙ICP备16000871号-1</a>
 	</div>
 	<div class="ba-info">
 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005049">
