@@ -4,7 +4,7 @@ date: 2021-05-18 07:33:00
 tags: 阅读
 categories: 阅历
 ---
-![通用源码阅读指导书--MyBatis源码详解]
+![通用源码阅读指导书--MyBatis源码详解](https://img1.doubanio.com/view/subject/s/p/s33686459.jpg)
 > 非常棒的一本书，阅读体验很棒，读起来很舒服。少有的能将代码和文字结合的很赞的一本技术书。
 
 ![生命密码](https://img2.doubanio.com/view/subject/s/public/s29912082.jpg)
