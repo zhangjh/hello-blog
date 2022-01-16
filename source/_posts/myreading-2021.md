@@ -4,6 +4,9 @@ date: 2021-05-18 07:33:00
 tags: 阅读
 categories: 阅历
 ---
+![每天5分钟玩转kubernetes](https://img1.doubanio.com/view/subject/s/p/s29731157.jpg)
+> 走马观花地看了一遍，了解了一下k8s的相关概念，扫个盲比较合适。
+
 ![每天5分钟玩转docker容器技术](https://img1.doubanio.com/view/subject/s/p/s29623609.jpg)
 > 非常不错的一本docker入门指南，跟着命令操作一遍基本上就掌握了。
 
