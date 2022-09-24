@@ -1,9 +1,10 @@
-FROM njhxzhangjh/web_base:2.0
+FROM node:10.24.1
 
-WORKDIR /root/web/hello-blog
-
-COPY ./ /root/web/hello-blog
+WORKDIR /hello-blog
+COPY ./ /hello-blog
 
 ## comment
-RUN cd /root/web/hello-blog
-RUN npm run start 
+RUN npm i 
+EXPOSE 4000
+
+CMD ["npm", "run", "start"]
