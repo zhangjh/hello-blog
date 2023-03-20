@@ -15,6 +15,5 @@ date: 2015-09-23 14:27:34
 出于懒惰和工作压力，逐渐降低了更新的频率。。
 
 
-另外，在此贴一个ProcessOn的邀请链接，看看有没有人跟我一样喜欢这个在线绘图工具，堪称架构师必备啊，太好用了。。!
-
-![processon.png](http://ww1.sinaimg.cn/large/62d95157ly1gsu5ffqn9qj20ku112e81.jpg)
+个人独立开发的ChatGpt微信小程序：AI文图，欢迎使用~
+![AI文图](https://user-images.githubusercontent.com/3371714/226229382-d306aea6-6f41-4119-b7d8-2083bb2a5774.jpg)
