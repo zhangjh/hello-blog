@@ -15,5 +15,10 @@ date: 2015-09-23 14:27:34
 出于懒惰和工作压力，逐渐降低了更新的频率。。
 
 
-个人独立开发的ChatGpt微信小程序：AI文图，欢迎使用~
-![AI文图](https://user-images.githubusercontent.com/3371714/226229382-d306aea6-6f41-4119-b7d8-2083bb2a5774.jpg)
+个人独立开发的微信小程序，欢迎使用~
+<div>
+  <img src="https://user-images.githubusercontent.com/3371714/226229382-d306aea6-6f41-4119-b7d8-2083bb2a5774.jpg" width="400" />
+  
+  <img src="https://user-images.githubusercontent.com/3371714/228761257-f2caeff2-c840-48f4-8513-625f18b5d9ce.png" width="400" />
+</div>
+
