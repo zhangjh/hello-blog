@@ -17,8 +17,9 @@ date: 2015-09-23 14:27:34
 
 个人独立开发的微信小程序，欢迎使用~
 <div>
+  <div>AI文图：一个ChatGpt小程序，包括问答、绘画以及一些AI应用</div>
   <img src="https://user-images.githubusercontent.com/3371714/226229382-d306aea6-6f41-4119-b7d8-2083bb2a5774.jpg" width="400" />
-  
+  <div>汉字助学：一个低年级汉字辅助学习小程序，包括拼音、汉字的认读识记，自定义生字本、错题本等功能</div>
   <img src="https://user-images.githubusercontent.com/3371714/228761257-f2caeff2-c840-48f4-8513-625f18b5d9ce.png" width="400" />
 </div>
 
