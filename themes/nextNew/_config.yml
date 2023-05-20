@@ -228,7 +228,7 @@ facebook_sdk:
 firebase: true
 
 ## 自研评论系统
-comment: true
+comment: false
 
 
 
