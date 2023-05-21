@@ -225,7 +225,7 @@ facebook_sdk:
   webmaster:    #true
 
 ##firebase统计支持
-firebase: true
+#firebase: false
 
 ## 自研评论系统
 comment: false
