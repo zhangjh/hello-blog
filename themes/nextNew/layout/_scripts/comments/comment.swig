@@ -131,7 +131,7 @@
 
 	  function saveComment(){
 	    $.ajax({
-	      url: "https://favlink.cn/comment/save",
+	      url: "https://comment.zhangjh.me/save",
 	      type: "post",
 	      data: comment
 	    }).done(function(ret){
@@ -147,7 +147,7 @@
 
 	  function getComment(url){
 	    $.ajax({
-	      url: "https://favlink.cn/comment/queryList",
+	      url: "https://comment.zhangjh.me/queryList",
 	      data: {
 	        url: url
 	      }
