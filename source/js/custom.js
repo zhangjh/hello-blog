@@ -22,10 +22,10 @@
         //let r = Math.random();
         //let img = "//wx2.sinaimg.cn/mw690/62d95157ly1fwvvhwbv9fj20ku0xck27.jpg";
         //if(r > 0.5){
-            img = "http://wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg";
+        //    img = "http://wx3.sinaimg.cn/mw690/62d95157gy1fm3p9us3vcj20pt11vnf0.jpg";
         //}
-        $("#alipay").attr("src",img);
-        $("#alipay img").attr("src",img);
+	//$("#alipay").attr("src",img);
+	//$("#alipay img").attr("src",img);
     });
 })();
 
@@ -39,7 +39,7 @@ function msgClickReg() {
         let id = $(this).attr("data-id");
         let url = $(this).attr("data-url");
         $.ajax({
-            url: "https://favlink.cn/comment/update",
+            url: "https://comment.zhangjh.me/update",
             data: {
                 condition: {
                     _id: id
@@ -64,7 +64,7 @@ function msgClickReg() {
     if(userInfo){
         let userInfoObj = JSON.parse(userInfo);
         let name = userInfoObj.name;
-        let queryUrl = "https://favlink.cn/comment/find";
+        let queryUrl = "https://comment.zhangjh.me/find";
         let replyComments = [];
         $.ajax({
             url: queryUrl,
