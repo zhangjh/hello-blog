@@ -4,7 +4,7 @@ date: 2022-02-25 10:27:26
 tags: 阅读
 categories: 阅历
 ---
-![RocketMQ实战与源码解析](https://img9.doubanio.com/view/subject/s/public/s29792034.jpg)
+<img src="https://img9.doubanio.com/view/subject/s/public/s29792034.jpg" alt="RocketMQ实战与源码解析" referrerPolicy="no-referrer" />
 > 总体来说写的不够深入，代码逻辑说明基本上都是贴一段代码，然后寥寥数语带过。不过这也算是源码解析类书籍的通病了，很少有书籍能够从整体业务链路角度来剖析源码阐述原理，大多都是贴一段认为的核心方法，然后片段式的进行解析。
 
 ![清明上河图：隐藏在千古名画中的阴谋与杀局](https://img1.doubanio.com/view/subject/s/public/s27956707.jpg)
