@@ -6,7 +6,10 @@
     "version": "3.9.0"
   },
   "scripts": {
-    "start": "hexo clean && hexo g && gulp && hexo s"
+    "clean": "hexo clean",
+    "generate": "hexo g",
+    "gulp": "gulp",
+    "start": "gulp && hexo s"
   },
   "dependencies": {
     "gulp": "~3.9.1",

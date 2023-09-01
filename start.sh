@@ -6,11 +6,11 @@ function install(){
 }
 
 function build(){
-    hexo clean
-	hexo g 
+    npm run clean
+    npm run generate
 	#sed -i 's/\&/\%26/g' public/sitemap.xml
     ##gulp 压缩
-    gulp  
+    npm run gulp
     if [ $? -ne 0 ];then
         echo "gulp压缩失败"
         exit 1
