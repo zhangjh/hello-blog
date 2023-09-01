@@ -43,7 +43,7 @@ function build(){
 
 function run(){
 	#killall hexo
-	pid=`netstat -nap | grep 4000 | grep hexo | awk '{print $7}' | cut -d / -f 1`
+	pid=`lsof -i:4000 | grep hexo | awk '{print $2}'`
 	if [[ "X${pid}" != "X" ]];then 
 		kill -9 ${pid}
 	fi
