@@ -42,11 +42,12 @@ function build(){
 #}
 
 function run(){
+	# 容器启动不再需要手杀进程
 	#killall hexo
-	pid=`lsof -i:4000 | grep hexo | awk '{print $2}'`
-	if [[ "X${pid}" != "X" ]];then 
-		kill -9 ${pid}
-	fi
+	#pid=`lsof -i:4000 | grep hexo | awk '{print $2}'`
+	#if [[ "X${pid}" != "X" ]];then 
+	#	kill -9 ${pid}
+	#fi
 	nohup npm run start &
 }
 
@@ -65,7 +66,7 @@ if [ $? -ne 0 ];then
 		msg=$1
 	fi
     git commit -a -m "${msg}"
-    #git push
+    git push
 fi
 
 run
