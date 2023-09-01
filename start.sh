@@ -66,7 +66,8 @@ if [ $? -ne 0 ];then
 		msg=$1
 	fi
     git commit -a -m "${msg}"
-    git push
+    #git push
 fi
 
 run
+exit 0
