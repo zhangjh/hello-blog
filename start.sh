@@ -69,5 +69,5 @@ if [ $? -ne 0 ];then
     #git push
 fi
 
-run
+#run
 exit 0
