@@ -47,7 +47,7 @@ function run(){
 	if [[ "X${pid}" != "X" ]];then 
 		kill -9 ${pid}
 	fi
-	nohup hexo s &
+	nohup npm run start &
 }
 
 #. ~/.bash_profile

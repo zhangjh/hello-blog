@@ -9,7 +9,7 @@
     "clean": "hexo clean",
     "generate": "hexo g",
     "gulp": "gulp",
-    "start": "gulp && hexo s"
+    "start": "hexo s"
   },
   "dependencies": {
     "gulp": "~3.9.1",
